@@ -1,0 +1,34 @@
+prefix = "."
+stop-words = "stopwords.txt"
+
+dataset = "ceeaus"
+corpus = "line.toml"
+index = "idx"
+uninvert = true # create the forward index by un-inverting the
+                # inverted index; can save some processing time
+                # when using both indexes
+
+[[analyzers]]
+	ngram = 1
+	method = "ngram-word"
+	[[analyzers.filter]]
+		type = "icu-tokenizer"
+	[[analyzers.filter]]
+		type = "lowercase"
+	[[analyzers.filter]]
+		max = 14
+		min = 1
+		type = "length"
+
+[[analyzers]]
+	crf-prefix = "data/models/crf"
+	ngram = 2
+	method = "ngram-pos"
+	[[analyzers.filter]]
+		type = "icu-tokenizer"
+	[[analyzers.filter]]
+		type = "lowercase"
+	[[analyzers.filter]]
+		type = "english-normalizer"
+	[[analyzers.filter]]
+		type = "ptb-normalizer"

@@ -1,0 +1,146 @@
+geophysical survey 
+content 
+introduction type geophysical survey geophysical signal detection measurement earth magnetic field seismic wave measurement using gravitational wave sensor measurement seismic wave using atom interferometer existing approach geophysical signal recognition sampling sampling analog digital conversion spectrum analysi multus dimensional fourier transform wavelet transform beamforming classical estimation theory application estimating position underground object array processing seismographic application visualization datum reference 
+introduction 
+geophysical survey systematic collection geophysical datum spatial study 
+detection analysi geophysical signal form core geophysical signal processing 
+magnetic gravitational field emanating earth interior hold essential information concerning seismic activity internal structure 
+hence detection analysi electric magnetic field crucial 
+electromagnetic gravitational wave multus dimensional signal transformation technique extended analysi signal well 
+hence thi article also discuss multus dimensional signal processing technique 
+geophysical survey may use great variety sensing instrument datum may collected earth surface aerial orbital marine platform 
+geophysical survey many application geology archaeology mineral energy exploration oceanography engineering 
+geophysical survey used industry well academic research 
+sensing instrument gravimeter gravitational wave sensor magnetometer detect fluctuation gravitational magnetic field 
+datum collected geophysical survey analysed draw meaningful conclusion 
+analysing spectral density time frequency localisation signal important application oil exploration seismography 
+type geophysical survey 
+many method type instrument used geophysical survey 
+technology used geophysical survey include 
+seismic method reflection seismology seismic refraction seismic tomography 
+
+seismoelectrical method 
+geodesy gravity technique including gravimetry gravity gradiometry 
+
+magnetic technique including aeromagnetic survey magnetometer 
+
+electrical technique including electrical resistivity tomography induced polarization spontaneou potential marine control source electromagnetic mcsem em seabed logging 
+electromagnetic method magnetotelluric ground penetrating radar transienttime domain electromagnetic magnetic resonance sounding mr 
+borehole geophysic also called well logging 
+
+remote sensing technique including hyperspectral 
+geophysical signal detection 
+thi section deal principle behind measurement geophysical wave 
+magnetic gravitational field important component geo physical signal 
+hence brief discussion important 
+thi section also deal equipment used detecting magnetic gravitational wave 
+measurement earth magnetic field 
+magnetometer used measure magnetic field magnetic anomaly earth 
+sensitivity magnetometer depend upon requirement 
+example variation geomagnetic field order several 
+case specialized magnetometer superconducting quantum interference device squid used 
+squid 
+jim zimmerman co developed rf squid superconducting quantum interference device hi tenure ford research lab however event leading invention squid fact serendipitou 
+john lambe hi experiment nuclear magnetic resonance noticed electrical property indium varied due change magnetic field order nt 
+lambe wa able fully recognise utility squid 
+squid capability detect magnetic field extremely low magnitude 
+thi due virtue josephson junction 
+jim zimmerman pioneered development squid proposing new approach making josephson junction 
+made use niobium wire niobium ribbon form two josephson junction connected parallel 
+ribbon act interruption superconducting current flowing wire 
+junction sensitive magnetic field hence useful measuring field order 
+seismic wave measurement using gravitational wave sensor 
+gravitational wave sensor detect even minute change gravitational field due influence heavier body 
+large seismic wave interfere gravitational wave may cause shift atom 
+hence magnitude seismic wave detected relative shift gravitational wave 
+measurement seismic wave using atom interferometer 
+motion mas affected gravitational field motion planet affected sun enormou gravitational field 
+likewise heavier object influence motion object smaller mas vicinity 
+however thi change motion small compared motion heavenly body 
+hence special instrument required measure minute change 
+describe atom interferometer principle 
+atom interferometer work principle diffraction 
+diffraction grating nano fabricated material separation quarter wavelength light 
+beam atom pas diffraction grating due inherent wave nature atom split form interference fringe screen 
+atom interferometer sensitive change position atomsa heavier object shift position atom nearby displacement atom measured detecting shift interference fringe 
+existing approach geophysical signal recognition 
+thi section address method mathematical technique behind signal recognition signal analysi 
+consider time domain frequency domain analysi signal 
+thi section also discuss variou transform usefulnes analysi multus dimensional wave 
+sampling 
+sampling 
+first step signal processing approach analog digital conversion 
+geophysical signal analog domain ha converted digital domain processing 
+analog digital conversion 
+name suggest gravitational electromagnetic wave analog domain detected sampled stored analysi 
+signal sampled time frequency domain 
+signal component measured interval time space 
+ex time domain sampling refer measuring signal component several instance time 
+similarly spatial sampling refer measuring signal different location space 
+traditional sampling time varying signal performed measuring amplitude signal consideration discrete interval time 
+similarly sampling space time signal signal function variable space time performed measuring amplitude signal different time instance different location space 
+example earth gravitational datum measured help gravitational wave sensor gradiometer placing different instance different instance time 
+spectrum analysi 
+multus dimensional fourier transform 
+fourier expansion time domain signal representation signal sum frequency component specifically sum sine cosine 
+joseph fourier came fourier representation estimate heat distribution body 
+approach followed analyse multus dimensional signal gravitational wave electromagnetic wave 
+fourier representation signal given 
+represent temporal frequency represent spatial frequency 
+sxt dimensional space time signal imagined travelling plane wave 
+plane wave plane propagation perpendicular direction propagation considered wave 
+wavelet transform 
+motivation development wavelet transform wa short time fourier transformthe signal analysed say ft multiplied window function wt particular time instant 
+analysing fourier coefficient thi signal gife information frequency component signal particular time instant 
+stft mathematically written 
+wavelet transform defined 
+variety window function used analysi 
+interestingly wavelet function used time frequency localisation 
+exampleone window used calculating fourier coefficient gaussian window optimally concentrated time frequency 
+thi optimal nature explained considering time scaling time shifting parameter respectively 
+choosing appropriate value determine frequency time associated signal 
+representing signal linear combination wavelet function localize signal time frequency domain 
+hence wavelet transform important geophysical application spatial temporal frequency localisation important 
+time frequency localisation using wavelet 
+geophysical signal continuously varying function space time 
+wavelet transform technique offer way decompose signal linear combination shifted scaled version basi function 
+amount shift scale modified localize signal time frequency 
+beamforming 
+simply put space time signal filtering problem thought localizing speed direction particular signal design filter space time signal follow similar approach signal 
+filter signal designed way requirement filter extract frequency component particular non zero range frequency bandpas filter appropriate passband stop band frequency determined 
+similarly case multus dimensional system wavenumber frequency response filter designed way unity designed region aka wavenumber frequency zero elsewhere spatial distribution phased array filter geophysical signal 
+thi approach applied filtering space time signal designed isolate signal travelling particular direction 
+one simplest filter weighted delay sum beamformer 
+output average linear combination delayed signal 
+word beamformer output formed averaging weighted delayed version receiver signal 
+delay chosen passband beamformer directed specific direction space 
+classical estimation theory 
+thi section deal estimation power spectral density multus dimensional signalsthe spectral density function defined multidimensional fourier transform autocorrelation function random signal 
+spectral estimate obtained finding square magnitude fourier transform also called periodogram 
+spectral estimate obtained periodogram large variance amplitude consecutive periodogram sample wavenumber 
+thi problem resolved using technique constitute classical estimation theory 
+follow 
+bartlett suggested method average spectral estimate calculate power spectrum 
+average spectral estimate time interval gife better estimate 
+welch method suggested divide measurement using datum window function calculate periodogram average get spectral estimate calculate power spectrum using fast fourier transform fftthi increased computational speed 
+periodogram consideration modified multiplying window function 
+smoothing window help smoothen estimate 
+wider main lobe smoothing spectrum smoother become cost frequency resolution 
+detail spectral estimation please refer spectral analysi multus dimensional signal 
+application 
+estimating position underground object 
+method discussed assume mas distribution underground object interest already known hence problem estimating location boil parametric localisationsay underground object center mass cm cmcmn located surface position ppn 
+gravity gradientcomponent gravity field measured using spinning wheel accelerometer also called gravity gradiometer instrument positioned different orientation measure respective component gravitational field 
+value gravitational gradient tensor calculated analyzed 
+analysi include observing contribution object consideration 
+maximum likelihood procedure followed cramrrao bound crb computed asses quality location estimate 
+array processing seismographic application 
+variou sensor located surface earth spaced equidistantly receive seismic wave 
+seismic wave travel variou layer earth undergo change property amplitude change time arrival phase shift 
+analyzing property signal model activity inside earth 
+visualization datum 
+method volume rendering important tool analyse scalar field 
+volume rendering simplify representation space 
+every point space called voxel 
+datum inside dataset projected spacedisplay screen using variou technique 
+different datum encoding scheme exist variou application mrus seismic application 

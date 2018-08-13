@@ -1,0 +1,186 @@
+geophysic 
+age sea floor 
+much dating information come magnetic anomaly 
+computer simulation earth magnetic field period normal polarity reversal 
+geophysic subject natural science concerned physical process physical property earth surrounding space environment use quantitative method analysi 
+term geophysic sometime refer geological application earth shape gravitational magnetic field internal structure composition dynamic surface expression plate tectonic generation magma volcanism rock formation however modern geophysic organization use broader definition include water cycle including snow ice fluid dynamic ocean atmosphere electricity magnetism ionosphere magnetosphere solar terrestrial relation analogou problem associated moon planet 
+although geophysic wa recognized separate discipline th century origin date back ancient time 
+first magnetic compass made lodestone modern magnetic compass played important role history navigation 
+first seismic instrument wa built ad 
+isaac newton applied hi theory mechanic tide precession equinox instrument developed measure earth shape density gravity field well component water cycle 
+th century geophysical method developed remote exploration solid earth ocean geophysic played essential role development theory plate tectonic 
+geophysic applied societal need mineral resource mitigation natural hazard environmental protection exploration geophysic geophysical survey datum used analyze potential petroleum reservoir mineral deposit locate groundwater find archaeological relic determine thicknes glacier soil asses site environmental remediation 
+content 
+physical phenomena gravity heat flow vibration electricity electromagnetic wave magnetism radioactivity fluid dynamic mineral physic region earth size form earth structure interior magnetosphere method geodesy satellite space probe history ancient classical era beginning modern science see also note reference external link 
+physical phenomena 
+geophysic highly interdisciplinary subject geophysicist contribute every area earth science 
+provide clearer idea constitute geophysic thi section describe phenomena studied physic relate earth surrounding 
+gravity 
+image globe combining color topography 
+map deviation gravity perfectly smooth idealized earth 
+main article gravity earth information physical geodesy gravimetry 
+gravitational pull moon sun give rise two high tide two low tide every lunar day every hour minute 
+therefore gap hour minute every high tide every low tide 
+gravitational force make rock pres deeper rock increasing density depth increase measurement gravitational acceleration gravitational potential earth surface used look mineral deposit see gravity anomaly gravimetry surface gravitational field provide information dynamic tectonic plate 
+geopotential surface called geoid one definition shape earth 
+geoid would global mean sea level ocean equilibrium could extended continent narrow canal 
+heat flow 
+main article geothermal gradient pseudocolor image vertical profile 
+model thermal convection earth mantle 
+thin red column mantle plume 
+earth cooling resulting heat flow generate earth magnetic field geodynamo plate tectonic mantle convection main source heat primordial heat radioactivity although also contribution phase transition 
+heat mostly carried surface thermal convection although two thermal boundary layer core mantle boundary lithosphere heat transported conduction heat carried bottom mantle mantle plume 
+heat flow earth surface potential source geothermal energy 
+vibration 
+main article seismology deformed block grid surface 
+illustration deformation block body wave surface wave see seismic wave 
+seismic wave vibration travel earth interior along surface 
+entire earth also oscillate form called normal mode free oscillation earth 
+ground motion wave normal mode measured using seismograph 
+wave come localized source earthquake explosion measurement one location used locate source 
+location earthquake provide information plate tectonic mantle convection 
+measurement seismic wave source information region wave travel 
+density composition rock change suddenly wave reflected 
+reflection provide information near surface structure change travel direction called refraction used infer deep structure earth 
+earthquake pose risk human 
+understanding mechanism depend type earthquake eg intraplate deep focu lead better estimate earthquake risk improvement earthquake engineering 
+electricity 
+although mainly notice electricity thunderstorm alway downward electric field near surface average volt per meter relative solid earth atmosphere ha net positive charge due bombardment cosmic ray 
+current ampere flow global circuit flow downward ionosphere earth back upward thunderstorm 
+flow manifested lightning cloud sprite 
+variety electric method used geophysical survey 
+measure spontaneou potential potential arise ground man made natural disturbance 
+telluric current flow earth ocean 
+two cause electromagnetic induction time varying external origin geomagnetic field motion conducting body seawater acros earth permanent magnetic field distribution telluric current density used detect variation electrical resistivity underground structure 
+geophysicist also provide electric current themself see induced polarization electrical resistivity tomography 
+electromagnetic wave 
+electromagnetic wave occur ionosphere magnetosphere well earth outer core 
+dawn choru believed caused high energy electron get caught van allen radiation belt 
+whistler produced lightning strike 
+may generated 
+electromagnetic wave may also generated earthquake see seismo electromagnetic 
+earth outer core electric current highly conductive liquid iron create magnetic field electromagnetic induction see geodynamo 
+alfvn wave magnetohydrodynamic wave magnetosphere earth core 
+core probably little observable effect geomagnetic field slower wave magnetic rossby wave may one source geomagnetic secular variation 
+electromagnetic method used geophysical survey include transient electromagnetic magnetotelluric 
+magnetism 
+information earth magnetic field aeromagnetic survey paleomagnetism 
+earth magnetic field protect earth deadly solar wind ha long used navigation 
+originate fluid motion earth outer core see geodynamo magnetic field upper atmosphere gife rise aurora diagram field line axe magnet line 
+earth dipole axi pink line tilted away rotational axi blue line 
+earth field roughly like tilted dipole change time phenomenon called geomagnetic secular variation 
+mostly geomagnetic pole stay near geographic pole random interval averaging million year polarity earth field reverse 
+geomagnetic reversal analyzed within geomagnetic polarity time scale contain polarity interval last million year change frequency time recent brief complete reversal laschamp event occurring year ago last glacial period 
+geologist observed geomagnetic reversal recorded volcanic rock magnetostratigraphy correlation see natural remanent magnetization signature seen parallel linear magnetic anomaly stripe seafloor 
+stripe provide quantitative information seafloor spreading part plate tectonic 
+basi magnetostratigraphy correlate magnetic reversal stratigraphy construct geologic time scale addition magnetization rock used measure motion continent 
+radioactivity 
+information radiometric dating diagram compound ball representing nuclei arrow 
+example radioactive decay chain see radiometric dating 
+radioactive decay account earth internal heat powering geodynamo plate tectonic main heat producing isotope potassium uranium uranium thorium radioactive element used radiometric dating primary method establishing absolute time scale geochronology 
+unstable isotope decay predictable rate decay rate different isotope cover several order magnitude radioactive decay used accurately date recent event event past geologic era radiometric mapping using ground airborne gamma spectrometry used map concentration distribution radioisotope near earth surface useful mapping lithology alteration 
+fluid dynamic 
+main article geophysical fluid dynamic 
+fluid motion occur magnetosphere atmosphere ocean mantle core 
+even mantle though ha enormou viscosity flow like fluid long time interval see geodynamic 
+thi flow reflected phenomena isostasy post glacial rebound mantle plume 
+mantle flow drife plate tectonic flow earth core drife geodynamo 
+geophysical fluid dynamic primary tool physical oceanography meteorology 
+rotation earth ha profound effect earth fluid dynamic often due corioli effect 
+atmosphere gife rise large scale pattern like rossby wave determine basic circulation pattern storm 
+ocean drive large scale circulation pattern well kelvin wave ekman spiral ocean surface earth core circulation molten iron structured taylor column 
+wave phenomena magnetosphere modeled using magnetohydrodynamic 
+mineral physic 
+information mineral physic 
+physical property mineral must understood infer composition earth interior seismology geothermal gradient source information 
+mineral physicist study elastic property mineral high pressure phase diagram melting point equation state high pressure rheological property rock ability flow 
+deformation rock creep make flow possible although short time rock brittle 
+viscosity rock affected temperature pressure turn determine rate tectonic plate move see geodynamic 
+water complex substance unique property essential life physical property shape hydrosphere essential part water cycle climate 
+thermodynamic property determine evaporation thermal gradient atmosphere 
+many type precipitation involve complex mixture process coalescence supercooling supersaturation precipitated water become groundwater groundwater flow include phenomena percolation conductivity water make electrical electromagnetic method useful tracking groundwater flow 
+physical property water salinity large effect motion ocean 
+many phase ice form cryosphere come form like ice sheet glacier sea ice freshwater ice snow frozen ground permafrost 
+region earth 
+size form earth 
+main article figure earth 
+earth roughly spherical bulge toward equator roughly shape ellipsoid see earth ellipsoid 
+thi bulge due rotation nearly consistent earth hydrostatic equilibrium 
+detailed shape earth however also affected distribution continent ocean basin extent dynamic plate 
+structure interior 
+main article structure earth diagram concentric shell curved path 
+seismic velocity boundary interior earth sampled seismic wave 
+evidence seismology heat flow surface mineral physic combined earth mas moment inertium infer model earth interior composition density temperature pressure 
+example earth mean specific gravity far higher typical specific gravity rock surface implying deeper material denser 
+thi also implied low moment inertium compared sphere constant density 
+however density increase compression enormou pressure inside earth 
+effect pressure calculated using adamswilliamson equation 
+conclusion pressure alone cannot account increase density 
+instead know earth core composed alloy iron mineral 
+reconstruction seismic wave deep interior earth show wave outer core 
+thi indicate outer core liquid liquid cannot support shear 
+outer core liquid motion thi highly conductive fluid generate earth field see geodynamo 
+inner core however solid enormou pressure 
+reconstruction seismic reflection deep interior indicate major discontinuity seismic velocity demarcate major zone earth inner core outer core mantle lithosphere crust 
+mantle divided upper mantle transition zone lower mantle layer 
+crust mantle mohorovius discontinuity 
+seismic model earth determine composition layer 
+complete model earth mineral physic needed interpret seismic velocity term composition 
+mineral property temperature dependent geotherm must also determined 
+thi require physical theory thermal conduction convection heat contribution radioactive element 
+main model radial structure interior earth preliminary reference earth model prem 
+part thi model updated recent finding mineral physic see post perovskite supplemented seismic tomography 
+mantle mainly composed silicate boundary layer mantle consistent phase transition 
+mantle act solid seismic wave high pressure temperature deform million year act like liquid 
+thi make plate tectonic possible 
+geodynamic study fluid flow mantle core 
+magnetosphere 
+main article magnetosphere diagram colored surface line 
+schematic earth magnetosphere 
+solar wind flow left right 
+planet magnetic field strong enough interaction solar wind form magnetosphere 
+early space probe mapped gros dimension earth magnetic field extend earth radius toward sun 
+solar wind stream charged particle stream around terrestrial magnetic field continue behind magnetic tail hundred earth radius downstream 
+inside magnetosphere relatively dense region solar wind particle called van allen radiation belt 
+method 
+geodesy 
+main article geodesy 
+geophysical measurement generally particular time place 
+accurate measurement position along earth deformation gravity province geodesy 
+geodesy geophysic separate field two closely connected many scientific organization american geophysical union canadian geophysical union international union geodesy geophysic encompas 
+absolute position frequently determined using global positioning system gp 
+three dimensional position calculated using message fmy visible satellite referred geodetic reference system 
+alternative optical astronomy combine astronomical coordinate local gravity vector get geodetic coordinate 
+thi method provide position two coordinate difficult use gp 
+however useful measuring motion earth nutation chandler wobble 
+relative position two point determined using long baseline interferometry 
+gravity measurement became part geodesy needed related measurement surface earth reference coordinate system 
+gravity measurement land made using gravimeter deployed either surface helicopter flyover 
+since earth gravity field ha measured analyzing motion satellite 
+sea level also measured satellite using radar altimetry contributing accurate geoid nasa launched gravity recovery climate experiment grace wherein two twin satellite map variation earth gravity field making measurement distance two satellite using gp microwave ranging system 
+gravity variation detected grace include caused change ocean current runoff ground water depletion melting ice sheet glacier 
+satellite space probe 
+satellite space made possible collect datum visible light region area electromagnetic spectrum 
+planet characterized force field gravity magnetic field studied geophysic space physic 
+measuring change acceleration experienced spacecraft orbit ha allowed fine detail gravity field planet mapped 
+example gravity field disturbance lunar marium measured lunar orbiter led discovery concentration mas mascon beneath imbrium serenitati crisium nectari humorum basin 
+history 
+main article history geophysic 
+geophysic emerged separate discipline th century intersection physical geography geology astronomy meteorology physic however many geophysical phenomena earth magnetic field earthquake investigated since ancient era 
+ancient classical era 
+picture ornate urn like device spout shape dragon replica zhang heng seismoscope possibly first contribution seismology 
+magnetic compas existed china back far fourth century bc 
+wa used much feng shui navigation land 
+wa good steel needle could forged compass used navigation sea could retain magnetism long enough useful 
+first mention compas europe wa ad 
+circa bc eratosthene cyrene deduced earth wa round measured circumference earth using trigonometry angle sun one latitude egypt 
+developed system latitude longitude 
+perhap earliest contribution seismology wa invention seismoscope prolific inventor zhang heng ad thi instrument wa designed drop bronze ball mouth dragon mouth toad 
+looking eight toad ball one could determine direction earthquake 
+wa year first design seismoscope wa published europe jean de la hautefeuille 
+wa never built 
+beginning modern science 
+one publication marked beginning modern science wa william gilbert de magnete report series meticulou experiment magnetism 
+gilbert deduced compass point north earth magnetic 
+isaac newton published hi principium laid foundation classical mechanic gravitation also explained variety geophysical phenomena tide precession equinox 
+first seismometer instrument capable keeping continuou record seismic activity wa built jame forbe 

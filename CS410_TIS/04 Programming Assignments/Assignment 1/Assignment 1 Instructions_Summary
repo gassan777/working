@@ -1,0 +1,210 @@
+﻿Assignment 1. CS410 MP1 - Getting Familiar with Text
+Text mining analysis with the MeTA toolkit
+
+
+https://gitlab.textdata.org/nedilko2/MP1
+Setup
+Metapy - Pyhon bindings for MeTA.
+
+# Ensure your pip is up to date
+pip install --upgrade pip
+
+# install metapy!
+pip install metapy pytoml
+
+Start
+
+python (in terminal)
+
+#import the MeTA python bindings
+import metapy
+
+#Optional: tell MeTA to log to stderr to get progress output for long-running function calls.
+metapy.log_to_stderr()
+
+Creating a document
+
+doc = metapy.index.Document()
+doc.content("I said that I can't believe that it only costs $19.95!")
+
+Tokenization
+
+MeTA provides a stream-based interface for performing document tokenization. Each stream starts off with a Tokenizer object, and in most cases you should use the Unicode standard aware ICUTokenizer.
+
+tok = metapy.analyzers.ICUTokenizer()
+
+Tokenizers operate on raw text and provide an Iterable that spits out the individual text tokens.
+Let's try running just the ICUTokenizer to see what it does.
+
+tok.set_content(doc.content()) # this could be any string
+tokens = [token for token in tok]
+print(tokens)
+
+See pseudo-XML looking tags - sentence boundary tags; ICUTokenizer dilimits sentences by default.
+Now in a multi-sentence document:
+
+doc.content("I said that I can't believe that it only costs $19.95! I could only find it for more than $30 before.")
+tok.set_content(doc.content())
+tokens = [token for token in tok]
+print(tokens)
+
+Most of the IR techniques in this class don't need sentence boundaries, but sometimes it is useful (see a scenario below). Meanwhile, pass a flag to the ICUTokenizer constructor to disable sentence boundary tags:
+
+tok = metapy.analyzers.ICUTokenizer(suppress_tags=True)
+tok.set_content(doc.content())
+tokens = [token for token in tok]
+print(tokens)
+
+MeTA treats tokenization as a streaming process and starts with a tokenizer. You can modify the raw tokens changing the document representation.
+The “intermediate” steps in the tokenization stream are represented with objects called Filters.
+Each filter consumes the content of a previous filter (or a tokenizer) and modifies the tokens coming out of the stream in a certain way.
+LengthFilter - a simple filter to eliminate a lot of noise in web documents:
+
+tok = metapy.analyzers.LengthFilter(tok, min=2, max=30)
+tok.set_content(doc.content())
+tokens = [token for token in tok]
+print(tokens)
+
+LengthFilter is consuming our original ICUTokenizer and emits only tokens with a length of 2 – 30, thus getting rid of a lot of punctuation tokens and excessively long tokens such as URLs.
+
+Stopword removal and stemming
+
+ListFilter removes stopwords in MeTA.
+
+wget -nc https://raw.githubusercontent.com/meta-toolkit/meta/master/data/lemur-stopwords.txt
+
+tok = metapy.analyzers.ListFilter(tok, "lemur-stopwords.txt", metapy.analyzers.ListFilter.Type.Reject)
+tok.set_content(doc.content())
+tokens = [token for token in tok]
+print(tokens)
+
+Here we've downloaded a common list of stopwords and created a ListFilter to reject any tokens that occur in that list of words. Makes a lot of difference by reducing the size of the document!
+
+Then, a stemmer or lemmatizer filter reducing different inflected word forms to the same representation, e.g. to find documents about a “run” when you search “running” or “runs”. Porter2 Stemmer is a common MeTA stemmer.
+
+tok = metapy.analyzers.Porter2Filter(tok)
+tok.set_content(doc.content())
+tokens = [token for token in tok]
+print(tokens)
+
+N-grams
+
+It's time to analyze the document by consuming each token from its token stream and performing some actions based on these tokens. The simplest case – the number of occurrences of these tokens.
+For clarity, let's switch back to a simpler token stream first. The following token stream tokenizes with ICUTokenizer, and then lowercases each token.
+
+tok = metapy.analyzers.ICUTokenizer(suppress_tags=True)
+tok = metapy.analyzers.LowercaseFilter(tok)
+tok.set_content(doc.content())
+tokens = [token for token in tok]
+print(tokens)
+
+Now, the number of occurrences in the stream - “bag of words” representation or “unigram word counts”.
+MeTA classes that consume a token stream and emit a document representation are Analyzers.
+
+ana = metapy.analyzers.NGramWordAnalyzer(1, tok)
+print(doc.content())
+unigrams = ana.analyze(doc)
+print(unigrams)
+
+You can also count groups of tokens. “Unigram” means “1-gram” (individual tokens); “Bigram” means “2-gram” (adjacent tokens as a group).
+
+ana = metapy.analyzers.NGramWordAnalyzer(2, tok)
+bigrams = ana.analyze(doc)
+print(bigrams)
+
+Sometimes looking at n-grams of characters is useful:
+
+tok = metapy.analyzers.CharacterTokenizer()
+ana = metapy.analyzers.NGramWordAnalyzer(4, tok)
+fourchar_ngrams = ana.analyze(doc)
+print(fourchar_ngrams)
+
+POS tagging
+
+MeTA’s NLP component currently supports two major tasks: POS tagging and syntactic parsing. POS tagging can be used to identify all of the nouns in a sentence, or all of the verbs, or adjectives, etc. This is the first step towards developing an understanding of the sentence meaning. MeTA’s POS tagging component is in the “sequences” library. Sstart off by creating a sequence:
+
+seq = metapy.sequence.Sequence()
+
+Now, add individual words (“symbols” in the library terminology) to the sequence. Sequences consist of a list of Observations (word / tag pairs). If you don't know the tags for a Sequence, just add individual words and leave the tags unset.
+
+for word in ["The", "dog", "ran", "across", "the", "park", "."]:
+    seq.add_symbol(word)
+print(seq)
+
+As you can see the sequence doesn’t yet have tags for each word. Use a pre-trained POS-tagger model distributed with MeTA.
+
+wget -nc https://github.com/meta-toolkit/meta/releases/download/v3.0.1/greedy-perceptron-tagger.tar.gz
+
+tar xvf greedy-perceptron-tagger.tar.gz
+tagger = metapy.sequence.PerceptronTagger("perceptron-tagger/")
+tagger.tag(seq)
+print(seq)
+
+This tagger was trained to output the tags present in the Penn Treebank tagset. Now, POS-tagging a document
+
+doc = metapy.index.Document()
+doc.content("I said that I can't believe that it only costs $19.95!")
+tok = metapy.analyzers.ICUTokenizer() # keep sentence boundaries!
+tok = metapy.analyzers.PennTreebankNormalizer(tok)
+tok.set_content(doc.content())
+tokens = [token for token in tok]
+print(tokens)
+
+Now, a function that transforms a token stream with sentence boundary tags into a list of Sequence objects. The actual Sequence object do not include the sentence boundary tags.
+
+def extract_sequences(tok):
+    sequences = []
+    for token in tok:
+        if token == '<s>':
+            sequences.append(metapy.sequence.Sequence())
+        elif token != '</s>':
+            sequences[-1].add_symbol(token)
+    return sequences
+
+doc = metapy.index.Document()
+doc.content("I said that I can't believe that it only costs $19.95!")
+tok.set_content(doc.content())
+for seq in extract_sequences(tok):
+    tagger.tag(seq)
+    print(seq)
+
+Config.toml file: setting up a pipeline
+
+It is often beneficial to combine multiple feature sets together with a MultiAnalyzer. Let's combine unigram words, bigram POS tags, and rewrite rules for our document feature representation.
+Instead of doing this programmatically (too tedious), we use MeTA's configuration file format (TOML configuration files) to specify the analyzer which we can then load in one line of code.
+
+#Add this as a config.toml file to your project directory
+stop-words = "lemur-stopwords.txt"
+
+[[analyzers]]
+method = "ngram-word"
+ngram = 1
+filter = "default-unigram-chain"
+
+[[analyzers]]
+method = "ngram-pos"
+ngram = 2
+filter = [{type = "icu-tokenizer"}, {type = "ptb-normalizer"}]
+crf-prefix = "crf"
+
+[[analyzers]]
+method = "tree"
+filter = [{type = "icu-tokenizer"}, {type = "ptb-normalizer"}]
+features = ["subtree"]
+tagger = "perceptron-tagger/"
+parser = "parser/"
+
+Each [[analyzers]] block defines another analyzer to combine for our feature representation. Since the “ngram-word” analyzer is very common, we define default filter chains that can be used with shortcuts.
+“default-unigram-chain” is a filter chain for unigram words;
+“default-chain” is a filter chain for bigram words and above.
+Now load the analyzer from the configuration file:
+
+ana = metapy.analyzers.load('config.toml')
+doc = metapy.index.Document()
+doc.content("I said that I can't believe that it only costs $19.95!")
+print(ana.analyze(doc))
+
+Trying it out on your own!
+
+Finally, let's test whether you can do such analysis on your own! Inside this repository, you will find example.py where we ask you to fill in your code. You are required to create a function that tokenizes with ICUTokenizer (without the end/start tags, i.e. suppress_tags=True), lowercases, removes words with less than 2 and more than 5 characters, performs stemming and produces trigrams for an input sentence.
+Once you edit the example.py to fill in the function, you can check whether your submission passed the test.

@@ -1,0 +1,136 @@
+natural gas processing 
+natural gas processing complex industrial proces designed clean raw natural gas separating impurity variou non methane hydrocarbon fluid produce known pipeline quality dry natural gas 
+natural gas processing begin well head 
+composition raw natural gas extracted producing well depend type depth location underground deposit geology area 
+oil natural gas often found together reservoir 
+natural gas produced oil well generally classified associated dissolved meaning natural gas associated dissolved crude oil 
+natural gas production absent association crude oil classified non associated percent wellhead production natural gas wa non associated 
+natural gas processing plant purify raw natural gas removing common contaminant water carbon dioxide co hydrogen sulfide 
+substance contaminate natural gas economic value processed sold 
+fully operational plant deliver pipeline quality dry natural gas used fuel residential commercial industrial consumer 
+content 
+type raw natural gas well contaminant raw natural gas description natural gas processing plant helium recovery consumption application natural gas see also reference external link reading 
+type raw natural gas well 
+raw natural gas come primarily one three type well crude oil well gas well condensate well 
+natural gas come crude oil well typically called associated gas 
+thi gas existed gas cap crude oil underground formation could dissolved crude oil 
+natural gas gas well condensate well little crude oil called non associated gas 
+gas well typically produce raw natural gas condensate well produce raw natural gas along low molecular weight hydrocarbon 
+liquid ambient condition ie pentane heavier called natural gas condensate sometime also called natural gasoline simply condensate 
+natural gas called sweet gas relatively free hydrogen sulfide gas contain hydrogen sulfide called smy gas 
+natural gas gas mixture containing significant quantity hydrogen sulfide carbon dioxide similar acidic gase called acid gas 
+raw natural gas also come methane deposit pore coal seam especially concentrated state adsorption onto surface coal 
+gas referred coalbed gas coalbed methane coal seam gas australium 
+coalbed gas ha become important source energy recent decade 
+contaminant raw natural gas 
+raw natural gas typically consist primarily methane ch shortest lightest hydrocarbon molecule 
+also contain varying amount heavier gaseou hydrocarbon ethane ch propane ch normal butane ch isobutane ch pentane even higher molecular weight hydrocarbon 
+processed purified finished product collectively referred natural gas liquid ngl 
+acid gase carbon dioxide co hydrogen sulfide mercaptan methanethiol chsh ethanethiol chsh 
+gase nitrogen helium 
+water water vapor liquid water 
+also dissolved salt dissolved gase acid 
+liquid hydrocarbon perhap natural gas condensate also referred casinghead gasoline natural gasoline andor crude oil 
+mercury small amount mercury primarily elemental form chloride species possibly present naturally occurring radioactive material norm natural gas may contain radon produced water may contain dissolved trace radium accumulate within piping processing equipmentcitation needed thi render piping equipment radioactive time 
+raw natural gas must purified meet quality standard specified major pipeline transmission distribution company 
+quality standard vary pipeline pipeline usually function pipeline system design market serve 
+general standard specify natural gas within specific range heating value caloric value 
+example united state btu per cubic foot gas atmosphere mj per cubic metre gas atmosphere 
+delivered specified hydrocarbon dew point temperature hydrocarbon gas might condense pipeline pressure forming liquid slug could damage pipeline 
+dew point adjustment serve reduction concentration water heavy hydrocarbon natural gas extent condensation occur ensuing transport pipeline free particulate solid liquid water prevent erosion corrosion damage pipeline 
+dehydrated water vapor sufficiently prevent formation methane hydrate within gas processing plant subsequently within sale gas transmission pipeline 
+typical water content specification gas must contain seven pound water per million standard cubic foot mmscf gas contain trace amount component hydrogen sulfide carbon dioxide mercaptan nitrogen 
+common specification hydrogen sulfide content grain per cubic foot gas approximately ppm 
+specification co typically limit content two three percent 
+maintain mercury les detectable limit approximately ppb volume primarily avoid damaging equipment gas processing plant pipeline transmission system mercury amalgamation embrittlement aluminum metal 
+description natural gas processing plant 
+great many way configure variou unit process used processing raw natural gas 
+block flow diagram generalized typical configuration processing raw natural gas non associated gas well 
+show raw natural gas processed sale gas pipelined end user market also show processing raw natural gas yield byproduct natural gas condensate sulfur ethane natural gas liquid ngl propane butane commonly used term pentane plu higher molecular weight hydrocarbon 
+raw natural gas commonly collected group adjacent well first processed collection point removal free liquid water natural gas condensate 
+condensate usually transported oil refinery water disposed wastewater 
+raw gas pipelined gas processing plant initial purification usually removal acid gase hydrogen sulfide carbon dioxide 
+many process available purpose shown flow diagram amine treating proces wa historically used 
+however due range performance environmental constraint amine proces newer technology based use polymeric membrane separate carbon dioxide hydrogen sulfide natural gas stream ha gained increasing acceptance 
+membrane attractive since reagent consumed 
+acid gase present removed membrane amine treating routed sulfur recovery unit convert hydrogen sulfide acid gas either elemental sulfur sulfuric acid 
+process available conversion clau proces far well known recovering elemental sulfur wherea conventional contact proces wsa wet sulfuric acid proces used technology recovering sulfuric acid 
+residual gas clau proces commonly called tail gas gas processed tail gas treating unit tgtu recover recycle residual sulfur containing compound back clau unit 
+shown flow diagram number process available treating clau unit tail gas purpose wsa proces also suitable since work autothermally tail gase 
+next step gas processing plant remove water vapor gas using either regenerable absorption liquid triethylene glycol teg commonly referred glycol dehydration deliquescent chloride desiccant pressure swing adsorption psa unit regenerable adsorption using solid adsorbent newer process like membrane may also considered 
+mercury removed using adsorption process shown flow diagram activated carbon regenerable molecular sieve 
+although common nitrogen sometime removed rejected using one three process indicated flow diagram cryogenic proces nitrogen rejection unit using low temperature distillation 
+thi proces modified also recover helium desired see also industrial gas 
+absorption proces using lean oil special solvent absorbent 
+adsorption proces using activated carbon molecular sieve adsorbent 
+thi proces may limited applicability said incur los butane heavier hydrocarbon 
+next step recover natural gas liquid ngl large modern gas processing plant use another cryogenic low temperature distillation proces involving expansion gas turbo expander followed distillation demethanizing fractionating column gas processing plant use lean oil absorption proces rather cryogenic turbo expander proces 
+recovered ngl stream sometime processed fractionation train consisting three distillation tower series deethanizer depropanizer debutanizer 
+overhead product deethanizer ethane bottom fed depropanizer 
+overhead product depropanizer propane bottom fed debutanizer 
+overhead product debutanizer mixture normal iso butane bottom product mixture 
+recovered stream propane butane may sweetened merox proces unit convert undesirable mercaptan disulfide along recovered ethane final ngl product gas processing plant 
+currently cryogenic plant include fractionation economic reason ngl stream instead transported mixed product standalone fractionation complex located near refinery chemical plant use component feedstock 
+case laying pipeline possible geographical reasonor distance source consumer exceed km natural gas transported ship lng liquefied natural gas converted gaseou state vicinity consumer 
+residue gas ngl recovery section final purified sale gas pipelined end user market 
+rule agreement made buyer seller regarding quality gas 
+usually specify maximum allowable concentration co ho well requiring gas commercially free objectionable odour material dust solid liquid matter waxe gum gum forming constituent might damage adversely affect operation buyer equipment 
+upset occur treatment plant buyer usually refuse accept gas lower flow rate negotiate price 
+natgasprocessingpng 
+helium recovery 
+gas contain significant helium content helium may recovered fractional distillation 
+natural gas may contain much helium commercial source noble gas instance hugoton gas field kansa oklahoma united state contain concentration helium separated valuable byproduct 
+consumption 
+natural gas consumption pattern acros nation vary based acces 
+country large reserve tend handle raw material natural gas generously country scarce lacking resource tend economical 
+despite considerable finding predicted availability natural gas reserve ha hardly changed 
+application natural gas 
+fuel industrial heating desiccation proces fuel operation public industrial power station household fuel cooking heating providing hot water fuel environmentally friendly compressed liquid natural gas vehicle raw material chemical synthesi raw material large scale fuel production using gas liquid gtl proces eg produce sulphur aromatic free diesel low emission combustion 
+see also 
+natural gas price oil refinery list natural gas oil production accident united state 
+reference 
+
+fact sheet natural gas processing plant 
+httpsmiteimitedusystemfilesnaturalgaschaptersupply 
+mercury removal natural gas liquid 
+uop llc 
+archived original 
+
+dehydration natural gas prof 
+jon steiner gudmundsson norwegian university science technology 
+glycol dehydration include flow diagram 
+desulfurization mercury removal natural gas bourke mj mazzoni af laurance reid gas conditioning conference norman oklahoma march 
+
+using gas geochemistry asses mercury risk oiltracer 
+natural gas processing crucial link natural gas production transportation market 
+example gas plant 
+purification liquefaction gas processing 
+feed gas treatment design pearl gtl project 
+benefit integrating ngl extraction lng liquefaction 
+msd natural gas liquid 
+conocophillip 
+
+natural gas liquid used 
+united state energy information administration 
+april 
+
+guide understanding natural gas natural gas liquid 
+stus group 
+
+
+baker future direction membrane gas separation technology ind eng chem 
+
+volume page 
+doiie 
+molecular sieve include flow diagram psa unit 
+gas process hydrocarbon processing page may schematic flow diagram description nitrogen rejection nitrogen removal process 
+market driven evolution gas processing technology ngl advanced extraction technology inc website page 
+aet proces nitrogen rejection unit advanced extraction technology inc website page 
+cryogenic turbo expander proces advanced extraction technology inc website page 
+gas process hydrocarbon processing page may schematic flow diagram description ngl pro ngl recovery process 
+winter mark 
+helium essential 
+university sheffield 
+retrieved 
+
+dwight ward arthur pierce helium united state mineral resource geological survey professional paper 

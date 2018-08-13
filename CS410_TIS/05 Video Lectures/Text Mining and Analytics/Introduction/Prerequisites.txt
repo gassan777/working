@@ -1,0 +1,66 @@
+[MUSIC] This lecture is a brief
+introduction to the course. We'll then do cover
+the objectives of the course. The prerequisites and the course format,
+the reference books and how to complete the course. The objectives of the course
+are the following. First we would like to cover
+the basic concepts and practical techniques in text data mining. So this means we will not be able to cover
+some advance the techniques in detail but rather we are going to choose
+the practical useful techniques and then treat them in more depth. We are going to also cover the basic
+concepts that are very useful for many applications. The second objective is to cover more
+general techniques for text data mining. So we emphasise the coverage
+of general techniques that can be applicable to any
+text in any natural language. We also hope that these techniques
+to either automatically work on problems without any human effort
+or only requiring minimum human effort. So these criteria have helped us to choose techniques that can be
+applied to many applications. This is in contrast to some
+more detailed analysis of text data particularly using natural
+language processing techniques. Now, such techniques
+are also very important. And they are indeed necessary for
+some of the protections where we would like to go in depth to
+understand the text data in more detail. Such detailed understanding
+techniques however are generally not scalable and they tend to
+require a lot of human effort. So they cannot be easy to
+applied into any domain. So as you can imagine in practice it
+would be beneficial to combine both kinds of techniques using
+the general techniques that we'll be covering in this course as a basis. And improve these techniques
+by using more human effort whenever it's appropriate
+We also would like to provide a hands on experience
+to you in Macro aspects. First, you can look at some experience
+was using a text mining toolkit and implementing text mining algorithms. Second, you have the opportunity to
+experiment with some algorithms for text reminding and
+physics to try them on some data sets and to understand how to do experiments. And finally you have
+opportunity to participate in a competition of a text-based
+prediction task. You are expected to know the basic concept
+of computer science for example data structures and some other really
+basic concepts in computers science. You are also expected to be
+familiar with programming and comfortable with programming,
+particularly with C++. This course however is
+not about programming, so you are not expected
+to do a lot of coding. but we're going to do give you a C++
+toolkit that's fairly sophisticated so you have to be comfortable
+with handling such a toolkit. And you may be asked to write
+a small amount of code. It's also useful if you
+know some concepts and techniques in probability and statistics,
+but it is not necessary, knowing such analogy will help you understand
+some of the algorithm in more depth. The format of the course is lectures plus quizzes that will be given
+to you in a regular basis. And there is also an optional
+programming assignment. Now, we've made programming assignments
+optional not because it's not important, but because we suspect that not
+all of you will have the need for computing resources to do
+the programming assignment. So naturally, we would encourage all of you to try
+to do the programming assignment. If possible as that would be a great
+way to learn about the knowledge that would teach in this course. The main reference book for this course
+is a recent book that Sean Massung and I have co-authored. The title is Text Data Management and Analysis A practical introduction to
+information retrieval and text mining. However this reference book is not
+required in the sense that if we follow all the lecture videos closely then you should have little problems because
+working on the quiz problems and will program your assignment
+to pass the course. However the book would be useful
+to give you a high level and systematic description of all the topics
+covered in this course plus some others. It would also help you understand
+some topics in more depth. So if you problems with following some of
+the videos the book may be useful to you. The book is also the reference book for
+another book. If you are interested in buying the book,
+there's a link here. And there should be substantial discount
+for the students of this course. There are also quite a few other
+useful reference books and ratings. And they are available though
+the link at the bottom of this slide. [MUSIC]

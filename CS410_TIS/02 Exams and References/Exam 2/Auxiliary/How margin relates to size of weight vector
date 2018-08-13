@@ -1,0 +1,10 @@
+https://piazza.com/class/j6h1gozq5xh14z?cid=733
+
+Lecture 11.2 About Linear SVM
+Can anyone help to illustrate how largest margin can be achieved by minimizing the sum of squared weights? Thanks a lot!
+
+The students' answer
+I assume you are talking about week 12? Haven't watched the lecture myself but as I recall, the "weights" form the normal vector that defines the decision boundary (ie: an n-dimensional hyperplane that sits in the middle of the support vectors). If your data is linearly separable, you can rescale your distance measure to the minimum distance (ie: from the hyperplane to the support vectors on either side). This means all data sits at least 1/|w| away from the hyperplane -> your margin is large when |w| is small.
+
+The instructors' answer
+Look at page 3 in https://ijpam.eu/contents/2013-87-6/2/2.pdf . They have mathematical explanation as to how the margin relates to the size of the weight vector.

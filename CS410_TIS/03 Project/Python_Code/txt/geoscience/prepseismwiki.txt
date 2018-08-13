@@ -1,0 +1,230 @@
+reflection seismology 
+wikipedium free encyclopedium jump navigation search thi article may confusing unclear reader 
+october learn remove thi template message seismic reflection datum 
+reflection seismology seismic reflection method exploration geophysic use principle seismology estimate property earth subsurface reflected seismic wave 
+method require controlled seismic source energy dynamite tovex blast specialized air gun seismic vibrator commonly known trademark name vibrosei 
+reflection seismology similar sonar echolocation 
+thi article surface seismic survey vertical seismic profile see vsp 
+seismic reflection outline 
+content 
+history environmental impact land marine outline method reflection experiment reflection transmission normal incidence reflection transmission non normal incidence interpretation reflection source noise air wave ground roll rayleigh wave scholte wave surface wave refraction head wave conical wave multiple reflection cultural noise application hydrocarbon exploration land survey acquisition marine survey acquisition streamer marine survey acquisition ocean bottom seismic ob time lapse acquisition seismic datum processing seismic interpretation seismic attribute analysi crustal study see also reading reference external link 
+history 
+seismic testing 
+reflection refraction seismic wave geologic interface within earth first observed recording earthquake generated seismic wave 
+basic model earth deep interior based observation earthquake generated seismic wave transmitted earth interior eg mohorovicic use human generated seismic wave map detail geology upper kilometer earth crust followed shortly thereafter ha developed mainly due commercial enterprise particularly petroleum industry 
+seismic reflection exploration grew seismic refraction exploration method wa used find oil associated salt dome ludger mintrop german mine surveyor devised mechanical seismograph successfully used detect salt dome germany 
+applied german patent wa issued 
+founded company seismo wa hired conduct seismic exploration texa mexico resulting first commercial discovery oil using refraction seismic method discovery orchard salt dome texa led boom seismic refraction exploration along gulf coast method led discovery shallow gulf coast salt dome refraction seismic method faded 
+canadian inventor reginald fessenden wa first conceive using reflected seismic wave infer geology 
+hi work wa initially propagation acoustic wave water motivated sinking titanic iceberg 
+also worked method detecting submarine world war applied first patent seismic exploration method wa issued 
+due war wa unable follow idea 
+john clarence karcher discovered seismic reflection independently working united state bureau standard national institute standard technology method sound ranging detect artillery 
+discussion colleague idea developed reflection could aid exploration petroleum 
+several many affiliated university oklahoma karcher helped form geological engineering company incorporated oklahoma april 
+first field test conducted near oklahoma city oklahoma 
+early reflection seismology wa viewed skepticism many oil industry 
+early advocate method commented 
+one personally tried introduce method general consulting practice senior writer definitely recall many time reflection even considered par divining rod least device background tradition 
+geological engineering company folded due drop price oil 
+oil price rebounded karcher helped form geophysical research corporation grc part oil company amerada 
+karcher left grc helped found geophysical service incorporated gsi 
+gsi wa one successful seismic contracting company year wa parent even successful company texa instrument 
+early gsi employee henry salvatorus left company found another major seismic contractor western geophysical 
+many company using reflection seismology hydrocarbon exploration hydrology engineering study application formed since method wa first invented 
+major service company today include cgg ion geophysical petroleum geo service polarcu tg westerngeco 
+major oil company also actively conducted research seismic method well collected processed seismic datum using personnel technology 
+reflection seismology ha also found application non commercial research academic government scientist around world 
+environmental impact 
+human activity seismic reflection survey may impact earth natural environment hydrocarbon industry environmental group partake research investigate effect 
+land 
+land conducting seismic survey may require building road transporting equipment personnel vegetation may need cleared deployment equipment 
+survey relatively undeveloped area significant habitat disturbance may occur many government require seismic company follow strict rule regarding destruction environment example use dynamite seismic source may disallowed 
+seismic processing technique allow seismic line deviate around natural obstacle use pre existing non straight track trail 
+careful planning thi greatly reduce environmental impact land seismic survey 
+recent use inertial navigation instrument land survey instead theodolite decreased impact seismic allowing winding survey line tree 
+marine 
+main environmental concern marine seismic survey potential noise associated high energy seismic source disturb injure animal life especially cetacean whale porpoise dolphin mammal use sound primary method communication one another high level long duration sound cause physical damage hearing los wherea lower level noise cause temporary threshold shift hearing obscuring sound vital marine life behavioural disturbance 
+study ha shown migrating humpback whale leave minimum km gap themself operating seismic vessel resting humpback whale pod cow exhibiting increased sensitivity leaving increased gap km 
+conversely study found male humpback whale attracted single operating airgun believed confused low frequency sound whale breaching behavimy 
+addition whale sea turtle fish squid showed alarm avoidance behavimy presence approaching seismic source 
+difficult compare report effect seismic survey noise marine life method unit often inadequately documented 
+gray whale avoid regular migratory feeding ground km area seismic testingcitation needed similarly breathing gray whale wa shown rapid indicating discomfort panic whale 
+circumstantial evidence thi ha led researcher believe avoidance panic might responsible increased whale beaching although research ongoing question 
+offering another point view joint paper international association geophysical contractor iagc international association oil gas producer ogp argue noise created marine seismic survey comparable natural source seismic noise stating 
+sound produced seismic survey comparable magnitude many naturally occurring man made sound source 
+furthermore specific characteristic seismic sound operational procedure employed seismic survey resulting risk marine mammal expected exceptionally low 
+fact three decade world wide seismic surveying activity variety research project shown evidence would suggest sound ep seismic activity ha resulted physical auditory injury marine mammal species 
+outline method 
+thi section cite source 
+please help improve thi section adding citation reliable source 
+unsourced material may challenged removed 
+december learn remove thi template message 
+seismic wave mechanical perturbation travel earth speed governed acoustic impedance medium travelling 
+acoustic seismic impedance defined equation 
+seismic wave velocity greek rho density rock 
+seismic wave travelling earth encounter interface two material different acoustic impedance wave energy reflect interface refract interface 
+basic seismic reflection technique consist generating seismic wave measuring time taken wave travel source reflect interface detected array receiver geophone surface knowing travel time source variou receiver velocity seismic wave geophysicist attempt reconstruct pathway wave order build image subsurface 
+common geophysical method reflection seismology may seen type inverse problem 
+given set datum collected experimentation physical law apply experiment experimenter wish develop abstract model physical system studied 
+case reflection seismology experimental datum recorded seismogram desired result model structure physical property earth crust 
+common type inverse problem result obtained reflection seismology usually unique one model adequately fit datum may sensitive relatively small error datum collection processing analysi 
+reason great care must taken interpreting result reflection seismic survey 
+reflection experiment 
+general principle seismic reflection send elastic wave using energy source dynamite explosion vibrosei earth layer within earth reflect portion wave energy back allows rest refract 
+reflected energy wave recorded predetermined time period called record length receiver detect motion ground placed 
+land typical receiver used small portable instrument known geophone convert ground motion analogue electrical signal 
+water hydrophone used convert pressure change electrical signal 
+receiver response single shot known trace recorded onto datum storage device shot location moved along proces repeated 
+typically recorded signal subjected significant amount signal processing ready interpreted thi area significant active research within industry academium 
+general complex geology area study sophisticated technique required remove noise increase resolution 
+modern seismic reflection survey contain large amount datum require large amount computer processing often performed supercomputer computer clusterscitation needed 
+reflection transmission normal incidence 
+wave reflect interface normal incidence 
+seismic wave encounter boundary two material different acoustic impedance energy wave reflected boundary energy transmitted boundary 
+amplitude reflected wave predicted multiplying amplitude incident wave seismic reflection coefficient determined impedance contrast two material 
+wave hit boundary normal incidence head expression reflection coefficient simply 
+
+similarly amplitude incident wave multiplied transmission coefficient predict amplitude wave transmitted boundary 
+formula normal incidence transmission coefficient 
+sum square amplitude reflected transmitted wave ha equal square amplitude incident wave easy show observing change strength reflector seismologist infer change seismic impedance 
+turn use thi information infer change property rock interface density elastic moduluscitation needed 
+reflection transmission non normal incidence 
+diagram showing mode conversion occur wave reflect interface non normal incidence 
+situation become much complicated case non normal incidence due mode conversion wave wave described zoeppritz equation 
+karl zoeppritz derived equation determine amplitude reflected refracted wave planar interface incident wave function angle incidence six independent elastic parameter equation unknown solved give intuitive understanding reflection amplitude vary rock property involved 
+reflection transmission coefficient govern amplitude reflection vary angle incidence used obtain information among many thing fluid content rock 
+practical use non normal incidence phenomena known avo see amplitude versu offset ha facilitated theoretical work derive workable approximation zoeppritz equation advance computer processing capacity 
+avo study attempt succes predict fluid content oil gas water potential reservoir lower risk drilling unproductive well identify new petroleum reservoir 
+term simplification zoeppritz equation commonly used wa developed known shuey equation 
+term simplification known shuey approximation valid angle incidence les degree usually case seismic survey given 
+interpretation reflection 
+time take reflection particular boundary arrive geophone called travel time 
+seismic wave velocity rock known travel time may used estimate depth reflector 
+simple vertically traveling wave travel time surface reflector back called two way time twt given formula 
+wave velocity rock 
+series apparently related reflection several seismogram often referred reflection event 
+correlating reflection event seismologist create estimated cros section geologic structure generated reflection 
+interpretation large survey usually performed program using high end three dimensional computer graphic 
+source noise 
+source noise seismic record 
+top left air wave top right head wave bottom left surface wave bottom right multiple 
+addition reflection interface within subsuface number seismic response detected receiver either unwanted unneeded 
+air wave 
+airwave travel directly source receiver example coherent noise 
+easily recognizable travel speed speed sound air 
+ground roll rayleigh wave scholte wave surface wave 
+rayleigh wave typically propagate along free surface solid elastic constant density air low compared rock surface earth approximately free surface 
+low velocity low frequency high amplitude rayleigh wave frequently present seismic record obscure signal degrading overall datum quality 
+known within industry ground roll example coherent noise attenuated carefully designed seismic survey scholte wave similar ground roll occur sea floor fluidsolid interface possibly obscure mask deep reflection marine seismic record velocity wave vary wavelength said dispersive shape wavetrain vary distance 
+refraction head wave conical wave 
+head wave refract interface travelling along within lower medium produce oscillatory motion parallel interface 
+thi motion cause disturbance upper medium detected surface phenomenon utilised seismic refraction 
+multiple reflection 
+event seismic record ha incurred one reflection called multiple 
+multiple either short path peg leg long path depending upon whether interfere primary reflection 
+multiple bottom body water interface base water rock sediment beneath air water interface common marine seismic datum suppressed seismic processing 
+cultural noise 
+cultural noise include noise weather effect plane helicopter electrical pylon ship case marine survey detected receiver 
+application 
+reflection seismology used extensively number field application categorised three group defined depth investigation near surface application application aim understand geology depth approximately km typically used engineering environmental survey well coal mineral exploration recently developed application seismic reflection geothermal energy survey although depth investigation km deep thi case hydrocarbon exploration used hydrocarbon industry provide high resolution map acoustic impedance contrast depth km within subsurface 
+thi combined seismic attribute analysi exploration geophysic tool used help geologist build geological model area interest 
+crustal study investigation structure origin earth crust moho discontinuity beyond depth km 
+method similar reflection seismology use electromagnetic instead elastic wave ha smaller depth penetration known ground penetrating radar gpr 
+hydrocarbon exploration 
+reflection seismology commonly referred seismic reflection abbreviated seismic within hydrocarbon industry used petroleum geologist geophysicist map interpret potential petroleum reservoir 
+size scale seismic survey ha increased alongside significant concurrent increase computer power last year 
+thi ha led seismic industry laboriously therefore rarely acquiring small survey routinely acquiring large scale high resolution survey 
+goal basic principle remained method slightly changed year 
+primary environment seismic exploration land transition zone marine 
+land land environment cover almost every type terrain exist earth bringing logistical problem 
+example thi environment jungle desert arctic tundra forest urban setting mountain region savannah 
+transition zone tz transition zone considered area land meet sea presenting unique challenge water shallow large seismic vessel deep use traditional method acquisition land 
+example thi environment river delta swamp marsh coral reef beach tidal area surf zone 
+transition zone seismic crew often work land transition zone shallow water marine environment single project order obtain complete map subsurface 
+diagram equipment used marine seismic survey 
+marine marine zone either shallow water area water depth les metre would normally considered shallow water area marine seismic operation deep water area normally associated sea ocean gulf mexico 
+seismic survey typically designed national oil company international oil company hire service company cgg petroleum geo service westerngeco acquire 
+another company hired proces datum although thi often company acquired survey 
+finally finished seismic volume delivered oil company geologically interpreted 
+land survey acquisition 
+see also vibrosei desert land seismic camp receiver line desert land crew recorder truck 
+land seismic survey tend large entity requiring hundred ton equipment employing anywhere hundred thousand person deployed vast area many month number option available controlled seismic source land survey particularly common choice vibrosei dynamite 
+vibrosei non impulsive source cheap efficient require flat ground operate making use difficult undeveloped area 
+method comprise one heavy terrain vehicle lowering steel plate onto ground vibrated specific frequency distribution amplitude produce low energy density allowing used city built area dynamite would cause significant damage though large weight attached vibrosei truck cause environmental damage dynamite impulsive source regarded ideal geophysical source due producing almost perfect impulse function ha obviou environmental drawback 
+long time wa seismic source available weight dropping wa introduced around allowing geophysicist make trade image quality environmental damage 
+compared vibrosei dynamite also operationally inefficient source point need drilled dynamite placed hole 
+land seismic survey require substantial logistical support 
+addition day day seismic operation must also support main camp catering waste management laundry etc smaller camp example distance far drive back main camp vibrator truck vehicle equipment maintenance medical personnel security 
+unlike marine seismic survey land geometry limited narrow path acquisition meaning wide range offset azimuth usually acquired largest challenge increasing rate acquisition 
+rate production obviously controlled fast source vibrosei thi case fired move next source location 
+attempt made use multiple seismic source time order increase survey efficiency successful example thi technique independent simultaneou sweeping iss 
+marine survey acquisition streamer 
+marine seismic survey using towed streamer plan view nat maz survey plan view watswaz survey seismic datum collected usg gulf mexico 
+traditional marine seismic survey conducted using specially equipped vessel tow one cable containing series hydrophone constant interval see diagram 
+cable known streamer survey using streamer survey employing though common 
+streamer deployed beneath surface water set distance away vessel 
+seismic source usually airgun array airgun source available also deployed beneath water surface located vessel first receiver 
+two identical source often used achieve faster rate shooting 
+marine seismic survey generate significant quantity datum streamer even km long containing hundred channel seismic source typically fired every second 
+seismic vessel source towing single streamer known narrow azimuth towed streamer naz nat 
+early wa accepted thi type acquisition wa useful initial exploration inadequate development production well accurately positioned 
+thi led development multus azimuth towed streamer maz tried break limitation linear acquisition pattern nat survey acquiring combination nat survey different azimuth see diagram thi successfully delivered increased illumination subsurface better signal noise ratio 
+seismic property salt pose additional problem marine seismic survey attenuate seismic wave structure contain overhang difficult image 
+thi led another variation nat survey type wide azimuth towed streamer waz wat wa first tested mad dog field thi type survey involved vessel solely towing set streamer separate vessel towing seismic source located start end last receiver line see diagram 
+thi configuration wa tiled time receiver vessel moving away source vessel time eventually creating effect survey time number streamer 
+end result wa seismic dataset larger range wider azimuth delivering breakthrough seismic imaging three common type marine towed streamer seismic survey 
+marine survey acquisition ocean bottom seismic ob 
+marine survey acquisition limited seismic vessel also possible lay cable geophone hydrophone sea bed similar way cable used land seismic survey use separate source vessel 
+thi method wa originally developed operational necessity order enable seismic survey conducted area obstruction production platform without compromise resultant image quality ocean bottom cable obc also extensively used area seismic vessel cannot used example shallow marine water depth transition zone environment deployed rov deep water repeatability valued see 
+conventional obc survey use dual component receiver combining pressure sensor hydrophone vertical particle velocity sensor vertical geophone recent development expanded method use fmy component sensor ie hydrophone three orthogonal geophone 
+fmy component sensor advantage able also record shear wave travel water still contain valuable information 
+addition operational advantage obc also ha geophysical advantage conventional nat survey arise increased fold wider range azimuth associated survey geometry however much like land survey wider azimuth increased fold come cost ability large scale obc survey severely limited 
+ocean bottom node obn extension obc method use battery powered cableles receiver placed deep water wa first trialled atlanti oil field partnership bp fairfield industry placement node flexible cable obc easier store deploy due smaller size lower weight 
+time lapse acquisition 
+time lapse survey seismic survey repeated period time 
+refer fourth dimension thi case time 
+time lapse survey acquired order observe reservoir change production identify area barrier flow may detectable conventional seismic 
+time lapse survey consist baseline survey monitor repeat survey acquired field wa production 
+survey repeated nat survey cheaper acquire field historically already nat baseline survey 
+survey collected using ocean bottom cable cable accurately placed previou location removed 
+better repetition exact source receiver location lead improved repeatability better signal noise ratio 
+number survey also set field ocean bottom cable purchased permanently deployed 
+thi method known life field seismic lof permanent reservoir monitoring prm 
+obn ha proven another good way accurately repeat seismic acquisition 
+world first survey using node wa acquired atlanti oil field node placed rov water depth within meter previously placed 
+seismic datum processing 
+see also deconvolution seismic migration multidimensional seismic datum processing 
+three main process seismic datum processing deconvolution common midpoint cmp stacking migration 
+deconvolution proces try extract reflectivity series earth assumption seismic trace reflectivity series earth convolved distorting filter thi proces improve temporal resolution collapsing seismic wavelet nonunique unles information available well log assumption made 
+deconvolution operation cascaded individual deconvolution designed remove particular type distortion 
+cmp stacking robust proces use fact particular location subsurface sampled numerou time different offset 
+thi allows geophysicist construct group trace range offset sample subsurface location known common midpoint gather average amplitude calculated along time sample resulting significantly lowering random noise also losing valuable information relationship seismic amplitude offset 
+les significant process applied shortly cmp stack normal moveout correction static correction 
+unlike marine seismic datum land seismic datum ha corrected elevation difference shot receiver location 
+thi correction form vertical time shift flat datum known static correction need correcting later processing sequence velocity near surface accurately known 
+thi correction known residual static correction 
+seismic migration proces seismic event geometrically located either space time location event occurred subsurface rather location wa recorded surface thereby creating accurate image subsurface 
+seismic interpretation 
+see also geologic modelling 
+goal seismic interpretation obtain coherent geological story map processed seismic reflection simple level seismic interpretation involf tracing correlating along continuou reflector throughout dataset using basi geological interpretation 
+aim thi produce structural map reflect spatial variation depth certain geological layer 
+using map hydrocarbon trap identified model subsurface created allow volume calculation made 
+however seismic dataset rarely gife picture clear enough thi 
+thi mainly vertical horizontal seismic resolution often noise processing difficulty also result lower quality picture 
+due thi alway degree uncertainty seismic interpretation particular dataset could one solution fit datum 
+case datum needed constrain solution example form seismic acquisition borehole logging gravity magnetic survey datum 
+similarly mentality seismic processor seismic interpreter generally encouraged optimistic order encourage work rather abandonment survey area seismic interpretation completed geologist geophysicist seismic interpreter understanding field 
+hydrocarbon exploration feature interpreter particularly trying delineate part make petroleum reservoir source rock reservoir rock seal trap 
+seismic attribute analysi 
+see also seismic attribute 
+seismic attribute analysi involf extracting deriving quantity seismic datum analysed order enhance information might subtle traditional seismic image leading better geological geophysical interpretation datum example attribute analysed include mean amplitude lead delineation bright spot dim spot coherency amplitude versu offset 
+attribute show presence hydrocarbon called direct hydrocarbon indicator 
+crustal study 
+use reflection seismology study tectonic earth crust wa pioneered group consortium continental reflection profiling cocorp inspired deep seismic exploration country birp great britain ecor france british institution reflection profiling syndicate birp wa started result oil hydrocarbon exploration north sea 
+became clear wa lack understanding tectonic process formed geological structure sedimentary basin explored 
+effort produced significant result showed possible profile feature thrust fault penetrate crust upper mantle marine seismic survey 
+see also 
+deconvolution seg popular file format seismic reflection datum depth conversion conversion acoustic wave two way travel time actual depth ligo seismic wave seismic refraction swell filter passive seismic seismic migration synthetic seismogram seismic unix open source software processing seismic reflection datum exploration geophysic 
+reading 
+research reflection seismology may found particularly book journal society exploration geophysicist american geophysical union european association geoscientist engineer 

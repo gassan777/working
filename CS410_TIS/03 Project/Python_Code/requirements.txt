@@ -1,0 +1,32 @@
+Install gensim:
+$ sudo pip install --upgrade gensim
+More detailed information:
+https://radimrehurek.com/gensim/install.html
+
+Gensim depends on Python >= 2.6, NumPy >= 1.3, SciPy >= 0.7
+Python is usually part of the Linux distribution. If you don’t have the last two, install as follows on Debian/Ubuntu:
+$ sudo apt-get install python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
+More detailed information and other OS:
+https://www.scipy.org/install.html
+
+Install Cython:
+$ sudo pip install Cython
+Unlike most Python software, Cython requires a C compiler to be present on the system. The details of getting a C compiler vary according to the system and can be found here:
+http://cython.readthedocs.io/en/latest/src/quickstart/install.html
+
+Install pattern:
+$ sudo pip install pattern
+More detailed information:
+https://github.com/clips/pattern
+
+Install NLTK and NLTK corpus:
+$ sudo pip install -U nltk
+$ python -m nltk.downloader all
+
+If you use anaconda, you can run these commands:
+$ conda install -c anaconda gensim
+$ conda install -c anaconda numpy
+$ conda install -c anaconda scipy
+$ conda install -c anaconda cython
+$ conda install -c anaconda nltk
+but install pattern with pip (see above)
