@@ -1,0 +1,61 @@
+All right, hi everyone, this is the week
+on identification, identity, identifiers. It's the second video, the title of
+the video is, What are we Identifying? We're going to be asking what
+exactly needs to be identified. Well guess what? Lots of things need to be identified, [LAUGH] maybe everything
+needs to be identified. Why? Because without shared identifiers, we cannot reliably communicate
+what we are talking about. So we need identifiers for properties,
+persons, values, counties, automobiles, nations, proteins,
+events, in other words, everything. There are some shared standards
+in specialized domains. And there are some good systems for
+developing identifiers. So some good news, but
+much remains to be done. You may know that identifiers are at
+the very heart of the semantic web, your eyes in particular. So here's an example of a statement
+in RDF/OWL using Turtle. And here's an example of a statement,
+also in RDF/OWL, also in Turtle, but exemplifying
+a literal, there it is, Spiderman. If you're thinking is that
+an identifier in the RDF semantics, it's referent is actually itself. So it is an identifier,
+it identifies the string Spiderman. It does not identify Spiderman,
+that's a story. So all of these identifiers or
+things that need identification are important
+in data curation. We need to have reliable ways
+of identifying names, or being the enemy of, or proteins,
+or relationships, and so on. Without a reliable identification scheme,
+and in particular a computer
+accessible identification scheme, obviously, a lot of
+missed opportunities and a lot of problems in the long run for
+the data curator. Nevertheless, in this video we're not
+going to be talking about everything. Even though everything is
+important to data curation, we're going to be talking about data sets. [COUGH] Okay, I'm going to reuse a few slides here
+to make point, you've seen these. So consider two files with the same data,
+but relational tables in one case and
+RDF triples in another, Same data, different representations. Now consider two files, same data and
+the same RDF triples, but an XML serialization in one case,
+I know it's very ugly, and an N3 serialization in the other. Same data, same RDF triples, but different serializations. Now consider two files with the same data,
+same RDF triples, same N3 serialization, but an ASCII character encoding in one
+case and an EBCDIC encoding in the other. Same data, same triples, same serialization, different codings,
+different lower level of codings. Okay, I know you're thinking I got it, because you've taken this up from
+a couple directions and a couple videos. But now we're going to make a little
+progress on what to do about it. So questions that should be in our head
+at this point is how many of these levels are there? How do we name, define, and manage them? How can they be identified which is
+why we're reprising this here and re-identified. How can they be identified and
+re-identified? Well you know,
+because we spent a long week answering these questions with
+the basic representational model. Three entity types, propositional content, symbol structure,
+patterned matter and energy. Three fundamental relationships, is expressed by,
+is encoded by, is inscribed by. And is encoded by is cursive,
+symbol structures can't encode symbol structures,
+all the way down. And it's using this conceptual model that we finally have the right
+lens on understanding how we can see levels of
+abstraction related to one another in a coherent way
+whenever we're looking at a file that contains data
+in a computer system. Okay, so what are we identifying? Well, it's those things I just mentioned, propositions, a set of propositions,
+RDF triples, a set of RDF triples, a set of RDF/XML, Encoding, set of unicode character, sequence of unicode characters, and a UTF-8 bit stream. Now, [LAUGH] we don't actually in data
+curation rarely concern ourselves with the actual array state. Maybe we should, most of the time we
+don't, I'm not going to address that. So these thing, which are all different,
+are all things we need to identify. We need to identify them and
+distinguish them. So these are different things that
+require different identifiers. Most of them are symbol structures,
+RDF triples, RDF/XML, unicode, UTF-8,
+those are symbol structures. Of course, what we're really
+interested in is propositional content. And yeah, it's kind of puzzling,
+how do we actually get at that? That's the next video.

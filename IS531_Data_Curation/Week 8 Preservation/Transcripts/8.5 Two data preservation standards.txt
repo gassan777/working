@@ -1,0 +1,46 @@
+Okay, this is the preservation
+week video titled, Two Data Preservation Standards. It's going to be a short one. I just want to draw your attention
+to the two extremely important and complementary data preservation standards. I think it's fair to say
+these are the most important standards specifically
+oriented to preservation. And going to draw your attention to them,
+say a few words about each, but then encourage you to
+explore them on your own. So OAIS,
+the Open Archival Information System, amodel for data archives. So this was developed for space data. And somewhat, you might say, and probably has turned out to be,
+by far the most influential, high level data archiving
+standard model that there is. And it's very widely applied to all
+kinds of data preservation projects. It is very comprehensive,
+it's also very high level. That means, it's a general framework. It's not a specific set of rules,
+formats, techniques, etc of the sort that you
+would need to develop when actually archiving,
+preserving data of specific kinds. So I have the URL right
+here to the documentation. Take a look at the documentation,
+and also surf around the web and get a sense of how OAIS is
+being discussed and used. I will show you a couple
+diagrams from OAIS. This one, I think,
+making it clear that this is a high level model for
+data preservation archiving. You represent the producer of the data,
+the consumer of the data, the ingesting of the data package into the system, along with its
+descriptive information, metadata, right? And then, coming out to the consumer,
+you'd often response to a query, the data and descriptive information. Pay attention in particular to
+the concept of a designated community. When we think about preservation and
+archiving, it becomes clear that we have certain
+communities in mind for use of the data. And that helps us understand
+just what we need to do, what we need to say, and how we need to
+say and do it to serve those communities. Here's a little more detail
+of an information package. Again, you can see that the Information
+Object contains the actual data. And it also contains
+representation information about how that data is being represented. This would be the encoding, syntax, and conceptual information. And then there's also preservation
+specific information, at least in some sense,
+at least information that's especially
+important to preservation. Provenance, where the data come from,
+contextual information, access rights, fixity, ones and zeros
+in the right order, that kind of thing. So, take a look. The other standard I'd like
+you to look at is PREMIS. And PREMIS is also a very influential
+data preservation standard, specifically a standard for
+preservation metadata. And although it's general in some respects, it is more specific, less general, that is, than OAIS. And you've already seen an example in
+the last video of some PREMIS metadata. Please take a look. Surf to this website,
+you won't have any trouble finding it. It's maintained at the US Library
+of Congress in the Standards area, and extremely influential and widely used. A lot of integration and preservation success is due to the wide use of PREMIS. So, as I said, short video,
+just want to draw your attention to these two very important
+preservation standards and encourage you to review them,
+look at them on your own.

@@ -1,0 +1,153 @@
+Hi, everyone. Welcome back. This is the data concepts week. And it's the video types and roles. We're going to use this important
+distinction to solve some problems we've just observed and
+advance our ontology of data concepts. So in the last video,
+we saw how our FRBR-inspired model for representation encountered two problems. Both of them related to
+the middle entity types. First, it appeared that the two
+middle entity types needed to be collapsed into a single entity type. And second, it appeared that
+the two middle entity types needed to be expanded into an indefinite
+number of entity types. There's a problem? So obviously,
+some refactoring is required. And in this video, we're going to present
+the foundation for this refactoring. Describing distinction,
+types versus roles, that's become fundamental
+in ontological analysis. So you remember our presentation
+of the first problem, where it appears that the expression
+manifestation entity types, or in the linguistic representation
+sentence encoding, are really In every case,
+simply symbol structures. And that suggests that we don't need
+two rectangles, that one will do. And you remember the second problem, that there appears to be a proliferation
+of levels of abstraction. Exactly of the sort that are represented
+by the two entity types, only now we have many levels, so
+it appears that we need many entity types. And this is especially
+vivid in the digital world. You can imagine how in
+bibliographic analysis, it wasn't so obvious that there
+was an indefinite cascade. But those of us who've been involved with
+representing data in digital systems, in computer systems know that
+this is a big problem for long lived data management. A big problem for data curators. Okay, I'm going to introduce these two
+concepts, role and type intuitively. You can look into this in the readings,
+there's a lot more to be said and it's actually fairly complex eventually. But the intuitive ideas are pretty simple. So we're going to distinguish
+two kinds of properties. This is about distinguishing
+kinds of properties. Those that are roles and
+those that are types. So again, we're doing this very roughly. The property of being a student. Is a property that is a role, why? In part, because students
+are persons only in virtue of particular contingent circumstances. Namely, being enrolled at a school,
+which you may or may not be. And you may become enrolled in school and
+later not be. On the other hand, the property of
+being a person isn't at all like that. We say the property of
+being a person is a type. Because persons are persons regardless
+of contingent circumstances. So other examples of properties
+that are roles, parent, president, planet nearest the sun,
+et cetera. And other properties that are types,
+number, color, physical object, copper, water, and so on. Being copper, of course, being water. Now I'm going to drill
+down a little further. So the property of rigidity can
+help us better understand and distinguish roles and types. Why? Because types are rigid. And roles are not. So let's define rigidity. I've already hinted at it. A property is rigid if and only if nothing that
+has it could exist and fail to have it In past, present or the future or
+in any alternative circumstances. And examples again, person, number,
+color, physical object, copper. Those things, those properties,
+if something has them, that thing can't lose them. It can't fail to have had them. It can't have not had them in the past. But a property is a role if and
+only if anything that has it could exist and
+fail to have it. And again, examples, student, president,
+parent, planet nearest the sun. I know these are sort of a mind
+bending intricate mouthful. So let's slow down and take our time elucidating exactly
+what we're talking about here. Okay, so this is, I know,
+mind-numbingly abstract. And we're going to slow down and take our time elucidating a little
+further what's going on here. So again,
+the property of being a person is rigid means that nothing that is a person
+could exist and fail to be a person. So for instance, some physical object,
+say your coffee cup, could not have existed and
+not been a physical object. It could not, for instance,
+have existed and been a number, a color or something entirely substantially
+different than a physical object. It might not have existed ,of course. But if that coffee cup existed
+at any point in time or in any alternative circumstance,
+it's going to be a physical object. Notice I didn't say it's going to
+be a coffee cup, that's debatable. But it's not going to be a number. It's not going to be a color. It's not going to be a set or
+a class or any of those things. The property of being a student,
+however, is not like that. The property of being
+a student is not rigid. Things that are students,
+like you for instance, and me, a while back, can exist and
+not be students. Notice that I have ceased to be a student,
+but I still exist. Sometime in the future probably,
+you will cease to be a student. Hard as you might try [LAUGH] for
+that not to happen. But you need not cease to exist,
+just when you cease to be a student. You cease to be a student and
+continue to exist. In some alternative universe, you might
+never be a student, but still exist. So still sort of unpacking this
+intuitively at the bottom of the slide. Once you were not a student,
+now you are a student. Soon, you will not be a student. Helps us see why student is a role. On the other hand, everything that
+is a person has been a person since it existed and will always
+be a person as long as it exists. And the same goes for numbers and
+colors and physical objects and so on. Copper, [LAUGH] even. So if you'd like a little more precision
+and a little less metaphysics, this distinction can also be
+articulated in modal logic. So some of you may be familiar with
+first order of predicate logic. Modal logic is simply the addition of
+pretty much the addition of the adverb, necessarily. And that's what the box stands for
+in this formula here. So in modal logic,
+rigidity can be defined as a property. Phi is rigid if and only if necessarily. For everything x, if x has phi,
+then x has phi necessarily. And if that intrigues you,
+[LAUGH] and it's not of course, I don't imagine, unless you're
+already familiar with modal logic, that this is something that can
+be absorbed from this slide. Just sort of putting it out there to see if I can intrigue
+anybody into looking further. And the place to look is in Guarino and Welty's very influential paper,
+A Formal Ontology of Properties. Another way rigidity can be
+defined in modal logic is in the model theoretic semantics for
+modal logic. And there, it would go roughly like this. A property, phi, is rigid If and only if. If phi is had by some X
+in some possible world, then X has phi in every possible
+world in which X exists. And needless to say, this account can
+also be spelled out with sets and functions and within the general
+context of model theory for logic. So if you want a little more precision,
+a little less metaphysics, Guarino and Welty is a place to look. Basic idea though, basic intuitive idea,
+I think is fairly clear and powerful. So. Are the middle entity types roles or
+types? We call them types, but is that warranted? Okay, we'll start with FRBR. So in FRBR, an expression is a simple
+structure that realizes a work. Basically, a text, right? That's an expression. Colloquially, we can say
+an expression ia a text. Natural language [INAUDIBLE]. A manifestation is a symbol structure
+that embodies an expression. In FRBR, of course,
+we'd be thinking of the addition. So we reflect on this and observe that symbols have their meanings Only as a result of
+contingent social convention. So whether or not an expression
+realizes this work or that work or any work really has to do with
+the existence of contingent social conventions,
+contingent circumstances. And so in different circumstances, the same symbol structures
+can mean different things. And this looser contingent connection
+between the symbol structure and what it realizes or
+embodies suggests that expressions and manifestations are actually roles
+that symbol structures have. Now this a little tricky,
+because expressions and manifestations are symbol structures,
+but they're symbol structures in a role. And the word expression, the word manifestation is
+an indication of the role. Not the type. Symbol structure indicates the type. Because after all, it's hard to imagine a symbol structure
+ever ceasing to be a symbol structure. Debatable, but at least plausible,
+that the things that are symbol structures are intrinsically symbol structures. They'll never cease to
+be a symbol structure. And so they're more appropriate as types. Okay. That was the FRBR perspective. Let's look at the linguistic
+representation perspective. There, a sentence is a symbol structure
+that expresses a proposition. And encoding is a symbol
+structure that encodes a sentence. I realize that the double use
+of encoding may be distracting, may even sound circular,
+but nothing turns on it. We just don't have good
+English words here. So in the linguistic model,
+a sentence like snow is white, is a symbol structure that
+expresses a proposition. And encoding, such as the phonemes,
+snow is white or the characters S-N-O-W, et cetera. Those are all different encodings. Those are symbol structures
+that encode a sentence. But again, symbols do what they do, whatever they do, only as a result
+of contingent social conventions. Could have people on the picture here. In different circumstances, the same
+symbol structures mean different things. It's a loose contingent connection,
+not a tight essential one. Like you get with the things that
+are persons and being a person. So again, both sentence's encodings
+would seem to be roles, not types. Which is actually good news for
+our comparison between FRBR And linguistic representation, but it does suggest how
+the refactoring is going to go. So recall our emerging model
+of the type/role relationship. A student is a person
+enrolled in a school. And student is a role, person is a type. Being enrolled in a school is a role
+that things of a certain type, namely persons, have. And paralleling that model. A sentence is a symbol structure
+that expresses a proposition. So being a sentence is a role that
+symbol structures have in certain contingent social circumstances. An encoding is a symbol structure
+that encodes a sentence. So an encoding is also a role that symbol structures have in
+certain social circumstances. But in both cases, a thing we're
+talking about is a simple structure. So we can collapse the two
+middle entity types. They're both simple structures. The difference between sentence and
+encoding is a difference of role, not a difference of type. But wait. [LAUGH]. That just solves half the problem and the
+other half pulls in the other direction. How do we deal with
+the proliferation problem? This doesn't seem to solve that. Anything, you might say it makes
+the problem more puzzling. There's a great solution to that. Here we go. New definitions. A sentence is a symbol structure
+that expresses a proposition and encoding is a symbol structure that
+encodes either a sentence or an encoding. Everybody's interested in R,
+this is the other R, recursion. So once we have this recursive
+relationship, a single entity type, namely symbol structure, Can actually represent an indefinite
+number of encoding levels through the use of
+the relationship encoding. Defined in this recursive way. Now how cool is that? It's very cool. And if you don't think so,
+wait till the next video. Thanks. See you soon.

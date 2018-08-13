@@ -1,0 +1,92 @@
+All right, everyone,
+this is data practices week, third video, data sharing. We talk about why data
+sharing is important, why it's hard, what the impediments are, and also what the incentives might be, and we might actually have an impact
+somehow on propensity to share. So, why is data sharing important? You start with the truisms here,
+the banal truisms. The data, of course, important and valuable to communities beyond
+the developing community. That is the data that
+a community develops, that a lab develops, that a company
+develops, that a team develops, is going to be valuable beyond
+the developing entity, obviously. And it's arduous and time consuming and
+expensive to develop data. So, yeah, since it's arduous,
+time-consuming, expensive to develop, let's use it
+beyond the community that develops it. In addition,
+we often need relevant data immediately. There's sometimes a crisis in
+which that data is important. So, failure to share data
+means lost opportunity, it can mean additional expense, and it
+also can have very serious consequences. They care about data in medicine or
+engineering, or data used to respond to a natural
+disaster such as a hurricane. So if data sharing is so
+important, why is it so hard? So on the receiving side
+that is getting the data, we have the usual data
+integration difficulties. You gotta find the relevant data, you
+gotta make sure you've got permissions and licenses, and then you have to integrate
+data, often in different formats and description standards into the receiving
+system, tools, applications, etc. And you gotta understand it correctly. So, we've looked at those
+problems already and we're going to be revisiting them
+again in the next video, data reuse. In this video,
+we focus on the sharing side. Not the receiving side,
+but the sharing side. The question there is, why share? So here's some data
+developed by Carol Tenopir, again, on why researchers
+are often reluctant to share data. Specifically, this has to do with
+what we might call data misused and broadly construed. So, many researchers
+believe that their data may be misinterpreted due to
+the complexity of the data. Look at the percentages here. This is 12, actually 1,300 respondents, and 75% of them felt
+that if they shared data, it might be misinterpreted due
+to complexity of the data. Now obviously,
+some additional documentation or the use of standards could theoretically remedy that, but that's a lot of work. And there may be skepticism about whether
+in fact it can remedy this problem, namely potential misinterpretation. Data may be used in other
+ways than intended. Again, nearly 75%, nearly three quarters. Once you share your data, you don't
+know what it's going to be used for. And then [LAUGH], very interestingly, the fear that it may be misinterpreted,
+not due to complexity, but due to poor quality,
+which may be as much as anything a fear that the poor quality might
+not reflect well on the team. And here are some additional data
+sharing impediments that have been collected by Carol Tenopir, again,
+in the same article, and Melissa Cragin. Let me draw your attention to Chris Bergman's remarks that there are no rewards for sharing data. It was felt by some in the science and
+humanities that you could lose competitive advantage,
+that you owned the data. These are pretty hard to overcome. And finally, just some more examples
+of things that we hear that aren't encouraging. Where's the best place for my data? Clearly, questions like this are going to
+be time consuming to answer. If you can't answer them in a reasonable
+amount of time, researchers are very busy, it's not going to happen. My data is here,
+that's not really a systematic response. Of course, I'm willing to share my data,
+but never a good sign. My data will never be
+of use to anybody else. There are no standards in my field,
+so how could you use it? What version of my data should I share,
+raw versus processed? What if it's continuously streaming? And, of course, researchers will need
+special analytical tools to reuse this data, so
+they probably can't use it, or they're going to be asking me for
+those tools and I have other things to do. And one of the very
+interesting things about sharing practices is the way that these
+impediments are overcome partially and differently in different fields and
+disciplines. So you see here that in
+different disciplines, astronomy, chemistry, crystallography, genomics, systems biology, classics, so on, there's different
+culture of data sharing, different levels of infrastructure,
+and different policies in effect, and of course,
+different actual sharing degrees. Finally, as earlier,
+what incentives, what can we do? Well, we can once again say, just contributes to science,
+both globally and locally. Because people are going to come back and
+they're going to say, here's what we learned using your data, and then you
+can take it from there, and presumably, even better position to go on and
+do new science with that input. Credit, as I mentioned earlier, when
+you're sharing data, you're going to be getting credit for that data, more credit
+than you would ordinarily have gotten, and there'll be more citations to your data
+than you would ordinarily have received. So this is something that could be
+pointed out to those reluctant to share. Infrastructure, now, this time we're
+imagining is that you improve your infrastructure because of what
+you learned about your data from other people who you've shared it to and
+are using it. So you can improve your application,
+interoperable applications, you can improve you reliability and
+reproducibility and so on because you have a better,
+broader understanding of the data that you produced,
+because other researchers or other data users have worked with
+that data and developed new insights. Reciprocity, [LAUGH],
+if you don't share data with others, don't expect them to share data with you. And finally, again,
+if data sharing can be at least partially or
+implicitly connected with tenure promotion assessment because
+it's part of being a good citizen, this can also [LAUGH] [INAUDIBLE]
+incentive to share, obviously. So there's a lot of research right
+now going on around data sharing, because everyone's convinced that if we
+could get more data sharing happening, we would all be better off. And yet, it seems hard to get
+that sharing to happen and the issues are quite different in
+different fields and disciplines. All right. And I'm going to end this video by
+saying if you are generating data, think about sharing it, and
+maybe somebody will share theirs with you. See you later.

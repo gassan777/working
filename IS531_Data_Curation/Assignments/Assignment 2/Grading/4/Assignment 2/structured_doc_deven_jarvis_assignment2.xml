@@ -1,0 +1,151 @@
+<?xml version="1.0"?> 
+<!DOCTYPE documentation [
+
+<!--The root element is the documentation element. A documentation element must begin with a single title element, and then may contain any number of header, subheader, and paragraph elements in any order. -->
+<!ELEMENT documentation (title,(header|subheader|paragraph)*)>
+
+<!--The title element may occur only once in a documentation element, and may only contain PCDATA. The title has no child elements and contains attributes to store font and size. -->
+<!ELEMENT title (#PCDATA)>
+<!ATTLIST title fontsize CDATA #FIXED "17.5">
+<!ATTLIST title fonttype (Arial|Courier_New) "Arial">
+
+<!--The header element may occur many times in a documentation element, and may only contain PCDATA. The header has no child elements and contains attributes to store font and size. -->
+<!ELEMENT header (#PCDATA)>
+<!ATTLIST header fontsize CDATA #FIXED "14.5">
+<!ATTLIST header fonttype (Arial|Courier_New) "Arial">
+
+<!--The subheader element may occur many times in a documentation element, and may only contain PCDATA. The subheader has no child elements and contains attributes to store font and size. -->
+<!ELEMENT subheader (#PCDATA)>
+<!ATTLIST subheader fontsize CDATA #FIXED "12">
+<!ATTLIST subheader fonttype (Arial|Courier_New) "Arial">
+
+<!--The paragraph element may occur many times in a documentation element, and may contain any number of child elements including PCDATA, code, codeblock, list, and link elements. These elements may occur in any order necessary. The paragraph element contains attributes to dictate font and size of the PCDATA. -->
+<!ELEMENT paragraph (#PCDATA|code|codeblock|list|link)*>
+<!ATTLIST paragraph fontsize CDATA #FIXED "12">
+<!ATTLIST paragraph fonttype (Arial|Courier_New) "Arial">
+
+<!--The codeblock element may only contain PCDATA and has attributes to dictate font and size. -->
+<!ELEMENT codeblock (#PCDATA)>
+<!ATTLIST codeblock fontsize CDATA #FIXED "10">
+<!ATTLIST codeblock fonttype (Arial|Courier_New) "Courier_New">
+
+<!--The code element may only contain PCDATA and has attributes to dictate font and size. -->
+<!ELEMENT code (#PCDATA)>
+<!ATTLIST code fontsize CDATA #FIXED "10">
+<!ATTLIST code fonttype (Arial|Courier_New) "Courier_New">
+
+<!--The list element must contain at least one listitem child element. An attribute called type is used to dictate the notation, bullet or number, for the child listitem elements -->
+<!ELEMENT list (listitem+)>
+<!ATTLIST list type (bullet|number) "bullet">
+
+<!--A listitem element is always a child to a list element and may contain PCDATA, boldtext, link, code, or codeblock elements. These elements may occur in any order, and as frequently as necessary. The list item contains attributes to dictate font and size of any PCDATA. -->
+<!ELEMENT listitem (#PCDATA|boldtext|link|code|codeblock)*>
+<!ATTLIST listitem fonttype (Arial|Courier_New) "Arial">
+<!ATTLIST listitem fontsize CDATA #FIXED "12">
+
+<!-- A link element may occur as a child to a paragraph or listitem, and may only contain PCDATA. Attributes for a link, include which URL to reference when clicked, and what styling to apply to the link's text.-->
+<!ELEMENT link (#PCDATA)>
+<!ATTLIST link href CDATA #REQUIRED>
+<!ATTLIST link style (bold|italic|none) "none">
+
+<!--A boldtext element only contains PCDATA and is used for emphasizing text. The boldtext element contains no attributes. -->
+<!ELEMENT boldtext (#PCDATA)>
+]>
+
+<documentation>
+	<title>Configure the universal forwarder</title>
+	<paragraph>Before a forwarder can forward data, it must have a configuration. A configuration:
+		<list type="bullet">
+			<listitem>Tells the forwarder what data to send.</listitem>
+			<listitem>Tells it where to send the data.</listitem>
+		</list>
+	Because the universal forwarder does not have Splunk Web, you must give the forwarder a configuration either during the installation (on Windows systems only) or later, as a separate step. To perform post-installation configuration, you can:
+		<list type="bullet">
+			<listitem>Use the <link href="http://docs.splunk.com/Splexicon:Commandlineinterface" style="bold">CLI</link>. The CLI lets you do nearly all configuration in a small number of steps, but does not give you full access to the feature set of the forwarder.</listitem>
+			<listitem><link href="http://docs.splunk.com/Documentation/Forwarder/6.6.3/Forwarder/Configureforwardingwithoutputs.conf">Create or modify configuration files</link> on the forwarder directly.</listitem>
+			<listitem>Use a deployment server. The deployment server can ease distribution of configurations, but does not make a forwarder forward data by itself. You must use the deployment server to deliver configurations to the forwarders so that they collect the data you want and send it to the place you want.</listitem>
+		</list>
+	</paragraph>
+	<subheader>About configuring the universal forwarder with configuration files</subheader>
+	<paragraph>
+	Configuration files are text files that the universal forwarder reads when it starts up or when you reload a configuration. Forwarders must read configuration files to know where to get and send data. These files give you full access to the forwarder feature set, but editing configuration files can be difficult or mistake-prone at times. See <link href="http://docs.splunk.com/Documentation/Splunk/7.0.0/Admin/Aboutconfigurationfiles">"About configuration files"</link> and <link href="http://docs.splunk.com/Documentation/Splunk/7.0.0/Admin/Wheretofindtheconfigurationfiles">"Configuration file precedence"</link> in the Splunk Enterprise Admin manual, for details on how configuration files work.
+	</paragraph>
+	<paragraph>
+	Key configuration files are:
+		<list type="bullet">
+			<listitem><link href="http://docs.splunk.com/Documentation/Splunk/7.0.0/Admin/Inputsconf">inputs.conf</link> controls how the forwarder collects data.</listitem>
+			<listitem><link href="http://docs.splunk.com/Documentation/Splunk/7.0.0/Admin/Outputsconf">outputs.conf</link> controls how the forwarder sends data to an indexer or other forwarder.</listitem>
+			<listitem><link href="http://docs.splunk.com/Documentation/Splunk/7.0.0/Admin/Serverconf">server.conf</link> for connection and performance tuning.</listitem>
+			<listitem><link href="http://docs.splunk.com/Documentation/Splunk/7.0.0/Admin/Deploymentclientconf">deploymentclient.conf</link> for connecting to a deployment server.</listitem>
+		</list>
+	You make changes to configuration files by editing them with a text editor. You can use any editor that you want as long as it can write files in ASCII/UTF-8 format.
+	</paragraph>
+	<paragraph>
+	The forwarder works with configurations for forwarding data in <code>outputs.conf</code> in <code>$SPLUNK_HOME/etc/system/local/</code>). See <link href="http://docs.splunk.com/Documentation/Forwarder/6.6.3/Forwarder/Configureforwardingwithoutputs.conf">Configure forwarding with outputs.conf</link>.
+	</paragraph>
+	<paragraph>
+	The universal forwarder has a <code>SplunkUniversalForwarder</code> app, which includes preconfigured settings that let the forwarder run in a streamlined mode. Do not edit any configuration files within that app unless you receive specific instructions.
+	</paragraph>
+	<subheader>Best practices for deploying configuration updates across universal forwarders</subheader>
+	<paragraph>
+	You can use the following methods to deploy configuration updates across your set of universal forwarders:
+		<list type="bullet">
+			<listitem>Edit or copy the configuration files for each universal forwarder manually (This is only useful for small deployments.)</listitem>
+			<listitem>Use the Splunk <link href="http://docs.splunk.com/Splexicon:Deploymentserver" style="bold">deployment server</link> to push configured apps to your set of universal forwarders.</listitem>
+			<listitem>Use your own deployment tools (puppet or Chef on *nix or System Center Configuration Manager on Windows) to push configuration changes.</listitem>
+		</list>
+	</paragraph>
+	<header>Configure the universal forwarder from the CLI</header>
+	<paragraph>
+	The CLI lets you configure most forwarding parameters without having to edit configuration files. It does not give you full access to all forwarding parameters, and you must edit configuration files in those cases.
+	</paragraph>
+	<paragraph>
+	When you make configuration changes with the CLI, the universal forwarder writes the configuration files. This prevents typos and other mistakes that can occur when you edit configuration files directly.
+	</paragraph>
+	<paragraph>
+	The forwarder writes configurations for forwarding data to <code>outputs.conf</code> in <code>$SPLUNK_HOME/etc/system/local/</code>). See <link href="http://docs.splunk.com/Documentation/Forwarder/6.6.3/Forwarder/Configureforwardingwithoutputs.conf">Configure forwarding with outputs.conf</link>, for information on <code>outputs.conf</code>.
+	</paragraph>
+	<header>Examples for using the CLI to configure a universal forwarder</header>
+	<paragraph>
+	Following are example procedures on how to configure a universal forwarder to connect to a receiving indexer.
+	</paragraph>
+	<subheader>Configure the universal forwarder to connect to a receiving indexer</subheader>
+	<paragraph>
+	From a shell or command prompt on the forwarder, run the command:
+		<codeblock>./splunk add forward-server &lt;host name or ip address&gt;:&lt;listening port&gt;</codeblock>
+	For example, to connect to the receiving indexer with the hostname <code>idx.mycompany.com</code> and that host listens on port 9997 for forwarders, type in:
+		<codeblock>./splunk add forward-server idx1.mycompany.com:9997</codeblock>
+	</paragraph>
+	<subheader>Configure the universal forwarder to connect to a deployment server</subheader>
+	<paragraph>
+	From a shell or command prompt on the forwarder, run the command:
+		<codeblock>./splunk set deploy-poll &lt;host name or ip address&gt;:&lt;management port&gt;</codeblock>
+	For example, if you want to connect to the deployment server with the hostname <code>ds1.mycompany.com</code> on the default management port of 8089, type in:
+		<codeblock>./splunk set deploy-poll ds1.mycompany.com:8089</codeblock>
+	</paragraph>
+	<subheader>Configure a data input on the forwarder</subheader>
+	<paragraph>
+	The Splunk Enterprise <link href="http://docs.splunk.com/Documentation/Splunk/7.0.0/Data/WhatSplunkcanmonitor" style="italic">Getting Data In</link> manual has information on what data a universal forwarder can collect.
+		<list type="number">
+			<listitem>Determine what data you want to collect.</listitem>
+			<listitem>From a shell or command prompt on the forwarder, run the command thatenables that data input. For example, to monitor the <code>/var/log directory</code> on the host with the universal forwarder installed, type in:</listitem>
+		</list>
+		<codeblock>./splunk add monitor /var/log</codeblock>
+	The forwarder asks you to authenticate and begins monitoring the specified directory immediately after you log in.
+	</paragraph>
+	<header>Restart the universal forwarder</header>
+	<paragraph>
+	Some configuration changes might require that you restart the forwarder.
+	</paragraph>
+	<paragraph>
+	To restart the universal forwarder, use the same CLI <code>restart</code> command that you use to restart a full Splunk Enterprise instance:
+		<list type="bullet">
+			<listitem><boldtext>On Windows:</boldtext> Go to <code>%SPLUNK_HOME%\bin</code> and run this command:
+				<codeblock>splunk restart</codeblock>
+			</listitem>
+			<listitem><boldtext>On *nix systems:</boldtext> From a shell prompt on the host, go to <code>$SPLUNK_HOME/bin</code>, and run this command:
+				<codeblock>./splunk restart</codeblock>
+			</listitem>
+		</list>
+	 </paragraph>
+ </documentation>

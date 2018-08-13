@@ -1,0 +1,224 @@
+In this video we're going to
+talk about the objectives, activities and methods of data curation. Objectives is actually
+going to be quite short. It's easier to see the objectives when
+you're looking at the activities. So for objectives, I'm just going to say,
+somewhat reprising the last video, data curation is concerned with all
+aspects of the management of data in order to efficiently and
+reliably support the analysis of data and
+enable reuse over time. That's extracted from
+the definition in the last video. Let's take a look at the areas
+of curatorial activities. This is a fairly complete, and I think, fairly principled list. Okay, let's take a closer
+look at each of these areas. Collection, so this includes support for,
+these are examples, coordination of instrument calibration,
+protocols, procedures, collection area, division, interview transcription,
+all kinds of things involved in the initial acquisition or
+collection of data. And a particular importance in
+caring out this support is recording information that's related to
+the collection activity, so that all relevant aspects of context
+are available later to support the full understanding, authentication and
+provenance of your data. Organization, the employing an appropriate
+data model and use appropriate standards. Really important data curators
+to determine what the, often determine what
+the appropriate data model is. With the appropriate schema,
+they use abstraction and indirection to manage data. They identify and use relevant standards
+for both syntax and semantics of data. Of a particular importance in
+these activities documenting schema attributes,
+especially, data types and constraints, documenting
+all changes to schemas. Profoundly important. And maintaining metadata for
+schema changes. Storage, sounds simple. Sounds boring. You can never attend to storage enough. Selecting storage strategies that
+have the right mix of reliability, security and access that you can afford. And make sure that your will data
+survive disasters, very important. Preservation, ensuring the data will be
+understandable and usable in the future. So, typically, data creators are involved in maintaining
+a documented preservation strategy, developing this strategy, documenting it,
+and maintaining that documentation. So this includes,
+not just it's sequence preservation and format syntax documentation, but also the documentation of the semantics
+for your data elements what they need. And that's often hard to do,
+because that's often not part of the documentation you're
+apt to get from the scientists who've been collecting the data they know,
+and in sense they do what data elements mean. They're part of the community, so
+documentation can be brief, too brief. And require too much inside
+knowledge to be useful. Data creators have to
+expand that documentation. Also, the generation preservation of
+all the metadata needed to ensure that the data is usable and understandable,
+and can be authenticate and audit for provenance far into the future. Executing that strategy with discipline,
+documenting all the actions taken, it's a lot of work and important. Discoverability, supporting the ability
+to search for and locate relevant data. Typically, this involves selecting and
+applying metadata to data sets. This metadata will then be
+used to support searching and finding the data, getting the right
+data in the relevant format, and, of course, getting data that
+you're allowed and download. If there does not exist
+relevant metadata schemas then you'll be developing
+your own metadata and promoting it,
+documenting it and applying it. Obviously, if you're selecting
+applying standard metadata, you'll be able to support more access and
+more tools. Often, supporting discoverability requires supporting relevance rankings and
+recommending related data sets. It's not always clear what
+you've found until you see it in the context of
+other similar data sets. Access, this is the ability to
+retrieve and distribute data for use involves making system tools for
+metadata that support the reliable, efficient retrieval and
+distribution of that data. And often you'll be adding metadata,
+describing file formats. Metadata describing file
+formats is very important. Partly, because in retrieval in
+there's no point in retrieving files that are the format you don't want or
+can't read. So you'll be choosing
+amongst file formats. And to actually work
+effectively with data, you'll need to know a lot about
+the file format that you have. In addition, you need to,
+when appropriate, control access and
+maintain data on distribution and access, that control
+involving privileges and involving tracking whose access data,
+who it's been distributing to. It's very important in the real world. Workflow, so systematizing work with data, processing of data to be reliable,
+to be auditable, to produce trustworthy data,
+should, at all possible, be carried out in a modular
+system of transformations. And the role of each module
+should be documented. The execution of a workflow,
+an actual workflow taking place in time
+should also be documented. So the system's documented,
+the modules are documented, and each iteration of the workflow documented,
+as well. If possible, documentation should
+be generated automatically, and should itself be machine readable. And executable. That's right, executable documentation. You need to understand
+exactly what's happened and you need to be able to roll things back,
+and forward, and locate a dubious transformation. Somewhat more simply,
+apart from large workflow systems, well-maintained scripts,
+[LAUGH] make files, things like that, should be developed and
+used to document, as well as execute data transformations. Don't sit at the command line and
+execute instructions. You need to know what
+structions you executed, when, in what order and
+what the response was, so scripts, not the command line,
+documented scripts. Identification, so the ability to
+identify, authenticate, and validate data. Identifier systems are hard to develop, important to develop, and
+need to be carefully designed. You have to give attention to,
+in particular, what is being identified. And then, to the method of identification, which varies with the what. So, the problem is that related entities,
+such as the data abstractly considered, and then the data represented in different
+formats and then an file on the disk. These are different things, closely
+related, you may need to identify and reidentify them and
+you need to relate them. It's a lot of work. It's intricate. A lot of problems. Version control, this is identification in time, over time. Diachronic identification, you might say. Extremely important in data management. You need version control for
+format changes. You need version control for
+corrections and updates. And format changes covers
+a wide range of sins. We'll talk more about that. There's lots of different kinds
+of format changes, obviously. Authentication, you need to know
+whether or not the data is, in fact, the data it claims to be. Validation, ensuring that
+schema constrains and syntax, semantics constraints are met. These things are absolutely fundamental. Integration, so this is the integration
+of data from different sources, you see different data models, different
+types of data models, different schemers. And often produced by different
+communities, as I said earlier, with fundamentally different practices and
+different notions of concepts that you may take for
+granted, like temperature. So the problem is both
+variations in syntax, and data element semantics
+have to be accommodated, if data from multiple sources
+is going to be combined. And related to solve real world problems. Real world problems are never solved
+with data from a single source. The world we live in is
+an interdisciplinary world, you'll be combining data
+from multiple sources. And sometimes,
+if you're doing something creative, you may be combining data from
+sources from which data has never been combined before, data that was
+generated by communities that know nothing about each other,
+see the world quite differently. But that's what it takes to
+do something interesting, new, deep, valuable in the real world. That means,
+you'll be using schema alignment and cross-walking techniques to integrate
+data semantically as well as simpler syntactic techniques to manage
+data syntax and file format. So reformatting date for
+use by different tools or to match new data format standards,
+is a routine activity in the workplace and it's something that requires
+careful documentation. Reproducibility, so reproducibility is fundamental in science. Believing in our punitive results,
+insuring scientific validity, requires that scientists
+are able to reproduce their owns results [LAUGH] and
+the results of other teams. So data curation for reproducibility
+is very important in science. It involves, not only documenting
+collection management, but documenting every bit of
+the processing and analysis, in the ways that I discussed earlier and
+spoke the other areas. Sharing, encouraging sharing and
+making sharing possible is an important
+part of data curation. There are many obstacles to sharing. Format obstacles. Documentation obstacles. And also concerns about misuse,
+misunderstanding, sometimes concerns about
+regulation policy even the law. And data curation has to address these, often this is done with policies,
+documentation and metadata, policies, documentation,
+metadata, life of data curator. Communication. So this is supporting the representation, publishing, and visualizations
+that provide insight from data. Data's going to be useful, it has to be
+presented in forms that provide insight. It needs to be integrated clearly and efficiently into the full life
+cycle of scientific work, and that includes scientific publishing and
+other forms of scientific communication. So there are also related
+communication issues that are relevant in other kinds of data curation
+activities, beyond science. That includes entertainment,
+technical documentation, services of all kind and, here, to some extent, data
+curation overlaps with interface design. Provenance, so,
+closely related to workflow. Provenance is identifying exactly what inputs and
+calculations are responsible for the data values that you see
+at some particular time or in some particular stage of processing. So when one data set or even a view
+Of data is derived from another. The reliable use and
+understanding of that data set or view requires that you know for
+sure what inputs were involved and what calculations on those
+inputs took place and are responsible for
+the data values that you have in that derived
+data set at that stage. If you don't have documentation
+that allows you to see for sure what inputs
+are ingredient in the result, what calculations gave you that result, you don't have the provenance of
+the data that you're looking at. And you risk unreliable data, and
+you certainly have untrustworthy data. Provenance is a big part
+of data curation now. Modification. So data has to be updated and corrected,
+and this needs to be not only supported and managed,
+ensuring that errors aren't introduced. But once again, these changes over
+time need to be tracked and audited. And this will happen through
+documentation, typically, or hopefully,
+machine-readable documentation, so you can search for a change. You can roll back, if necessary, your data set to an earlier
+version documentation that provides some level of executability. Compliance. There's several normative
+aspects to data curation. But it's often necessary to make sure
+that you're not breaking the law. You're not failing to
+comply to regulations or to policy requirements, local policy requirements, governmental
+policy requirements, all important. These issues, as I say here,
+range from intellectual property regimes to regulation involving medical,
+financial privacy, all kinds of things. And as I said earlier,
+guarantee you that your programmers will not be paying much attention to these
+things, so you'll need to rein them in. And finally, hardly least,
+security, ensuring that data is secure from tampering,
+inappropriate access or distribution. So this involves methods for
+controlling access, determining user identity,
+determining user privileges. It involves data identity, so
+authentication and validation. You need to know whether or
+not data's been tampered with. This is hard to do. Many tampering detection systems
+give a lot of false positives and are discarded for that reason. So we need something that
+discriminates fairly finely. Okay, we just went through a long list, I think a fairly complete list, of the areas of activity in data curation. Now we're going to talk
+a little bit about methods. I'm going to pull out five
+categories of methods, techniques that are employed
+to achieve curatorial objectives in the areas just mentioned. Five that I think
+are particularly important, not exhaustive, but
+I think particularly important, and to some extent,
+characteristic of curatorial activity. So first, analysis,
+[LAUGH] not surprisingly. Analysis to determine needs. Analysis to develop relevant
+data models and metadata. Analysis to reformat, correct, update metadata, and so on. A lot of analytical activity
+in data curation, fundamental. Documentation, equally fundamental. In fact, in some respects,
+documentation is kind of the exemplary curatorial activity. This is recording essential
+information about whatever. Could be formats,
+could be process, could be needs. Recording essential information. Wherever possible, with machine,
+computer processable metadata, wherever possible with standard
+metadata schemas and vocabularies. But natural language prose, also valuable,
+and sometimes actually necessary. Documentation's fundamental
+to probably every one of the areas we just went through,
+as I think is analysis. System design and implementation. You need to design systems,
+implement systems, in order to support data
+curatorial activities. So a lot [LAUGH] of script writing. And you also need to be
+involved in the design and implementation of systems in order
+to support the generation and use of data documentation and
+processing information. What I'm saying here is that in
+the work of your organization, you need to ensure that
+the systems generate data documentation and processing information. As they run automatically,
+you need to generate that and record it, and make sure that it's usable. Workflow is the obvious example. Policy actions. So this means, after analysis [LAUGH] and through documentation,
+specifying objectives, procedures, practices, formats, and so on. So policy, of course, here,
+specification will range from things having to do with regulation,
+law, property. But also specifying data formats or
+metadata use or documentation protocols
+specifying these policies. Major part of data curation. Process. What I intend by process is
+the ensuring of success and efficiency in your organization,
+or in your own work, by managing the development of appropriate
+organizational units and roles. Providing training, advocating for
+change, managing curatorial activities. That kind of engagement with
+the life of your organization, that's your role as data curator. You have to be there,
+you have to be at the table. You have to make sure that your
+organization accommodates the systematic, effective carrying out of
+data curatorial activities. And some of this, sometimes this is
+done by developing independent units. Sometimes it's done by having
+a kind of a cross-cutting involvement in everybody's business. But training, education, advocating,
+managing curatorial activities, also important actions involved in most,
+if not all, of the areas of data curation
+that we just went through.

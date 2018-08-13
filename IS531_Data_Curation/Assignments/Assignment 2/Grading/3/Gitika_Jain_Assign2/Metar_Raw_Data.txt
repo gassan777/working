@@ -1,0 +1,25 @@
+Columbia, Columbia Metropolitan Airport, SC, 
+	United States (KCAE) 33-56-31N 081-07-05W 73M
+Sep 28, 2017 - 11:56 PM EST / 2017.09.29 0456 UTC
+Wind: from the N (010 degrees) at 5 MPH (5 KT):0
+Visibility: 10 mile(s):0
+Sky conditions: clear
+Temperature: 41.0 F (5.0 C)
+Dew Point: 36.0 F (2.2 C)
+Relative Humidity: 82%
+Pressure (altimeter): 29.98 in. Hg (1015 hPa)
+ob: KCAE 100456Z 01005KT 10SM CLR 05/02 A2998 
+	RMK AO2 SLP152 T00500022 401170022
+cycle: 5
+
+Cadillac / Wexford County, MI, United States (KCAD) 44-17N 085-25W
+Sep 28, 2017 - 09:55 PM EDT / 2017.09.29 0155 UTC
+Wind: from the SW (220 degrees) at 7 MPH (6 KT):0
+Visibility: 10 mile(s):0
+Sky conditions: overcast
+Temperature: 58.1 F (14.5 C)
+Dew Point: 44.8 F (7.1 C)
+Relative Humidity: 61%
+Pressure (altimeter): 30.05 in. Hg (1017 hPa)
+ob: KCAD 290155Z AUTO 22006KT 10SM OVC100 14/07 A3005 RMK AO2 T01450071
+cycle: 2

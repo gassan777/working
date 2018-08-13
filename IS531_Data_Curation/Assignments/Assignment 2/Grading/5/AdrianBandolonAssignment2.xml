@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE progressNote [
+
+  <!ELEMENT progressNote (heading, history, careProvider, signature)>
+  <!--Visit Specifics-->
+    <!ELEMENT heading (date, time, name, patientNumber)>
+    <!ATTLIST heading type CDATA #FIXED "Visit Specifics">
+  
+      <!--Date Element-->
+      <!ELEMENT date (day, month, year)>
+      <!ATTLIST date type (Visit|Target|Signature) #REQUIRED>   
+        <!ELEMENT day (#PCDATA)>
+        <!ELEMENT month (#PCDATA)>
+        <!ELEMENT year (#PCDATA)>
+       
+  
+      <!--Time Element-->
+      <!ELEMENT time (hr, min, sec, timeOfDay)>
+      <!ATTLIST time type (Visit|Signature) #REQUIRED> 
+        <!ELEMENT hr (#PCDATA)>
+        <!ELEMENT min (#PCDATA)>
+        <!ELEMENT sec (#PCDATA)>
+        <!ELEMENT timeOfDay (#PCDATA)>
+ 
+      <!--Name Element-->
+      <!ELEMENT name (firstName, lastName)>
+      <!ATTLIST name type (Patient|Provider) #REQUIRED>  
+        <!ELEMENT firstName (#PCDATA)>
+        <!ELEMENT lastName (#PCDATA)>
+
+      <!ELEMENT patientNumber (#PCDATA)>
+  
+    <!--Patient History and Intervention Narratives-->
+    <!ELEMENT history (#PCDATA|patientStatus|targetSymptoms|basicBehaviors| sideEffects|mentalStatus|specialCircumstances|vitalSigns|nursingInterventions|levelOfCare|linkToTheTreatmentPlan|interventions)*>
+    <!ATTLIST history type CDATA #FIXED "Patient History and Intervention">
+
+      <!ELEMENT patientStatus (#PCDATA)>
+      <!ELEMENT targetSymptoms (#PCDATA)>
+      <!ELEMENT basicBehaviors (#PCDATA)>
+      <!ELEMENT sideEffects (#PCDATA)>
+      <!ELEMENT mentalStatus (#PCDATA)>
+      <!ELEMENT specialCircumstances (#PCDATA)>
+  
+      <!ELEMENT vitalSigns (sittingBP, sittingPulse, respRate, temp, weight)>
+        <!ELEMENT sittingBP (#PCDATA)>
+        <!ELEMENT sittingPulse (#PCDATA)>
+        <!ELEMENT respRate (#PCDATA)>
+        <!ELEMENT temp (#PCDATA)>
+        <!ELEMENT weight (#PCDATA)>
+          <!--UOM=UNIT OF MEASURE-->
+        <!ATTLIST sittingBP UOM CDATA #FIXED "mmHg">
+        <!ATTLIST sittingPulse UOM CDATA #FIXED "BPM"><!--BMP=BEATS PER MINUTE-->
+        <!ATTLIST respRate UOM CDATA #FIXED "Per Minute">
+        <!ATTLIST temp UOM CDATA #FIXED "Degrees Farenheit">
+        <!ATTLIST weight UOM CDATA #FIXED "LBS(KG)">
+  
+      <!ELEMENT nursingInterventions (#PCDATA)>
+      <!ELEMENT levelOfCare (#PCDATA)>
+  
+      <!ELEMENT linkToTheTreatmentPlan (problem, shortTermGoals, date)>
+      <!ELEMENT problem (#PCDATA)>
+      <!ELEMENT shortTermGoals (#PCDATA)>
+  
+      <!ELEMENT interventions (#PCDATA)>
+
+    <!--Provider Specifics-->
+    <!ELEMENT careProvider (name, providerTitle)>
+    <!ATTLIST careProvider type CDATA #FIXED "Provider Specifics">
+      <!ELEMENT providerTitle (#PCDATA)>
+  
+      <!ENTITY title1 "RN">
+      <!ENTITY title2 "LVN">
+  
+    <!--Signatures-->
+    <!ELEMENT signature (method, name, providerTitle, date, time)>
+    <!ATTLIST signature type CDATA #FIXED "Signature Specifics">
+      <!ELEMENT method (#PCDATA)>
+]>
+
+<progressNote>
+  <heading type="Visit Specifics">
+
+    <date type="Visit">
+      <day>09</day>
+      <month>05</month>
+      <year>2013</year>
+    </date>
+
+    <time type="Visit">
+      <hr>02</hr>
+      <min>02</min>
+      <sec>45</sec>
+      <timeOfDay>PM</timeOfDay>
+    </time>
+
+    <name type="Patient">
+      <firstName>Julie</firstName>
+      <lastName>Smart</lastName>
+    </name>
+
+    <patientNumber>1000010649803</patientNumber>
+
+  </heading>
+
+  <history type="Patient History and Intervention">
+    <patientStatus>Julie is worse today.</patientStatus>
+
+    <targetSymptoms>
+      Julie reports that depressive symptoms continue. Her symptoms, she reports, are more frequent or more intense. Anergia is present. Increased symptoms of anhedonia are present. Julie's difficulty with concentrating has not changed. Julie reports that she continues to feel sad. Guilty feelings are described by Julie. "I should have been with my sister, I had no idea she was suicidal." Sleep has improved with the use of PRN Ambien CR at HS. Julie convincingly denies suicidal ideas or intentions.
+    </targetSymptoms>
+
+    <basicBehaviors>
+      Medication has been taken regularly. She needs help with ADLs. When she attends activities participation is minimal. Prn's are used occasionally and are described as effective for her headaches. Impulsive behaviors are occurring, but less frequently. Julie has diminished food and fluid intake. Julie has not been confused. A good night's sleep is described.
+    </basicBehaviors>
+
+    <sideEffects>Sedative effects of the medication are described</sideEffects>
+    <sideEffects>Patient reports of dry mouth</sideEffects>
+    <sideEffects>No other side effects are reported or in evidence</sideEffects>
+
+    <mentalStatus>
+      Julie presents as glum, downcast, inattentive, minimally communicative, and looks unhappy. She appears listless and anergic. She appears downcast. Thought content is depressed. Slowness of physical movement helps reveal depressed mood. Facial expression and general demeanor reveal depressed mood. She denies having suicidal ideas. There are no apparent signs of hallucinations, delusions, bizarre behaviors, or other indicators of psychotic process. Associations are intact, thinking is logical, and thought content appears appropriate. There are signs of anxiety. Patient is fidgety in a way that is suggestive of anxiety.
+    </mentalStatus>
+
+    <specialCircumstances>
+      Julie continues to have an unsteady gait, especially after midnight. Call light is within her reach. She has been instructed to ring for the nurse to assist her when ambulating to bathroom.
+    </specialCircumstances>
+
+    <vitalSigns>
+      <sittingBP UOM="mmHg">150/85</sittingBP>
+      <sittingPulse UOM="BPM">80</sittingPulse>
+      <respRate UOM="Per Minute">18</respRate>
+      <temp UOM="Degrees Farenheit">98+</temp>
+      <weight UOM="LBS(KG)">155(70.3)</weight>
+    </vitalSigns>
+
+    <nursingInterventions>
+      The following nursing interventions were performed:
+      Medication was administered to Julie, compliance, symptoms, and possible side effects monitored and recorded as appropriate. Response to medication is as follows: Julie's response to medication Ambien CR is considered good. Details are as follows: Julie reports being well rested in the morning for the first time in several months
+    </nursingInterventions>
+
+    <levelOfCare>
+      Julie needs continued Inpatient treatment. (Julie is voluntary.) Julie did not benefit or could not be managed in an outpatient setting causing exacerbation of psychiatric symptoms and condition is likely to improve with treatment at the current level of care.
+    </levelOfCare>
+
+    <linkToTheTreatmentPlan>
+      <problem>depressed mood</problem>
+      <shortTermGoals>
+        Julie will recognize and report thoughts of death to staff immediately
+      </shortTermGoals>
+      <date type="Target">
+        <day>09</day>
+        <month>05</month>
+        <year>2013</year>
+      </date>
+    </linkToTheTreatmentPlan>
+
+    <interventions>
+      Nursing staff will engage in conversation and encourage VERBALIZATION OF FEELINGS.
+      Nursing staff will engage in friendly conversation and ENCOURAGE SOCIALIZATION with other patients and in activities.
+      Nursing staff to encourage attention to DRESSING, GROOMING and the maintenance of personal area.
+    </interventions>
+    <interventions>
+      Moderate progress in reaching these goals and resolving problems seemed present today.
+      Recommend that the interventions and short term goals for this problem be continued since more time is needed to
+      meet these goals and resolve this problem.
+    </interventions>
+
+  </history>
+
+  <careProvider type="Provider Specifics">
+    <name type="Provider">
+      <firstName>Liz</firstName>
+      <lastName>Lobao</lastName>
+    </name>
+
+    <providerTitle>&title1;</providerTitle>
+  </careProvider>
+
+  <signature type="Signature Specifics">
+    
+    <method>Electronically Signed</method>
+    
+    <name type="Provider">
+      <firstName>Liz</firstName>
+      <lastName>Lobao</lastName>
+    </name>
+    
+    <providerTitle>&title1;</providerTitle>
+    
+    <date type="Signature">
+      <day>09</day>
+      <month>05</month>
+      <year>2013</year>
+    </date>
+    
+    <time type="Signature">
+      <hr>02</hr>
+      <min>03</min>
+      <sec>01</sec>
+      <timeOfDay>PM</timeOfDay>
+    </time>
+  
+  </signature>
+
+</progressNote>

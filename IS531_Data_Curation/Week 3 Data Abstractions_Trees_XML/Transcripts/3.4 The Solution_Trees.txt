@@ -1,0 +1,68 @@
+As I said in the last video,
+the tree model approach actually is a combination of descriptive markup and
+trees. And I've just focused on descriptive
+markup in the previous video. And now we're going to talk about
+how the tree data structure is combined with descriptive
+markup in contemporary approaches to using the tree
+model to manage data. And here's an outline of what
+we're talking about in this video. First, the OHCO model of text, which emerges from what we
+saw in the preceding video. Then, we're going to talk
+about how the data structure is a tree kind of graph and
+how trees can be serialized in formal languages defined
+by context free grammars. So, from the preceding video, we can generalize that text and documents is an ordered hierarchy of content objects, why? First of all we say that the parts of
+a text that we need to identify primarily. The things we are abstracting to,
+are content objects like chapters, paragraphs,
+sentences, dances, lines, speeches, equations, title settings,
+abstracts and so on. These are the things that
+are the sort of first order objects if you will,
+the components of a text. Things like pages, columns,
+headings and so on, those are the things
+we abstract away from. These content objects have
+a particular natural organization. They're organized hierarchically,
+sentences are inside paragraphs, paragraphs inside sections,
+sections inside chapters and so on. We have nesting going on here and
+no overlaps. You don't see a sentence
+begin in a paragraph, in the middle of a paragraph and continue
+into the next, at least not typically. And finally,
+these objects are ordered linearly. So the first paragraph of a chapter precedes the next paragraph. That says that is a structure
+that's part of the document. So in one of your readings,
+you saw that some colleagues of mine and I identified this OHCO model
+as the most effective way of working with text because it
+allowed us to have the right kind of abstraction and
+the right kind of interaction and in fact, empirically it turned
+out to be very effective. Okay, this model leads us
+naturally to recognize that as well as the implementation
+via descriptive markup, another part of implementing
+the model is a particular data structure,
+namely the tree data structure. So, most documents as we saw
+can be modeled as trees. And here's a picture of
+a tree on the right. It's our familiar poem. As I said,
+it's a tree that's fallen over, so turn it counterclockwise one quarter and
+you'll stand it up. It'll look like a tree. Trees do have technical
+definitions in graph theory. The definition we're using here,
+the Graph Theoretic Definition is a tree is a directed acyclic
+graph with ordered branches and all nodes except one
+having exactly one parent. The nodes are labeled, that's where the
+descriptive markup comes in, and they're often also annotated with additional
+information, such as lang equals English. The fact that the data structure here is a well-understood mathematical entity, a kind of directed acyclic
+graph really provides us, you might say for free,
+with a lot of understanding in tools that we can use
+to manipulate textual data. Just like the fact that relations are a
+well-understood mathematical construct. And therefore we're able
+to use the set theory and first order logic in working
+with relation databases. Similarly, the fact that
+the OHCO model is naturally represented with the data structure tree, another mathematical construct
+lets us use the graph theoretic terminology,
+understanding, and tools. Now, you can't use a graphic
+object as input to a computer, nor can you use a purely abstract
+object like a graph. You need to serialize it. And trees are serialized these days,
+typically, with XML. And you see an example of an XML
+serialization of a tree and the XML languages are formal
+languages that can be defined with a context-free grammar. And as a result,
+this serialization of a tree also is well understood from
+the mathematical point of view. And we're able to use a variety of
+tools to manage XML serializations. Because it is in fact an instance of
+a well-understood mathematical object. So, parsers and validators and
+other tools related to formal grammar, as well as all of our understanding and
+terminology of formal grammars can be easily brought to bear when you're
+using a tree model to represent text.

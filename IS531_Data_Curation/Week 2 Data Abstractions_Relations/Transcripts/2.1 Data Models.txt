@@ -1,0 +1,232 @@
+All right, as you know,
+we're going to spend the first few weeks looking at the relevance
+of data models to data curation. Data models are extremely important,
+fundamental, in data curation. This week,
+we are starting with the relational model. What it is, how it works, what it's
+relationship is to data creation. But in this video, we are going to
+introduce data models in general. So data models. We're going to talk about
+different definitions for data model,
+give some examples of data models. Talk initially about why data
+models are important to curation. And then take a few steps
+towards an integrated picture of data model relationships. This is pretty much a breadth
+first treatment, so we're going to mention a lot of things
+that we'll take up in detail later. Okay, here is the data models that
+I'm sure you know, I'm sure you love. The relational model, see a table there. Trees, we've got a graphic picture
+of tree in the background and a XML serialization up front. And entity relationship modeling. These days, kind of ontology approach. And you see a schema, graphic schema for
+an Diagram actually up front there. I believe that you're all already
+familiar with these data models. So I'm not introducing
+you to anything that you don't already know when
+we talk about the models. But what we're doing here is looking
+at the significance of these models, the relevance of these models to
+the various activities of data curation. So we're looking at data models through,
+you might say, through a data curatorial lens. But, a few words just to make sure we're
+all on the same page about each model, this is the relational model. Relational models are well-suited for
+data that would be naturally conceptualized
+as attribute/value pairs. Expressing characteristics of things,
+for instance. And this particular relational
+model we're looking at here, includes the attributes, title and date. It is a set of tuples mathematically,
+or in terms of tables, you might say it's rows and columns. In this particular relation here,
+this table is modeling a state of affairs where a novel,
+Moby Dick, was published in 1851. The tree model. Tree's in the background. You can see why it's called a tree. It's, looks like it's been
+chopped down and fallen over. But if you turn it clockwise,
+it'll stand up on its root. The serialization of
+the tree is in XML upfront. And tree models are particularly
+well suited for data that has a hierarchical
+structure such as documents. They can also be used and are frequently
+used to serialize relations or other kinds of data objects. In this tree, you see the nodes have
+labels like stanza and line, and that it's modeling a poem that has two
+stanzas each with four metrical lines. The entity relationship model. We're looking here at a schema,
+an entity relationship schema. And Models operate at a very
+high level of abstraction, they represent the things and
+the relationships of a domain. Focused really as much on things and relationships primarily rather than data elements or data values. And in this Schema that you are looking
+at right now, you can see there are two entity classes, person and work,
+those are the rectangles sets of entities. And each has several attributes. And there's a relationship
+that holds between them. Entity relationship models need to be represented typically in some other data
+model before they are used in relations. And tree data models are often used for
+that. We talk a lot more about
+these things later. I do want to say right at the outset
+though for my purposes, Diagrams, UML class diagrams,
+other conceptual modeling approaches, ontology languages such as RDFS and
+OWL, for our purposes these are all
+fundamentally similar. And roughly, you can treat them all
+as specifications of an ontology. I know that may seem a little
+much when you're looking at an Diagram without classes,
+to refer to it as an ontology. But for our purposes,
+these are all very similar. These are all approaches that
+focus on things and relationships. So I've just kind of shown by example,
+you might say, what data models are, reminded you
+of what we mean by data model. Let's see if we can drill down a bit and
+spell out with some level of rigor what
+exactly a data model is. Turns out, the phrase data
+model has three common senses. The first one is a type of framework for
+representing information. That is, sometimes when the phrase
+data model is used in conversation, is referring to a kind of framework for
+representing information. The second sense is
+a particular framework for representing information,
+often identified with a particular schema. And the third is an application
+of particular framework for representing information. So let's take a closer look. So sense 1 is a type of framework. And here are the sentences where you hear
+the word model being used in this sense. When someone says, for instance, the
+relational model with attributes, tuples and values is a good one for organizing
+course registration information. The tree model, with nodes, labels and edges, excels at organizing
+natural language text. The entity relationship model,
+with entities and relationships, identifies the things and
+relationships in domain of interest. Each of these sentences uses the notion
+of a data model in the sense of a kind of framework, an approach to modeling,
+a modeling strategy, you might say. Sense 2,
+this sense data model is used to refer to a particular framework,
+often a particular schema. So here are some sentences where
+data model is used in this sense. First, the registrars relational
+model includes these attributes. Course prerequisites, credits department,
+and assigns the data type, integer. Second, the journal
+uses an XML tree model. It includes nodes, article title,
+author, affiliation. It requires the title node must and may only appears the first
+child of an article node. And third, the Model for
+registration includes the entities person, course, department, and the relationships
+enrolled in, sponsored by and teaches. It allows persons to teach multiple
+courses that requires, [INAUDIBLE] so on. These are three sentences corresponding
+yes to each data model that we looked at, in which the term model is used to
+refer to a particular framework or schema, as opposed to a particular
+kind of framework or schema. And then finally, data model sometimes used to refer to
+the application of a particular framework. So here are those examples. The registrar's relational
+model has the value IS501 for course in the only tuple that
+has Smith for instructor. Second, in the XML tree model for
+this article, the node labelled author has
+the content Alonzo Church. And the following sibling node,
+affiliation, has the content Princeton University. Third, the RDF instance of that
+ontology model that model shows that Anton Marty is enrolled in Dr.
+Brentano’s course. So here,
+we're talking about the actual instance, the population of a relation or
+a particular tree with data, and we're talking about
+what data it in fact has. This is another sense of model. So continuing with our elaboration,
+generalizing a bit. I want to note that data models in general
+typically have three sorts of components. They have some sort of structure such
+as sets and tuples, or nodes and arcs. There are things there, [LAUGH] such as
+values, labels, entities, relationships. And particularly, entity types,
+relationship types. And there are constraints
+such as data types, or grammar constraints, or
+cardinality constraints. Often, the specification of
+a set of operations on data is considered essential to the formal
+definition of a data model. So here's a classic definition from Oman. A data model is a mathematical
+formalism with two parts. 1, a notation for describing data. 2, a set of operations used
+to manipulate that data. That's it for our account of
+what exactly data models are, examples, definitions, and elaborations. Now, why in the world are we talking
+about data models in this course? And it's because data models
+are fundamental in data curation for a lot of reasons. Very important,
+critical activities in data curation include these activities
+which involve data models. First, we need to,
+working with data, select what kind of data model we're going to
+use to organize our data. Entity relationships, relations, trees. That's a decision. Next, we need to select
+data model schemas. Typically, many schemas exist for
+many kinds of data. And wherever possible, we want to
+find a schema that's already in use, that is working really well. And perhaps is shared by a broad
+community, lots of advantages to that. Supports communication, there'll be a lot
+more tools, there'll be documentation, there'll be training. So that means evaluating
+the existing schemas, and making a very important decision about
+what schema you're going to use. Of course it has to support
+analysis which is what we're often especially
+concerned within data science. Next, develop data model schemas. When it's not possible to
+find a schema that works, but you will sometimes have to develop
+your own data model schemas. And that means that in data curation,
+we are often involved with developing schemas when we
+can't find a schema that works. And getting good at that, knowing what
+the issues are, big part of data curation. Next, revise data model schemas. So even though I said, we're often involved in developing
+those schemas, that is to be avoided. And when we do avoid it,
+is to select an existing schema. But another way to avoid having to develop
+a data model schema from scratch is to adopt one that already exists. And this is something that is
+important part of data curation, as is revising your
+schemas as time goes by. And you discover that they're not
+working as well as they might for one reason or another, or
+that you're collecting new data. That you did not anticipate collecting,
+or that there are constraints, data typing, or cardinality, or other
+kinds of integrity constraints that need to be applied, or different class
+hierarchies that need to be applied.. This is a huge part of data curation. Next, validation. We often want to take a dataset, and using a schema that
+presumably applies to it. Determine that, in fact,
+the dataset does conform the the schema. That everything the schema says is there,
+is there. That the constraints, data types,
+cardinality, grammar, etc., are all met. In fact, we can trust this dataset at
+least syntactically, to be what we expect. This is very important, and
+there are a lot of safety and risk related challenges that
+we address through validation. Ensuring that we do have the dataset
+we think we have before we act on it. Then there are a number of different
+kinds of transformation activities that are very important in data curation. Sometimes we transform data, that dataset, that is organized in conformance
+with one kind of model such as, for instance,
+relations to a dataset that's organized according to another kind
+of model such as trees. We need to do this for
+a number of reasons, such as interchange, accommodating Different software tools and sharing data,
+ensuring a successful distribution using different validation tools,
+lots of reasons to do this. It's done routinely. It needs to be done well, carefully,
+and it needs to be documented. Lot of work and
+fundamental part of data curation. Another kind of transformation
+is when we transform data from one schema to another, and there
+are lots of different reasons to do this. Now, I'm including the ones I just
+mentioned, accommodating different tools, accommodating different user groups,
+ensuring validation, providing different kinds of
+analytical opportunities. And sometimes,
+as part of analysis, as we enhance the data, as we correct it,
+as we derive information from the data, we're transforming
+it from one schema to another. This means that, in some cases, we're
+going from a radically different kind of data to data of another kind, you might
+be going to take one classic example from data about air pressure to
+data [COUGH] about altitude. Altitude is calculated from air pressure. So when you're doing that
+the derivation to determine altitude, you'll be transforming one data set to
+another, they may all be relations, but it'll be going from
+one schema to another. Now, you're probably thinking,
+is that really transforming data from one schema to another, or
+is that deriving new data from old data? We'll take that up later. Another transformation, transforming data from one
+representation such as one particular serialization to another serialization
+even with the same basic schema. So for instance,
+you might go from XML RDF to M3, or total, they're really just changing how we represent or
+encode the RDF triples. A different kind of example, perhaps
+clearer, is when you go from one kind of character encoding to another
+kind of character encoding, or when you go from a serialization
+language like SGML, to a closely related
+serialization language like XML. And then, finally and
+extremely importantly, so last but by far not least,
+there is the huge challenge of integrating data from
+two different data models substantially perhaps
+different data models. Because you need to do analysis that
+involves data from those two or more data models and
+this can be one of the great, great challenges of [COUGH]
+data integration where there are not only syntactic differences and
+how the data is organized, but fundamental conceptual differences
+in how we think about the data. Okay, before closing, I'm going to look ahead a bit to the data
+model relationships, model of data model relationships, that
+will be emerging over the next few weeks. So it is important in data
+curation how we understand the relationships between and
+among data models. A lot of what we do in data curation
+involves these relationships and managing these relationships and
+transforming datasets from one to another and
+transforming schemas, as well. So here's a partial diagram and I'll be referring to this diagram
+a number of times in the first few weeks. So this is probably familiar to you
+all because it's, to some extent, similar to the classic diagram you'll
+find in a database management course. At the very bottom,
+we have the level of the, what you call physical level,
+which is the storage level, how we organize the storage of
+data as bytes and values and files and records, but different data
+structures in indexes and so on. At the logical level, we have the data
+models, that two of which I've just talked about, relations and trees,
+triples we'll talk about later. These are data models that focus, not on
+storage methods, but on the data itself. The thing about the logical
+level is that we are here thinking about the data and
+not the details of storage. And, as we'll see, this is an extremely, as I'm sure you know,
+this is an extremely important advance in our understanding about how to
+organize and interact with data. That there needs to be
+a conceptual organization of the data that works with the data as data itself works
+with it on its own terms and not in terms of the methods
+of storage organization. And then one step up we have an additional
+level of extraction where here we're not looking at data,
+per say, but we're looking at the things, properties and
+relationships of the domain that we are modeling with the data. And this is the level of
+ontologies' many relationships. And schemas such as Schemas,
+or RDFS and OWL schemes, pretty much the same as
+far as I'm concerned. For most of us in the 21st century, this is a level that we're
+now working at more and more. But all three of these levels
+work together in the successful organization of data. And you're not going to succeed in
+organizing good data unless you do in fact store it somewhere and
+have a physical representation that works. And you're not going to be able to do all
+the things that you would like to do or you're building an efficiently or reliably without understanding
+your data at the logic of it all. And then, finally, for
+the kind of advanced functionality and integration that we expect today,
+you need to conceptualize your data and
+its representation of a domain in terms of the things in the domain
+in ontological terms.

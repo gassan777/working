@@ -1,0 +1,97 @@
+Hi, everyone. Welcome back. This video is on Schema Integration. First definition, few words about
+representational challenges, more than a few words about semantic
+challenges that includes homonyms, synonyms, overlaps,
+missing relationships and generality. Here we go, the promised definition. According to Batini and others, the process of merging several
+conceptual schemas into a global conceptual schema that represents all
+the requirements of the application. If the approach you're taking to
+integration is a federating approach then you'll create a federating schema,
+mapped individual schemas. If the approach is the derived
+combination approach where data warehousing then a single schema
+will be created for the derived dataset. Conceptually these are very similar, even though in some respects,
+carrying them out is done differently. A schema integration could actually
+take place at both the logical and conceptual levels, and
+they even in a sense can take place across those levels that
+may seem a little strange. But what's typically going
+on there is that it is a conceptual schema level integration but on the logical schema side we're kind
+of imagining the conceptual schema. That's what I mean by
+the distinction between logical and conceptual level being unclear. Okay, two kinds of schema integration
+problems are often identified. Representational, sometimes
+called structural, and semantic You'll recall from an earlier
+video that the representational challenges occur when different
+choices about modelling constructs and
+integrity constraints are made. And we've already seen some of those. Semantic challenges occur with synonyms,
+homonyms, missing relationships, and different but related concepts, and
+we're going to take a look at those. So consider the situation,
+two schemas use different names F and G for the same properties. Clearly this is going to interfere
+with queries, analysis, views, etc. It's going to interfere
+with data integration. The problem here is synonyms. Second, two schemas use the same name,
+F, for different properties. Similarly, this is good to interfere
+with views, queries, analysis, etc., ensure data integration, and
+this problem is of course, homonyms. Or not homonyms plural,
+because we have one name. It's the homonym problem,
+one name for two different things. The first case it was two names for
+the same thing. So once we determine
+that there is a problem. This is a situation where the remedy,
+either meta-schema for federation or new comprehensive schema for derived
+combination, is usually pretty obvious. We need to stop using different names for
+the same thing. And we need to stop using a single
+name for different things. That's easy, the remedy is easy. What's hard, is determining,
+it's harder than you might think, determining whether or not there is
+in fact, a problem of this kind. And there is no easy way to do that. You have to roll up your sleeves, look at
+the documentation, talk to the people who made the schema, talk to the people
+who are using this schema, so on. You'll also of course
+be examining the data instances themselves looking at the actual
+value and scratching your head, and bringing to bear all the background
+information you have in order to decide whether or not you have a case of
+different names for the same thing. Or a single name for different things. And here's a graphic example. You can study on your own. Here is a not so simple naming problem. Conceptual overlaps. So imagine two schemas, A and B, and schema A has the attribute name,
+which is interpreted as applying to nicknames and
+legal names but not to aliases. In other words,
+a legal name and a nickname. Both are names in Schema A. But an alias is not a name. In Schema B, the attribute name
+is interpreted as applying to legal names and aliases,
+but not to nicknames. So you get the point, and it really doesn't matter that
+we use the same attribute name. Name, [LAUGH] in these two cases. The problem is the overlap. So like the earlier problems,
+this is hard to discover, and spend their time wondering
+if they have this problem, but their schemas are trying to integrate. But this is a case where
+it is extremely difficult to remedy the problem
+without information loss. You can of course define
+a new concept attribute, which covers nicknames,
+legal names, and aliases. But if you only used that new concept,
+you will have your information loss. Your best bet is probably
+going to be to do that but also keep the two
+different attributes here. You'll have to distinguish them
+by changing the name of one. The only alternative is to study the data. And, actually, reanalyze it. And then you can use
+a finer-grained set of attributes. Inter-schema relationships, so
+these are pretty interesting. Suppose that one schema has
+the entity type, County. But not the entity type State. Another has the entity type State but
+not the entity type County. So as always, the consequence is
+information will not be available to queries and analysis data
+integration will be thwarted. So what we do is add
+the missing relationship, namely the relationship that tells
+us that a county belongs to a state. And this is an interschema relationship, which you'll need to add
+to the integrating schema. Whether it's of the federating variety,
+or of the warehouse variety. And note that the relationship
+in question are not, this relationship is not in either schema. We are inferring it and then adding it. Generality variation. Imagine schema A has
+an entity type vehicle. But no way to indicate kinds of vehicles. Schema B has an entity type for
+motorcycle but no entity type for vehicle. Now we know of course that
+motorcycle is a proper subset of vehicle and therefore,
+subclass vehicle. Just like we know as illustrated
+in the previous slide that counties belong to states. The simplest solution here is of course, the worst in some respects which is
+to generalize just to do nothing. But a simple solution that just
+generalizes motorcycle to vehicle, loses information. So instead, we should take this fact
+that we know that a motorcycle is a subclass of vehicle and
+represent it in an integrating schema. So retaining both vehicle and motorcycle,
+with motorcycle as a subclass of vehicle, that solution, someone [INAUDIBLE]
+saw in the earlier slide, retains all the information we have. And you could do it with
+a kind attribute as well. This approach,
+there's no information loss, but there's a kind of unevenness in
+the instance descriptions in the data sets themselves that might tempt
+us to do further analysis. As before, this base, the basic strategy
+here is the same whether it's for federations or derived combinations. And final example. Similar to the ones we just saw but
+raising an issue I'll take up next week. So imagine two schemas, one,
+schema A has an entity type STUDENT, Entity type SCHOOL,
+the relationship Enrolled_in. Schema B has the entity type PERSON and entity type SCHOOL, and relationship Enrolled_in. So what do we do? A federating or combining schema,
+Might very well have or imply the relationship
+you see here in schema C. We're keeping all our information,
+we're not losing anything. Or actually at least you might think we have more information in schema C than in either schema A or schema B individually. This is in some respects
+a practical resolution but there's some interesting issues with it. And I will be taking them up next week. And that is the end of schema integration
+in the data integration week. See you soon.

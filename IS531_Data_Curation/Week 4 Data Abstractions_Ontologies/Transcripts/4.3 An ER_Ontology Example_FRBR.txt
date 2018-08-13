@@ -1,0 +1,123 @@
+Let's look at an example of developing
+an entity-relationship model, which is to say an ontology for
+an interesting domain. And a domain that's not just interesting,
+challenging in many respects, but also a domain that's very important to data curation and
+digital asset management in general. In this video we're going to
+show how a fragment of the FRBR, just call it FRBR for now. The FRBR conceptual model was developed in order to support the complexities
+of library cataloguing. And although the example,
+as an example of Modeling, is from library cataloguing, the solution, the actual conceptual model is
+a fairly profound one, the seminal. And it's directly related
+to deep important problems in data curation and also, in fact,
+to digital asset management in general. Let's start with the question,
+what is a book? You might ask someone,
+did you read the same book I did? It sounds simple,
+did you read the same book I did? And in fact,
+that simple phrase the same book conceals some very different sentences. It could mean did you read
+the same novel I did? And the answer might be yes, but
+I read the French translation. It might mean did you read the same text? I did, but the large type edition. It might mean did you
+read the same edition? I did, but I read the copy that
+we left in the summer house. Or you might mean did
+you read the same copy? Yes I did, the one with the mustard stain. Those are all different things
+that we could mean when we ask, did you read the same book? And often we mean one thing and
+often we mean another. These are all sentences that
+are fairly prominent in conversation. They mean different things. They get different answers
+at different times. To see how they get different answers,
+read these from bottom to top. If you meant did you read the same copy,
+the answer might be no but I read the same edition. If you meant did you
+read the same edition? The answer might be no, but
+yes I did read the same text. If the question is,
+did you read the same text? The answer might be no,
+I don't read French, but I did read it in German, and so on. So the ordinary book,
+apparently can be simultaneously, for instance, about Manet, in French, typeset in neo-Bauhaus,
+and mustard-stained. This is a little peculiar. Is there really one thing that
+is about Manet, in French, typeset in Bauhaus and mustard-stained? We talk in ordinary
+conversation as if there is. But that's not good enough for
+building a database. We can talk like there is one
+thing that's about Manet, in French, typeset in neo-Bauhaus and
+mustard-stained. But if you're going to develop a database
+that's flexible and precise and good enough for hard work,
+digital asset management, like running a big academic library,
+it's not going to cut it. And the reason is the thing that is about Manet is a work that could be in French, in German, and in English. The thing that's in French is
+what's called the expression, which could be typeset in New Times,
+typeset in 100 pages, 110 pages, on paper, online. Same expression but different manifestations. And it's the manifestation
+that's typeset in neo-Bauhaus. It, of course, exists in many different copies amidst
+the copy that's mustard-stained. So I've just introduced
+the four key technical terms in the functional requirements for
+bibliographic records for FRBR. Which takes the ordinary
+concept of a book and replaces it with four other
+concepts that are more precise and more suitable for developing a database
+to manage intellectual objects. Let's take a closer look at
+the Group 1 entity types. Therefore, the work which
+is characterized as a distinct intellectual or
+artistic creation. The expression,
+which is the intellectual or artistic realization of a work in
+the form of alphanumeric, musical, or choreographic notations,
+sound, image, etc. The manifestation, which is the physical
+embodiment of the expression of the work. And the item, which is a single
+exemplar of a manifestation. If we were talking about ordinary
+physical books, rough synonyms. Ordinary colloquial synonyms for these four concepts would be work, text, edition, and copy. Now to get a better grip on
+exactly what's going on here, we're going to look at some attribute
+assignments because they tell us a lot about how these concepts work,
+what these entity types are. So as is typical in Modeling, every entity type is assigned
+a distinctive set of attributes. In this case works will have
+attributes like subject and genre. A work is about something. It might be a scientific paper,
+novel, poem, something like that. Expressions have attributes such as
+language, the text in which a work is expressed will have some language,
+or be in some language or other. Manifestations have
+attributes like typeface. It's the addition that might
+be in Times or [INAUDIBLE]. And items have attributes such
+as condition and location. So, important to notice that these attribute assignments are disjoint. We have here four sets of attributes. I haven't shown you all the values
+in a domain for each attribute. But trust me,
+the domains of attributes for each entity type here, they're disjoint. For example, a work may have a subject but it does not have a language or
+a typeface or a condition. Expression has the language, manifestation
+has the typeface, item has the condition. An expression may have a language,
+it does not have a subject. The work has the subject. A manifestation may have a typeface but it does not have a subject or a language. And an item may have a condition, but
+it does not have a subject, language, or typeface. This is not how we talk. But if you reflect on
+the problem we face when we notice how the same question
+can be answered yes or no in different ways,
+you'll see the same question, did you read the same book I read? It becomes clear that the way we
+talk is really not very precise. And the world we think we live
+in where we have these books that are both in English
+about Manet in Times Roman, we don't live in that world, not really. So this approach to understanding
+how intellectual objects like books work is actually kind of a generalization
+of a long history in library and information science of
+thinking about these things. Please don't be misled by
+the focus on physical books. FRBR is not just a major event in
+cataloguing and technology in libraries. It has become extremely influential
+in the development of ontologies for digital asset management and
+data creation. An example of noticing how
+FRBR can give us insights into data curation is this paper about
+FRBR in a scientific context. So now we dig into the actual Modeling. And then it characterizes, this is
+a simple, informal approach to Modeling. I'm going to indicate two steps. One is isolate the kinds or the types of
+objects and entities that are of interest. When you're doing that,
+don't think about data, focus on things. And each entity type will
+eventually become a focal point for a cluster of data. Next step is identify the important
+attributes for each entity. There's more, but that's enough to remind
+us of what we probably already know about Modeling so that we can look at it from
+the point of view of data curation. So here is an Diagram for the entity
+types that we've just been talking about. Works are realized through expressions,
+expressions are embodied in manifestations,
+manifestations exemplified by items, each rectangle corresponds to an entity type
+that is extensionally a set of entities. This is a set of works, a set of
+expressions, a set ot manifestations, a set of items. Let me clarify that this is the set of
+all works, the set of all expressions, the set of all manifestations,
+the set of all items. And if you want a little more
+clarity on just what these are and how they're related. You can read the text on this slide
+where we walk through how Moby Dick, the work,
+is realized through different expressions, embodied in different manifestations and
+exemplified in different items. There's a lot more to fleshing out
+a picture of the bibliographic universe than just dealing with
+the intellectual object itself. So here on the overview slide,
+you see how FRBR divides the bibliographic world up into not just Group 1 entities
+that we've been looking at but also entities like person, family,
+corporate body, entities types, and types like concepts,
+object, event and place. And then characterizes the kinds
+of attributes and relationships. And the libraries'
+additional relationships, such as translation, abridgement, part of, as you can imagine it
+becomes quite complex. Here's a high level picture
+of the entity types. And here we have a picture of FRBR from
+the point of view of first order logic. That is we articulate the definitions and
+first order logic, we note which terms we're using as primitives, meaning
+they're only defined in natural language. We give our cardinality axioms,
+our domain range axioms, disjointness axioms, and then [INAUDIBLE]. Okay, that's our example of Modeling. It's also preparing us to see how FRBR can be used to develop a robust ontology for contemporary scientific data curation and asset management actually as well. That'll be in a couple weeks. So what you learned here
+about FRBR it's an example. It's not just an example, it's going to be part of the substance of working out a adequate ontology for understanding data curation.

@@ -1,0 +1,66 @@
+In this video,
+I want to orient us to, well, you might say the social
+side of data curation, the organizations and
+conferences, for instance, the principal periodical literature and
+also workforce issues. So, organizations here are some
+that you should be familiar with. You could surf them all but
+let me especially recommend, no not just recommend,
+let me tell you to take a good full look at
+the Research Data Alliance site. Explore that. Browse that. RDA has become extremely
+important in data creation and data science in general right now. It's a global organization,
+very large, well funded, very, very productive of developing
+standards and policies and so on. You must take a close look at RDA. It will orient you in a contemporary, social way to the things
+going on data creation. And what follows in the course, we're going to be talking about
+theoretical issues, big ideas and so on. And it's easy to lose track of
+the fact that this is right now a very intense developing area that's
+receiving a lot of attention. And you'll be able to see that if you
+take a good look at the RDA site, so please spend an hour or
+two right there. All right,
+here are some selected conferences. There are quite a few
+relevant conferences. RDA also has a number of conferences and meetings, an enormous number actually. You should look at the proceedings for those conferences and
+the agendas for those meetings. Please take a couple hours doing that. The International Provenance and
+Annotation Workshop Series, IPAW, a sophisticated scientific
+approach to provenance. It'll give you a good sense of
+the technical side of data curation. The International Web Conferences, please if you're not familiar with those,
+please take a look. A lot of what goes in the semantic web world
+is directly related to contemporary approaches to increased
+abstraction in the management of data, which is to say semantic issues and
+ontology issues. I press International Conference
+on Digital Curation, take a look. Look at the proceedings. Look at the agenda. Dublin Core Metadata Initiative,
+absolutely take a look. CODATA, been around for a long time. A very small special conference,
+Balisage on markup, favorite of mine. It's a treat. Please take a look and
+look at the others as well. I did put asterisks by the ones
+that you absolutely should be taking a close look at and,
+again, emphasizing RDA. There are an enormous
+number of specialized data curation-related conferences. This is just a handful. You could find others easily. So there's a recurring
+conference on biodiversity data. There's a very important recurring
+conference on Earth sciences data. And this is not just a conference, it's a group of Earth
+science researchers and support staff that is very productive,
+very influential. Please take a look at ESIP. going to read some papers by
+ESIP practitioners later. eScience conference, JCDL, the digital libraries, we got
+a conference for social science data and DH, a very large growing conference
+on the digital humanities. A lot in there about humanities data. All right. Journals, I just picked a couple here. There are others, but
+these are two that you should surf up, look at the tables of contents. Get a sense of the things being published, both in IJDC, the International Journal
+of Data Creation, and the CODATA Data Science Journal,
+which has been around for quite a while. Not with that name, but, the title varies,
+as librarians are fond of saying. There's also a nice list of more
+specialized data related journals. And there's the link to that. Here are two. They're fairly long but
+pretty interesting, pretty important documents,
+one produced by the NSF. A lot of people were involved along with
+Data Collections Enabling Research and Education in the 21st Century. This is a very good kind of scoping
+document about the issues involved in scientific data curation from
+the perspective of 2005 and I strongly recommend reading that [COUGH]. It's easy to read. And then second,
+Preparing the Workforce for Data Curation, published recently by the National Academies
+is a really fascinating exposition of he kinds of roles and the tasks that we will see before the 21st century data curation workforce. You see I'm varying data curation, digital curation I do actually
+recognize a slight difference. I'll talk about that eventually. Okay a final word about the course. I just want to remind you
+that this is a course for you to, I presume,
+learn a lot but also enjoy. I won't be teaching you techniques. We won't be doing problem sets. We won't be building challenging systems
+and staying out up all night and stuff like that. Not a course in techniques. This is a course that focuses
+on becoming acquainted with the problems of data curation,
+the activities of data curation, the fundamental ideas and principles behind data curation. Particularly, the ideas and principles
+that enable us to be successful. So we want you to be able to
+recognize curatorial problems and have a sense of how to go
+about solving them and managing the challenges
+that we're all going to be facing in the data intensive workplace. So keep your eyes open for the big ideas. Reflect on the material and its connection to your own education and
+work experiences. And be sure to be active in the forums. And with that, the first week
+of videos ends and see you soon.

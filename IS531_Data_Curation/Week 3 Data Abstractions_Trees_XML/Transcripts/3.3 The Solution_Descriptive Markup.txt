@@ -1,0 +1,129 @@
+In this video,
+we take up the solution to the problem that was discussed in the previous video,
+and the solution has two parts. I've been using the word tree and
+tree model to suggest a single, coherent solution to
+a certain kind of data challenge, but in fact, it has two parts. One part is descriptive markup and the other part is the tree
+data structure itself. And this is actually not so different from
+what's going on with the relational model. But it's just easier to see,
+in the case of the tree model, that it's not just the mathematical tree,
+but it's also the conceptual component,
+namely descriptive markup as well. Same goes for the relational model, and
+not just the mathematical relation, but it's the use of attributes, okay. So, we're going to bring
+up the problem again and we're going to then
+talk about the solution that emerged and how it emerged,
+how it works and delivers the goods, and then why it works. And by this time, you probably know that has something to
+do with the abstraction and indirection. So here's the example we
+introduced in the last video. We are imagining a scenario
+where there's an input file which contains
+instructions like you see here, and then some data as well, some text. And this is processed and rendered. And we noted that, well, right off
+the bat, pretty easy to make a mistake. And even if you don't make a mistake,
+it takes a long time. So this is a pretty
+expensive way of proceeding. This is how the Government Printing Office
+in the early 1960s was working, and many, many, many large publishing organizations
+were working this way as well. And they came up with an improvement that addressed the problems
+that I just mentioned. And the improvement, and this is an actual
+improvement that really occurred in the 1960s, the use of a macro to
+abbreviate formatting commands. So here you see the macro format17,
+which is used to define the sequence of formatting commands
+that had been typed into the file. This macro is then used
+before the textual input. In this case, the title The Sick Rose. And some immediate advantages are obvious. The compositor,
+the data entry person, the editor, did not need to type this long
+string of formatting commands every time they wanted this particular
+look, this particular effect. They just needed to type &format17:, and then the formatting commands
+were separately stored and would be referenced at processing. That is, format17 would be
+replaced automatically by these formatting commands. So this one simplified input and
+two reduced errors. It's an interesting thing to
+think about because it addressed some problems, but
+it didn't go as far as it might. So, think about format17
+as an aside that's actually the name of a real macro used by the GPO in the 1960s for this. Since format17 abstracts to
+a typographic appearance, you can use it wherever
+you want that appearance. You can use it to format a title,
+a caption, extract labels, as long as That's those things according to the designer are to
+be formatted with that look. And for a while at the GPO,
+this seemed just fine. And then eventually, it was realized that
+an improvement would be not to focus on the typographic appearance,
+which could be used in many places, but to abstract the component itself. Here we have an example of that. So the macro now is being
+defined to identify the logical component of the text,
+not the intended processing and not the appearance of the document. So we now have a name for
+our textual component title. And we can use that name
+to identify the component, and then we can have a rule, namely
+the sequence of formatting commands, mapped to the name that
+identifies the title. And this kind of semantic
+was a extremely powerful, almost revolutionary change in publishing. The abstraction to the component
+of the text rather than either one simply using
+formatting commands or to using a macro that
+identified an appearance. Now we're identifying
+the things in the document and mapping formatting
+commands to those things. Many advantages ensue. In addition, there was also a recognition
+that we needed to abstract from storage. So I'll use a modern example for this one. Consider the text, An example of
+the Tea rose is, and then a URL. What if the image moves? [LAUGH] Imagine a book or a journal that frequently needed to address an image, bring an image into the rendered text and used a URL like this one. If the image moves to another place or you want to use a different image,
+you need to locate every instance of that URL and replace it with another one. Probably at this point,
+we all know there's a better way. And that better way is,
+once again, to use a name for the image, in this case, &rose42. And then map it to the URL. And now, the author can use &rose42. And even if you need to use a different picture of a rose or
+a picture of a different rose, or you lose the access to
+the picture you were using, you only need to go to the mapping and
+change the mapping, and the actual files that use
+&rose42 don't have to be touched. Very similar to what we
+were doing over here with the abbreviation of formatting commands. If we change the formatting or
+any other kind of processing of titles, we don't have to locate every title and
+make that change. Instead, we just go to the mapping and
+make that change. And of course, the word indirection should
+be surfacing in your minds about now. So, once again,
+what we're doing is abstracting. Abstracting away from storage,
+abstracting away from processing, and then this creates interaction. Again, in explicitly identifying
+recurring logical objects like titles, we abstract away from the varied and
+varying details of processing and storage. And we exploit this
+abstraction with indirection. We map object instances to storage
+locations, we map types of objects to processing rules, and
+this gives us enormous new functionality. Here are some example of components you
+might want to identify in a text, title, author, date, abstract, section,
+subsection and subsubsection, and so on, section title, paragraph,
+extract equation, diagram, footnote. Here are some examples of
+components that are specific to different kinds of texts,
+scientific article, playscripts, poetry,
+wide variety of things. Here is how it looks in XML. This is our poem, and here are some other examples of descriptive markup and creating tree-like structures
+implemented in XML. Some of them are textual, and some are. So I've been using the phrase descriptive
+markup, I want to pause for a moment. Very important concept, and characterize it exactly. Descriptive markup describes the logical components of documents. It does not specify processing. It is declarative or
+descriptive, it identifies. It's not an instruction. And what it's identifying
+is a logical component. Not a graphic feature, but
+a conceptual part of a document. So advantages of descriptive markup
+should be pretty obvious by now, and most of us are already taking
+advantage of these advantages. So for authoring, editing, transcribing,
+obviously composition is simplified. You don't have to remember
+how to make something happen. You don't have to know
+what effect you want. Let me say that again. There are two different
+advantages here in composition. One is you no longer need to know
+exactly how to make something happen. And second, you don't even need to know
+what kind of look you want to get. All you need to know is, this is a title. This is a heading. This is an extract. This is a verse. This is a formula. That's your job as author. And the system then exploits the mappings,
+the indirection, to give you a right effect. And we also say, because I know
+you're thinking about the WYSIWYG text processing we do today,
+that the use of a graphical user interface doesn't really
+change the basic dynamic. When you use styles in
+a graphical interface, you're getting these advantages. When you don't, you aren't. In publishing, formatting can
+be generically specified and globally, generically modified. Apparatus like tables of contents, tables of diagrams and plates,
+indexes and so on, can be automated because the relevant
+components are identified as such, and processing can collect them and
+represent them. Better support for output devices,
+that varies as well. Improvements in portability. And of course, there are a lot of
+opportunities for retrieval and analysis. You can use this descriptive markup and retrieval, creating a database
+out of your document, and you can use it to
+support analysis as well. So how does this help with data curation? Descriptive markup makes documents
+easier to create, easier to maintain, easier to convert to new formats,
+new delivery software, better integrated with
+workflow in your organization, better integrated with
+other applications and tools such as databases,
+word processing templates, indexes and so on,
+more accessible to varied audiences. Maybe you can use descriptive markup,
+for instance, to signal to a blind person that
+something is, let's say a vector. A blind person cannot see the fact
+that a character is bold, even if you're told it's bold. Doesn't allow you to conclude
+reliably that it's a vector. And the fact that it's in italics, this will let you conclude
+reliably that it is a variable. There are lots of reasons for
+something to be in italics. But if the character is marked
+as a variable or marked as a vector, then that's a lot of
+information that can be used for a wide variety of things ranging
+from analysis, filling or input to databases, or
+ensuring that a blind person is able to understand mathematics,
+and so on. Okay, this has been a video on half of the tree model solution,
+the descriptive markup part. Now we'll turn our attention to
+trees themselves in the next video. You've seen them. Now we're going to take a closer look.

@@ -1,0 +1,140 @@
+What's the problem? I would characterize the problem this way. Connecting data to information. It's not connected, and
+it's hard to connect. I'll show you what I mean by that. So, tables and trees abstract
+away from storage and processing. They let us focus on the data itself. And they let us interact with the data
+without going through storage or processing. But just as there are many ways to store
+the data, there are also many different ways to use tables and
+trees to express the same information. And this diversity results
+in problems similar, but different, than the ones
+we saw with tables and trees. So, sort of structurally the same,
+but interestingly different. Okay, I'm going to set up the problem. Imagine you need to manage some data. You might use XML trees, you might use
+relations, or you might use RDF triples. Or you might start with XML trees, and
+then in a few years convert those to relations, and then in a few years
+convert those to RDF triples. But all through these changes,
+your domain of interest, the stuff that you're actually
+concerned with, whether it's people, or houses, or proteins,
+remains pretty much the same. Same kinds of things, same kinds of
+properties, same kinds of relationships. Moreover, even if you're revising
+a schema within a data model, still, as you update schema details and
+structures, that what you're talking about,
+the domain of interest remains the same. Interesting, different
+data model types and different schemas within the same
+model type, but through all this, just one domain of kinds of objects,
+relations, and properties. Here's the problem. Reviewing the last slide, different data
+model types, and different schemas within a data model, but just one domain of kinds
+of objects, relationships, and properties. Now obviously in this situation, our understanding of that
+domain is extremely important. In the single domain, that is
+the single domain we're talking about. That understanding, your understanding
+of the structure of your domain is going to be what guides
+initial schema development. You're thinking about
+the things you're concerned with as you develop a relational schema,
+or a tree schema. In addition,
+that domain is going to be constant across schema variations, and
+revisions within a model type, and it's going to be constant across
+schemas from different model types But how do we articulate our
+understanding of the domain independently of these schemas, for
+things like trees and relations? And how is that understanding
+connected to these logical schemas? As you probably know, too often it's just in the heads of programmers and
+other staff. Maybe some stickies if you're lucky,
+some technical documentation. But for the most part, there's no
+systematic articulation of the kinds of things, relationships and properties,
+in the domain of interest. Or at least there wasn't so
+much in the 60s and 70s. This is, again, a bit of history. Even when you do have prose
+documentation in the domain features. Even when it's carefully written,
+it's still typically true that the documentation rarely provides
+the formal precision, and completeness that's needed
+to be truly useful. Nor does it provide the mathematical
+constructs that we need to do computer processing of that description. So, this is not a good situation,
+what can we do about it? To address the problem, we need an independent neutral way
+to describe the domain of interest. By neutral, I mean not a schema for
+constructing a tree or a schema for
+constructing a relational database, but rather, I used the word schema, a schema that actually describes
+the domain of interest so that we have that to work with
+when we develop schemas for our relational database,
+or an XML database. So this schema cannot be tied
+to any particular logical model, at least not intrinsically. And it can't be tied to any
+implementation variations of different specific schemas
+within a logical model. It has to abstract away from logical
+models and schema variations, just as those logical models themselves
+abstracted away from storage methods. This description should
+be similarly precise, complete, and mathematical. As close as possible to
+the kind of rigor that we now have in the relational model and
+the tree model. And it must be possible to somehow
+connect these descriptions computationally to schemas
+at the logical level. Well maybe this isn't necessary, but
+it certainly would be advantageous. I mean it's a good thing if we have
+a model that human beings can look at, when they develop a relational schema or
+a tree schema. Be great thing to have the model
+of the domain in mind, but even better, to connect it to
+relational entry schemas computationally. Now you might be skeptical as to whether
+or not this is really necessary. I'm sure that many of you have
+developed relational schemas, and probably some of
+you XML document types, without first articulating
+any higher level abstraction. And you might think,
+when we look at a schema, we feel that it is describing the domain. When we look at those column headings. When we look at those element names and
+attribute values. What more could we do? But this feeling that we have,
+we have because of all the information that we bring to
+bear in interpreting that schema. And since we do this so
+naturally and routinely, we tend to forget just how technical and
+thin the formal theory of the relational model, and
+the tree model actually is. So let's look at this issue
+from a different perspective. Okay, what we think we see
+first is what is really there. Take a look at this relation,
+what does it say to you? Probably says something like, there's a
+work titled Moby Dick, published in 1851. And in fact, in a sense,
+that's what we intend to record in this relation, and
+that's what you see, information. Propositions we believe to be true. Here is the thing, given the formalities,
+the formal theory of relational model. This relations explicit semantics
+does not deliver that information. It produces at best this proposition. There's a tuple where the primary
+key WorkID has the value, W5825, and the title attribute has as its value
+the string, M-O-B-Y space D-I-C-K. That's what we get if we follow the strict
+pure theory of the relational model. We don't get information. Yeah, you can absolutely infer from that relation that W58425, a work, is titled Moby Dick was published in 1851. But that's an inference that you make. That's an inference that humans can make. And we can make these inferences
+partly from the fact that in a particular tuple,
+certain attributes have certain values. But the relational model itself
+does not support that inference. And when we make the inference, we use an enormous amount
+of background information. We use the English meanings of
+the column headings and values. We use our knowledge of the domain, we use other common sense,
+beliefs about the world. Maybe we had a chat with
+the database administrator, maybe we found some documentation
+in the desk drawer. All those things are used when
+we stare at this relation. And understand that it's telling us
+something about a particular book, Moby Dick, and when it was published. [COUGH] But
+because of the fact that that is a, you might say informal
+inference that we need human beings to make,
+this means that the meaning, the semantics of the relation is
+inaccessible to computer processing, and in general unreliable to compute. To sort of drive this point home, and
+maybe if you don't remember the details of relational model to indicate why this is a
+problem, we're going to read the note now. In the formal relational model, column headings are not
+attributes in the ordinary sets. Namely they aren't properties or concepts. They are strings, domain names, mapped to sets of allowed values. This is a mapping from
+strings to allowed values. And there is no sets in which
+in peer relational theory, the value pair is asserted of,
+said about, or describes the thing identified by
+the corresponding primary key. That is all added interpretation. It's natural, but it's added. Even it may be intended by
+the database designer, doesn't matter. This is something that you're adding, it's not something with
+semantics of the relation. And in many cases actually,
+that kind of reading, which seems natural, it looks like the value is being, it looks like a column heading is a property,
+and the value is a term, and it's being said of the thing
+referred to by the primary key. In fact, that formula doesn't work for
+certain kinds of relations. Think of, for instance, of tables that
+express many to many relationships. Here's the heart of the problem. We don't have a shared
+framework that explicitly and formally maps the relevant features,
+the domain of interest, to the relation or tree schemas for
+data about those things. If we had such a framework,
+it could be used explicitly and effectively to guide relation and
+tree schema development and revision, and
+to identify common domain features that are reflected in different relation and
+tree schemas. It could help us do those things. This framework would also provide relation
+and tree schemas with a semantics. And as a consequence of getting
+a semantics in your schema, their instances, relations and
+trees themselves, would have meaning and assert propositions From
+a formal point of view. And we'll see why that's important later. But without this,
+we really don't know formally, what a relation or
+an XML document is telling us. Yep, it's in our head. You know. Your friends know. Your colleagues know. I guess, supposedly,
+that's not good enough. First place, you may not know. You may not agree with
+your colleagues about what the relation is saying
+with how the schema works, how the schema represents,
+what the schema is representing. And even if you do, you'll go on and
+work some place else eventually. I hope you've written some documentation. I hope it's relatively
+straightforward to read. Maybe you don't write documentation,
+maybe you don't write it well. And in any case, humans have to read
+that documentation and interpret it. What we really need is something
+that's computationally processable. We need another level of abstraction.

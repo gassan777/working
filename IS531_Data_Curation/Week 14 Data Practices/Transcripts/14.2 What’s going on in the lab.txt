@@ -1,0 +1,147 @@
+Okay, hi everyone. This is the data practices
+week of data curation, video two, what's going on in the lab. And I say lab because this
+course has a particular Interest in scientific data curation. So you could replace lab by workplace or
+field or institution or profession, or company, maybe your home. Anywhere data is created, used, managed. So we're continuing our empirical
+look at data practices. This is going to include
+the empirical extraction of relevant vocabulary and
+identification of processes. It's going to include the empirical
+identification of bad behavior, bad behavior around metadata,
+as in not assigning any, bad behavior on code documentation,
+not doing it. Code testing, not doing it. Workflow documentation, not doing it. And provenance availability and so on. So talk a little bit about what sort
+of incentives might help us to better. And the heart of the problem, which is for
+human beings, and there are some really fundamental psychological obstacles
+to doing better at data curation. And those obstacles are always
+going to be a challenge no matter how sophisticated are tools and
+practices become. There is a lot of reflection analysis and
+data curation, which you might call quasi-empirical. Basically, many of us spent
+decades observing the research the process and
+observing scientific data management. And so
+we can take some reasonable inferences, especially in the context
+of your prior work and publish articles and
+technical documentation. So that's not a rigorously
+designed experiment or a case study, but it's not nothing either. So a great deal of what
+we see in the science of data creation is actually empirical. Even though as it comes out of
+a generalizing of experience, [INAUDIBLE] priori, but it's not the
+result of a rigorous design experiment. So examples include most obviously
+the various lifecycle diagrams. And here are four prominent ones that are suppose to represent in a very, very high level the research process and the aligned data management issues,
+as well. That's the DCC lifecycle in particular. I've conveniently arranged all
+of these on a page for you. They're often presented
+as important fundamental representations of the research
+process with respect to data. I would take that with a grain of salt. They're at very high level. I'm not sure that they give
+us profound insights that guide our interventions or our support. Now Chao, Craign, and Palmer are empirical
+scientists and empirical social scientists and a number of articles have
+studied scientists actually working. But interviews and surveys,
+and a wide variety of other tools in a number
+of research projects done rigorous work that give us
+insights into practices. And here are some examples
+from One project of theirs published a Data Practices and
+Curation Vocabulary. This is typology of
+research data practices. Desiging research, managing data,
+generating and collecting, etcetera. I think it's nice to know that we
+do have empirical confirmation that these are important,
+fundamental activities, dated practices probably suspected that all along,
+but it's good to have that confirmed. But on another level of detail all
+together, the work again by Chao, Craig and Palmer, have I think, and this is a snapshot of
+a much larger picture, has actually drilled down to
+a tremendous granular detail, a picture of data practices and data curation vocabulary
+that in it's detail, I think does provide us with new insights. New understanding, and
+really more information then we would've come up with just by closing your eyes and
+reflecting on what we know. Okay let's move on to the ugly stuff. I know you already know that there's
+a lot of bad behavior in the lab and in the workplace, in the business,
+in the field, in the community. But [LAUGH] there really is a lot of bad
+behavior and it is nice to understand better the varieties of bad behavior and
+quantify it a bit. So this is a sentence from an article in Nature News, I'll read it. As a general rule, researchers do not test
+or document their programs rigorously, and they rarely release their code,
+making it almost impossible to produce and
+verify published by scientific software. Say computer scientist. Scientist often lack these
+communication documentation skills so this is a problem that computer
+scientist are observed presumably better behaved but
+I'm skeptical. [LAUGH] That computer scientist
+are observing with respect to domain scientists. Not documenting their code,
+not testing their code. Now we can easily extend that and
+say not assigning metadata, not documenting workflow, etc., etc. This is just one example
+of how in the workplace, whether it's a business or
+scientific laboratory, in the demands of circumstance,
+the pressures of time, The pressures of lack of resources,
+lack of staffing. They hope that documentation,
+not really necessary and testing's not really necessary and so on, leads to a lot of data
+that's going to be very difficult to reuse,
+to integrate, to trust. And there are the numbers
+right here on the right, survey from as they say, nearly 2,000 researchers
+Metadata failures. So the question is, what metadata do you currently
+use to describe your data if any? This is in a study by Carol Tenapier and
+others. It's not pretty. So the really scary thing is that
+nearly half of the respondents said they don't collect,
+they don't assign metadata. And this is obviously going to downstream create huge problems for finding, for preserving, for integration and so on. Nope they don't add up to 100, that's
+because you can select as many as apply. Data storage, yeah. Here the question is how much of your data
+do you currently store in the following locations. On my personal computer, 65%. On my PI server, 28.4%. On paper in my office, around 14%. This is scary stuff. Again, this was a select all that apply. So why is it so hard to be good? Well, you don't need a behavioral
+economist to tell you why it's so hard to be good. The problem here is that
+we have a hard time giving up short term benefits for
+long term benefits. Even when the long term
+benefits are greater. This has been demonstrated over and over. And come on, we know this about ourselves,
+for the most part. This is difficult,
+giving up short term benefits for long term benefits even when
+the benefits accrue to ourselves. Our future selves, but ourselves. How much harder than, it is when much of the benefit accrues to others,
+not to us at all. And so much of dedication practice
+is a combination of things we do that will make our lives
+easier in the future, not necessarily that day,
+that week, that month, at but some point in the future
+make our lives better. And also make our field or business or community a benefit as well, in the long run. So those benefits, we won't be getting. And yep, sometimes we do, or
+encourage to do things that really aren't going to benefit us that much
+even in the long run, but will benefit our company, our lab,
+our field, our disciplinary community. But this is hard. It's hard for us to give up
+those short term benefits for long term benefits, and
+it's really hard for us to give up benefits to ourselves for
+benefits to others. And that's why we don't document code or
+test code or add data to data sets use standards back up our files,
+void transformations on the command line. Please don't do that.
+And so on and on and on and on. And often of course,
+the benefits seem indirect and elusive. We can't even be sure that we can see what
+the benefit's going to be in the future. And if we're motivated to not take
+the time and do what we should do, we're going to convince ourselves
+that it's not necessary. We're going to say well there's
+no time to document this, but there's no need either because
+how it works is self evident. Or there's no need to test this,
+we were careful. There's no need to back up and
+earlier version, this one is better. And I don't think we used that earlier
+version for anything important. Or did we?
+You can convince yourself that you don't have to take the extra time,
+which can be irritating. And it's frequently doing something
+that's not in your normal, you know,
+integrated naturally into your daily work. It's easy to convince
+yourself that you don't need to do it when you do, it's human. Okay, so what can we do about this? So here's some incentives
+that have been suggested and presumably these incentives
+work by communicating these possible benefits
+to the team members, lab members, community field participants. So one is just reiterating
+that there are benefits to the science when you
+do good scientific data management, good data creation practices. Your analysis becomes more reliable. And it can be trusted. It's more likely to be accurate. And this states over in infrastructure
+which we'll get to in a minute but you sort of effective, efficient staple. Process teamwork price lab,
+whatever it is. When you have good practices,
+your results will be better. Credit, so there are a number of good data practices that result in better credit for the data producer and the analyst as well. So in some cases just making
+sure that the team or person or
+company lab that produced the data. It's easy to see that,
+that the right metadata is there. And that metadata can be used to searches,
+it can be converted to citations. And we have evidence, by the way,
+that sharing data increases citations. And if you're familiar
+with the academic world, you know that citations
+are profoundly important to the financing of research and
+to tenure and promotion. More data, more shared data,
+more citations. And talk about sharing
+data in the next video. So better infrastructure,
+this is important because it means better quality work,
+scientific value, again. But it also means that
+you could accomplish the work more efficiently, cost less, less issues with staffing,
+with efficiency, with keeping an ongoing operation ongoing. And finally, if there's a lot
+of interest in integrating civic minded data stewardship,
+in to tenure promotion assessment. If that can be done,
+then [LAUGH] that's quite a stick. Any of these things going to work? I don't know, it's hard. It's one thing to develop better
+tools to identify better practices, but to get people, human beings,
+to do what they should, What they need to do,
+even when the benefits, for instance, in interoperability,
+are going to be enormous within a year, A year can seem like a long
+ways away to a human being. And then,
+when you write the page that is better for the world, good luck with that. Okay, that's the end of this second video. And data practices video you just listened
+to was what's going on in the lab, what's going on in the lab,
+a lot of stuff that shouldn't be going on, and there's a lot that should
+be going on that isn't, and trying to change how people
+behave when it benefits them. It's hard. See you soon.

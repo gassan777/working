@@ -1,0 +1,116 @@
+This is the second of our
+three data models weeks. And this week is on the tree model. Last week was on the relational model, this week is on the tree model and
+it's significance for the various activities
+involved in data curation. I always like to show this diagram. It's a map of our journey. Once again, I draw you attention
+to the three levels of extraction. Physical, Logical, and Conceptual. Last week we talked about
+the Relational model and how it addressed problems
+in data processing 1960s. This week we're going to talk
+about the Tree model and how it addressed similar problems, although typically with a different
+kind of data, also that emerged in data processing in the 1960s,
+data processing and publishing, actually. Okay, let's get started. A few words about why text is
+important in data curation. Some of examples of data
+intensive documents. And then we'll talk about the promised
+functionality of digital documents, functionality that has turned
+to be hard to realize. Hard realize for
+the same reason that the promise of computing technology was hard
+to realize in the '50s and '60s. So what's so important about documents? So, the document is the natural
+unit of textual information. That's where you find text organized
+into some sort of structured unity. Why are documents important? Three reasons. First, that's where the information is. If you exclude censored data,
+astronomy data, at least arguably much more
+information exists in documents and unstructured natural language
+text than exists in databases. There's a lot of information in documents,
+and if we don't have powerful
+effective ways of getting at it, we're not going to be able to do the kinds
+of exciting things we want to do. So that's where the information is. Second, that's where the action is. One of the striking things about
+documents is that they can be, and I think typically are,
+instruments of action. There is a sense in which information
+only gets traction on the social world, on our world,
+when it's communicated in documents. And those documents do things. They say things like you're hired, you're
+fired, we agree that's a contract you own. You owe. That's a loan. They have that kind of importance in
+the dynamics of our social world. Databases typically only have
+an effect in our social world when a document is generated and
+then read by someone. Or, yeah, I know some processing agent. Data can of course be transferred
+into a machine directly, and a machine does things that we want or
+don't want. And then, finally, and more generally,
+in the long history of the human race, documents have played a fundamental
+role in every aspect of our lives. We can not really imagine our social
+lives, commercial, scientific, cultural, everyday without the medium
+of document-based communication. It's a fundamental cross-cutting
+feature of our lives. So Relational databases we saw last week, are a natural fit for
+certain kinds of data. I mean, it's so natural that you've got to wonder why it took until 1970 before someone made the case
+as vividly as Codd did. The kind of data that Relational
+databases are optimized for is data that has this form. Something has a value for an attribute. Think for a moment about a relation
+picture in your mind, a table. Rows and columns. It's typically saying something, referred to by the primary key,
+something has a value for an attribute, for a predicate property. When data has that form,
+a table it is a natural model for storing that kind of information, for conceptualizing that kind of information. But as we just noted,
+most of the information in the world is contained not databases, but
+in the text of documents. And this is a problem. Because relations do not seem an obvious fit for
+modeling the text of documents. Two reasons for that. First, if in the text of a document, imagine pick one up near you and
+look at it. It's not typically not obvious,
+it may require a lot of human effort to see what is
+being said about what. And if you can't easily see
+what is being said about what, it's going to be hard
+to use the Relational model to represent that information. And there's another problem. Not only do we sometimes want to
+represent the information in a document, but the document's text itself,
+the text itself, columns, paragraphs, titles, formulas, extracts, footnotes, etc., those things, those components,
+those structured components, that often needs to be organized and
+managed. Obviously in publishing applications,
+text processing applications. Rather than going after the data
+that's being asserted by the text. And if you look at a document,
+hold it at arm's length and squint your eyes, what you see does
+not appear to be tabular in nature. Now, I'm not saying you can't shoe-horn
+it into the Relational model. But it's not easy, it's not natural, and
+arguably, it's not efficient or effective. The structure of textual
+communication just doesn't have that natural tabular format. I'll show you examples
+that are clear examples of complicated interesting
+documents in our lives, and perhaps the semantics of
+the sentences do say that something has a value for
+some property or attribute. But it would be hard to get at that. At the same time, the structure of
+the documents we are about to see needs to be represented somehow if you
+are going to manage these documents. For instance create them,
+communicate them, publish them, transform them, edit them and so on. Here we go. So typical documents that you find. They clearly have structure,
+there is clearly information there. But getting that structure
+into a relation on the first example on the left,
+it's going to be pretty hard. Yeah, date, subject, to, from. But what are we going to do with
+the sentences, paragraphs, words? On the right, a little more promising
+with respect to perhaps being able to get into relation Other examples. Again, you can see some information there. You want to be able to capture it somehow. And you want to be able to capture
+it in a reasonable amount of time with a reasonable amount of effort. And you want to be able to communicate it. You want to be able to transform it,
+process it. It's not going to be easy. And it's certainly going to
+be hard to do with relations. Here's some more. Here's some more examples. These include scientific articles and
+technical documentation, both of which have an enormous
+amount of valuable information, some of which we might be able to
+get into this has x value for that. But much of it we're not going to be able
+to easily get it into that form, and yet we're going to want to get some kind of
+purchase on the structure of this text. So it doesn't look like it's going to
+be easy to use the Relational model to get at the structure of text, to get
+at the kind of information that we have in text that we need to get at in order to
+do the things that we want to do with it. And what do we want to do with it? Well, the exciting thing about
+the emergence of digital text and digital computing in the '60s and
+'70s is that it seemed to promise, really, a wonderful new world
+of functionality for a text. So, and there was,
+you may know these visionary guys who told us that the world was
+changing rapidly around us, and the new intellectual tools,
+the new tools for communication, digital data,
+digital functionality, was going to give us,
+just going to augment our intellect, as Doug Engelbart,
+inventor of the mouse said. If you aren't familiar with Paul Otlet,
+Vannevar Bush, Douglas Engelbart, Ted Nelson,
+I commend them to your attention. Ted Nelson invented the word hypertext. Doug Engelbart invented the mouse. Vannevar Bush wrote early articles
+on hypertext in the 1950s. Paul Otlet was even earlier
+who had visionary ideas about how you'd be able to
+communicate with new textual tools. So we've been looking forward to,
+for instance, having computationally available
+data items that are accessible with discipline-specific tools when we're
+reading so that we can recognize and manipulate chemical formulae,
+proteins equations, and so on. Advanced navigation and
+viewing optimized for, let's say, a particular discipline or
+a particular interests. Typed hypertext linking with
+links as first class objects so that you have databases of links. You don't have the hard
+code them into documents. Data-driven interactive diagrams and
+graphics, computable equations, automatic inferencing,
+thoroughgoing interoperability. These are all things
+that have been promised, just like jetpacks for the last,
+I don't know, 100 years. How we doing? Yeah, we're making some progress. We go the web, but
+that's been hard to get as far as we are. And we really haven't realized the kind of functionality
+described in the previous slide. So, what are the problems, then, that are obstacles in realizing the full potential of digital text in today, when we have not only in our
+responsive digital text, but terrific digital tools? And that, the problem, is the next video.

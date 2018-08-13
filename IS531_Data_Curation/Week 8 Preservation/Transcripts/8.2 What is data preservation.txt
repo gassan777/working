@@ -1,0 +1,168 @@
+Okay, in this video we ask the question
+what is data preservation? And we'll attempt to give a precise, accurate, rigorous answer. In the case of data preservation that's
+a lot harder than you might think. I also believe it's a lot more
+important than you might think. This is not just an idle
+philosophical exercise. The problem is that we don't have a good definition of data preservation and
+data use, and that is in fact problematic. So looking at the content slide right now,
+we're going to start by noticing the common definitions
+are misleading at best. And the problem behind the common
+definitions is that it's not clear what, at least with respect to
+digital data preservation, what exactly is being preserved? What ontologically speaking,
+is being preserved? If we were to do a conceptual
+model of data preservation. We're not quite sure what entity type is going to be the entity type for
+the thing that is preserved. And in fact, we have a radical answer
+to the question what is preserved and that answer is nothing is preserved. We will give you a definition, I don't want to spoil the drama
+in suspense but it's coming. And I'll say a few words about
+why this definition is important. First two examples of definitions
+of deterioration that are typical, these are the kind of
+definitions you're apt to see. The first is from the Society
+from American Archivists and particularly interesting for
+the story that's unfolding in this video. The professional discipline, this is
+the definition of data preservation. The professional discipline of protecting
+materials by minimizing chemical and physical deterioration and
+damage to minimize the loss of information and
+extend the life of cultural property. Notice the focus here
+on physical materials. When they say chemical,
+physical deterioration damage, they're talking about physical materials. When you think about preservation
+of digital materials, you're thinking about maintaining
+the integrity of the object, keeping it from falling apart,
+keeping it from oxidizing and so on. The US Library of Congress realizes
+that a traditional definition of preservation doesn't really work, but
+they don't really improve on it much. This is the one you saw in the last video. The active management of digital content
+over time to ensure ongoing access. At one level this sounds okay, but at another level,
+what does access mean here? And for that matter,
+what does management of content mean? And finally, perhaps most importantly,
+if somewhat obscurely, what does it mean to ensure access? Think they're on the right track, but they really haven't gotten
+very far down that track. I like to start by reminding
+you of our data ontology. Not for nothing did we work so
+hard on developing this data ontology. Here it is, three entity types. Propositional content, symbol structure
+and patterned matter and energy. And relationships that are maintained by contingent social circumstances. Is expressed by,
+is encoded by, is inscribed in. Now looking at this data ontology, looking at this diagram with its three
+entity types, ask yourself this. In a successful preservation scenario, that is when we have
+succeeded in preserving data, what exactly is preserved? What is preserved? I know we say, we successfully preserved
+this dataset or something like that. But really what is preserved? And your answer should be
+chosen from our diagram. If this diagram is the right diagram,
+the answer to what exactly is preserved should be chosen from one
+of the three rectangles. It's either something,
+which is propositional content, symbol structure Patterned matter and
+energy. Which entity type is the entity type for
+the thing that is preserved? That's the question. Have you marked your ballots? Okay, let's try a lower, lower to the earth here, entity type. Patterned matter and energy. When we're asking whether or
+not that's the right entity type, what we're really asking is, is it
+some physical thing that is preserved? Maybe it is, maybe the thing that's
+preserved is in the patterned matter and energy empty type. Of course, what's in that entity
+type are things like disks, actual disks, thumb drives, hard drives,
+RAID arrays, things like that. Now sure, we absolutely need
+to take care of these things. In any preservation scenario, we cannot
+be careless of these physical objects. But the question is not whether or
+not we need to take care of these physical things in a scenario of
+data preservation, but whether or not these physical things
+are the things that are preserved. And if you think about it,
+you see that well, no. [LAUGH] It can't be the physical thing. For one thing. Preservation of data can be
+successful even as the individual physical media disappear Or
+become inoperable. So clearly, the continuing existence and
+integrity of some physical object is not necessary for
+preservation. Because you could succeed at preservation
+even though as time goes by, there's no particular physical thing that endured throughout that
+entire period of time. You probably moved your data from floppy disks to 3.5 inch disks to external drives to thumb drives to raid arrays. And as you did this,
+the disk that you were using eventually, well who knows what? You lost them, you sold them, they threw them out in the garbage,
+but they were not preserved. So the preservation of a physical
+thing can't be what is preserved. It can't be all there is
+to data preservation, because it's not even necessary for
+data preservation. In fact as we'll see later, one of the strategies
+in data preservation is to discard physical media in migration. That's one way you can actually
+accomplish preservation. Let's move on,
+How about propositional content? We jumped up now to the top entity type, The northwest corner there. So maybe what's preserved
+are things that belong to the propositional content entity type. Now what would that be? That would be things like observations,
+claims, assertions, facts, stuff like that. But here's the thing,
+did those things really need preservation? Consider this assertion, 100,000
+people live in zip code area 61820. Now that presumably is a proposition or
+observation claim, assertion, fact, whatever you want to call it. It's the kind of thing that is in
+propositional content rectangle. It's entity type is propositional content, But does it need preservation? Does that claim? I'm not talking about the sentence, I'm not talking about toner,
+if you've printed this out. I'm talking about the assertion,
+which is an assertion that you're thinking about and I'm thinking about and
+tomorrow somebody else can think about it. It can be thought about on multiple
+continents at the same time. It's not a thing in the physical world. It can't crumble, it can't oxidize. It can't dissolve, mold, it doesn't require our intervention to persist. So some things just cannot decay. And if you can't decay, you can't be the object of preservation in the original archival
+sense of preservation. So we're not preserving
+propositional content and data preservation, because it will
+persist even without any help from us. And now, we're down to, One more entity type,
+and it's the last one. This is the symbol structure entity type. If anything's being preserved, it had
+better be this because nothing left. So maybe it is, maybe what is preserved,
+what we preserve and we preserve data. We are preserving things of
+the symbol structure entity type. It has some plausibility on the surface. The problem is symbol structures like propositions are not physical objects. They have physical abstatiations,
+but they are not physical objects. So they also don't need preservation. So here's an example,
+this is just a kind of a triple. Simply we're saying that as we did before,
+that it's a certain ZIP code. It's a certain population and
+we're saying it using an imagined language for
+triples, kind of like in three. So this symbol structure is a repeatable
+sequence of tokens for characters. And what I mean by repeatable
+is that it is an abstract thing that can be
+articulated multiple times. It's not something that comes
+into existence out of atoms and has a causal story involving matter and
+energy and then dissipates. It's instantiations in
+the physical world have those properties, but
+this is simply a sequence. In this case, a sequence of characters,
+not a thing in the physical world. So it too, cannot oxidize, fall apart, dissolve, get moldy and so on. And so once again, symbol structures
+also do not need our help surviving the, as I say here the vicissitudes of nature. In addition, it is the same with disks and other pattern energy media. We often support preservation of data by
+deliberately changing simple structures. For instances,
+replacing one obsolete language or format with a different or
+newer language or format. So far from it being the format, that is the thing preserved that persists throughout the entire
+preservation scenario. It need not persist, and often, preservation strategy is
+one that discards an old symbol structure in favor of
+a newer symbol structure. We're out of entity types,
+[LAUGH] you may wonder wow, maybe there's something
+wrong with our ontology. Maybe this is a sign that we've left
+something out, I don't think so. So what is preserved? We've just observed that it can't be
+any of the things in our data ontology. I would say the answer is,
+nothing is preserved. The rhetoric of preservation
+is very misleading. That is the natural language
+sentences about preservation, suggest that something is
+preserved in preservation, but in fact, nothing is preserved. Or, a little more charitably,
+a little less paradoxically, no thing is preserved in preservation. Something else is going on. What is it? I'm going to continue to
+drive the point home for just one more slide, [LAUGH]
+And then we'll move to the positive
+part of defining data preservation. So again, data preservation
+is not about preserving data. I know that sounds paradoxical. Data preservation is not
+about preserving data. That's what we've seen. It's true that preserving physical
+objects in the traditional sense of preservation is
+part of data preservation. But that is preserving a disk for
+some period of time. But it's only part. So preservation of physical media must
+occur for some intervals of time, yeah. But data preservation, as we've noted, can also take place even in
+particular media decay and in fact often we deliberately discard media as
+part of a data preservation strategy. So, maintaining the integrity
+of physical media for some interval can be necessary. But it's not necessary to
+preserve it throughout the entire data preservation scenarios. In fact we may have a strategy for preservation that requires discarding
+it in favor of newer media. Similarly, preserving propositions and symbol structures are also
+not necessary for data preservation. In this case, they're not part
+preservation in the traditional sense of propositions and symbol structures,
+that is, assertions and coding. Not part of data preservation at all,
+at all. [LAUGH] And that's because they cannot
+decay, they are not physical objects. In addition,
+their continued existence which they have, because they're not physical objects,
+doesn't ensure preservation. So the fact that propositions continue
+to exist, the symbol structures continue to exist, that doesn't mean
+that any preservation has happened. So not only do they not need
+preservation intervention to continue to exist, but
+even when they continue to exist as they do that does
+not ensure preservation. [COUGH] I can't resist one
+more paradoxical claim. Preservation is not about preservation. Data preservation is not about
+preserving the existence of objects. And here's the pasta part you've
+been waiting for I'm sure, for the last three or four slides. Well then, what is it about? It's about communication with the future. And I think the best simple
+definition of preservation is ensuring reliable
+communication with the future. That's what preservation is about. Ensuring reliable
+communication with the future. [BLANK AUDIO]. Now in outline, and more exactly, or maybe I should say more exactly,
+but in outline. [LAUGH] What this means is, preservation actions
+are intended to ensure that future researchers or
+other users of data, one, will come into possession of
+physical media and encodings. Two, from which they will correctly recognize the originally
+intended propositional content. Three, and
+from which they will be justified in believing that this
+propositional content is in fact the intended
+propositional content. And that is a conceptually sound definition of what we really mean when we say preservation. And I know it sounds like I'm
+talking about people here, but that's just kind of
+a device you can make a similar characterization that
+focuses on software agents, as indicated here in the footnote. But the key thing, and this is important, is that what we're doing when we do data preservation, is make it possible for someone in the future to understand what we intend to communicate. And to be confident, That they're justified in believing that that is what we intended to communicate. That's data curation, and
+when you understand it for what it really is,
+you have a much better grasp of what kinds of interventions
+are necessary to make it happen. That is what kinds of
+interventions are necessary in order to ensure reliable
+communication with the future.

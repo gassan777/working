@@ -1,0 +1,129 @@
+Okay, hi, everyone. This video is on Metadata Schemas. We're going to talk about metadata
+schemas, what they are, as always, starting with definitions,
+then a little bit about what I call vocabulary independence,
+then syntax/serialization independence, mixing and matching metadata schemas,
+and examples of schemas. Okay, a reasonably clear,
+general, very general, actually, characterization of metadata
+schema is a set of data elements, with specified meanings for supporting metadata statements
+in particular contexts. Metadata schemas are sometimes
+vocabulary independent And often,
+syntax serialization independent. What do we mean by that? In short, we mean that metadata
+schemas are sometimes purely conceptual Or, as I say here, pure metadata schemas are conceptual,
+it means the same thing, I think. So one aspect of being conceptual is
+being independent of any particular terminology for
+the concepts that are part of the schema. So metadata elements in
+a metadata schema can be purely conceptual, in that,
+they are concepts but without a controlled vocabulary for
+naming those concepts or applying those concepts, just concepts. So there's some advantages here,
+doing it this way, because in allowing different
+vocabulary terms for the same concept, a pure conceptual
+schema can more gracefully support different languages,
+which can be very important. Nobody who speaks one language, really, is all that excited about using
+metadata in another language. So purely conceptual metadata schemas
+that are vocabulary independent, more gracefully support different
+languages, and they also avoid or sometimes take advantage of
+common meanings for common words. It's often the case that when you attempt
+to provide a control vocabulary for a set of concepts,
+you'll make some unfortunate selections. You'll use words that mean
+something similar to but not quite identical with the concept
+in question in some natural language. Nevertheless, you have these advantages,
+but the advantage, which is a level of indirection, we've
+seen before, indirection, most important. Ten years from now, you don't remember
+much about this course, indirection. So there are manages to this
+indirection between concept and term, but in real life, in the workplace, they are often outweighed
+by the advantages of successfully promoting
+a controlled term vocabulary. If you don't provide a term vocabulary
+with your pure conceptual schema, then you're going to need
+a term vocabulary, and different communities
+are going to develop different vocabularies because you
+haven't provided one. So even though there
+are advantages to the indirection, in this case,
+many metadata schemas do specify a controlled vocabulary,
+as well as conceptual elements. And users who wish to use
+different vocabulary for those concepts can do so and simply provide a mapping
+to the conceptual elements. So you can use your own vocabulary,
+and, often, how to do these things
+will be specified as well. Another way that pure metadata
+schemas are conceptual is that they're often syntax, or
+serialization, independent. That is, they don't say how, precisely, to use the schema to make a statement about data or a data set. So and, in fact, here,
+there are very clear, important advantages to focusing
+on the conceptual level and not on the levels of syntax and encoding. So most metadata schemas, I think, themselves do not specify any particular syntax for
+applying specified concepts. They may be associated with
+specifications of that sort, but there's a kind of division between
+the conceptual specification and specifications for
+application serialization. And the reason is pretty obvious, I think. Given the incredible variety of contexts,
+different data models, different file formats, etc.,
+in which metadata is going to be applied, in real life, allowing metadata
+statements to be implemented in different serialization syntax is,
+in fact, profoundly useful and, indeed, it's essential for
+wide adoption. You really can't expect in the incredible variety of situations
+that we're all working in, a wide range of file formats and tools and so on,
+you can't expect everybody to use the same serialization syntaxes. It is, however, sometimes the case
+that recommended serialization syntaxes will be developed and
+standardized independently of the metadata schema. So anticipating the most common
+applications of metadata. Serializations syntaxes for
+actually making metadata statements with respect to a particular pure
+metadata schema would be developed. Here's a really simple but, ultimately, influential metadata schema, Dublin Core. Originally, the idea was that
+we needed a really simple and web-friendly approach to attaching
+metadata to information objects. And 15 elements, and you see them right
+there, were defined very briefly. And some of them have recommended
+vocabularies of values for them as well. And these, at least originally, these names that you see here
+are not a controlled vocabulary, these are simply the names used to
+indicate the concept in this schema. So on the far left here,
+you see Dublin Core metadata element set applied to our poem earlier,
+A Sick Rose. William Blake's the creator. The title's, A Sick Rose. The date is 1794. And so the idea here is what
+you're looking at is just the conceptual representation. You have to write it somehow, but
+it's a conceptual representation of information about the information object,
+the poem. On the right, you see this
+information serialized as RDF/XML. And then below that, you see it serialized
+with the HTML meta element type, which you probably used, most of you. You could also serialize this as, say, some comma delimited format or N3 or Turtle or
+a wide variety of serializations. And RDF/XML and HTML serializations are, in fact, articulated in documents
+that are associated with a Dublin Core community, but
+they are, strictly speaking, part of the schema. They are, strictly speaking,
+part of the metadata schema for Dublin Core metadata elements
+because Dublin Core is pretty committed to pure schemas that have
+these levels of indirection and getting advantage from that. So pure schema versus serialization. Okay, a few words about combining,
+specializing, and extending metadata schemas. This is something that I'm sure many of
+you have been doing, and data curation, we do this day in, day out, why? Because we want to use standard schemas,
+but often standard schemas
+don't really do the job. So we may combine a couple
+different schemas. Or we may take a schema and
+specialize the concepts, that is, articulate more specific,
+granular versions of the metadata concepts that
+applies more precisely and with more information to
+the objects that we're describing. Or sometimes we extend them, just by
+adding brand new attributes and values. So some examples, again, from Dublin Core,
+which is simple but makes the point. So you can imagine that a particular
+application of Dublin Core, that is, a particular extension of
+Dublin Core may limit the values of the dc:format element to some
+particular controlled vocabulary. In this case, and
+this is a common one, to MIME types. So you use the Dublin Core
+format element and you specify the values must be MIME types. Or something similar, but different, you can specify refinements for
+an attribute like dc:coverage. And, in this case,
+the refinements indicated are spacial, so spacial coverage, and
+temporal, temporal coverage. And you can find these examples, this is
+actually from the DCMI documentation. Now the metadata community,
+or communities, plural, are fairly sophisticated,
+and there's a lot of effort underway to standardize how combining,
+specializing and extending happens. So we want to ensure that the processing
+of metadata, even after combining, specializing and extending,
+doesn't give any unexpected results. So a lot of attention
+goes into techniques for ensuring that, even if you add
+something to a metadata schema or specialize an attribute processing
+by conformant software, will, nevertheless,
+be fairly graceful even when encountering metadata attributes, which it's never seen before
+because you've added them. Okay, so that's a lot of
+theoretical context for metadata. What you should do now is take
+a look at some metadata schemas, and we're pointing to, here, three lists of a metadata schemas
+that you should serve up. The first two are discipline specific, one on biodiversity, there're
+quite a number of metadata schemas in a biodiversity community,
+and then the second is for libraries and museums there, again,
+quite a number of metadata schemas. And take a look, also,
+at the Wikipedia article on metadata standards, in particular, browse the list of
+metadata standards there. Of course, there are many metadata schemas
+that are developed by small groups, by small labs, research groups,
+businesses, other organizations. Sometimes they're kept secret and private. Sometimes an industry will endorse
+an industry developed metadata scheme. Usually, these are specializations of
+existing schemas, and they're often include a specified vocabulary because
+want to get on with their jobs, right? So control vocabulary is
+usually specified and so are serialization syntaxes as well. And that's it for this video. See you in the next video.

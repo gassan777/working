@@ -1,0 +1,123 @@
+Hi, everyone, welcome back,
+this is What Is Data? Yeah, you might think, shouldn't we
+have started with that question? As I said earlier,
+the answer's actually no. It's an abstract question,
+not a good idea to start with. As I've convinced you, now is the time to dig into these intricate, somewhat
+abstract, but very important issues. So we are now positioned to answer
+the question, what is data? I'm going to give an answer based
+on the ontology we just developed. And we note in particular that
+data is a role, not a type. And so it's relative, and
+it's relative actually in two senses. First, being a role, not a type,
+nothing is data intrinsically, only with respect to use. Because data is not just a role,
+it is a social role. So use is critical here. Second, the same propositions
+can be data in one circumstance, but a claim supported by data in another. That is, data in one circumstance and
+not data in another, Characteristic of being a role. And finally,
+need at least one slogan per video, right? It is routinely the case in science, and it is importantly,
+routinely the case in science, that often one person's data is
+another person's theory. You recall the picture? This is what we'll be alluding to when
+we give a short answer to the question, what is data? You might take a moment,
+stare at this model for a moment and ask yourself, where's the data? [LAUGH] So here we go, our answer to
+the next question, what is data? Data are,
+I'll switch to the plural verbs here, data are propositions,
+Asserted as evidence. We sometimes say systematically
+asserted as evidence. If you want to distinguish casual
+argumentation from argumentation supported by a certain
+quantity of organized data. I'm not sure that systematically is
+really absolutely essential here. Data are propositions
+asserted as evidence. There you have it, data
+are propositions asserted as evidence. Let's remind ourselves what
+we may mean by propositions. Very roughly, two declarative sentences that say the
+same thing express the same proposition. Even if they're different sentences, even if they're in different languages,
+that's the basic idea. We could also say those things which
+are true or false, those are propositions. Those things that can be believed or
+doubted, those are propositions. Okay, so much for propositions,
+what about assertion? So data are propositions
+asserted as evidence. What can we say about assertion? The important thing here is that to be
+asserted, propositions must be expressed in a language, encoded in symbols,
+and inscribed in material form. And, of course, that encoding in
+symbols might be an adapted cascade. And when we say inscribed
+in material form, we mean actual patterned matter and
+energy. Yeah, the thing sitting right there
+on your desktop, or the ink on paper. So to be asserted, propositions must be,
+one, expressed in a language. Two, encoded in symbols, and,
+three, inscribed in material stuff. And that makes it clear, I think vivid, how human intentionality is
+fundamental to the very idea of data. Expressing, encoding, and inscribing are
+not things that simply happen in nature. They require conventions that are created
+and maintained by communities of persons. They also require particular beliefs,
+intentions, and practices based on those conventions. You don't have that, nothing is expressed. And nothing is encoded,
+and nothing is inscribed. Okay, so much for propositions, so
+much for assertion, now evidence. What is it exactly for
+propositions to be evidence for something? This is a requirement,
+now, for being data. But what could we say to define it,
+or clarify what we mean? You know what, I'm not going to do it. It's kind of a philosophical,
+epistemological question. On this one, I'm just going to say,
+we know it when we see it, right? When we're arguing in the pub,
+we have a sense of what it means for something to be offered as evidence for
+something. We know when someone is trying
+to back up their claim. So that's it for evidence. Okay, now let's ask whether the property
+of being data is a type or a role. We're really asking,
+is data a kind of thing? Or is it a role that
+things of certain kinds have in particular circumstances? So from our definition,
+we're committed to saying that all data consists of propositions. But our definition also entails
+that not all propositions are data. Only propositions that
+are asserted are data. And not even all asserted
+propositions are data. Only those intended to serve as evidence. Reflecting on that,
+we pretty quickly come to the conclusion that data is not
+a type of thing, it is a role. So just as persons are students
+when they're enrolled in a school, propositions are data when
+asserted as evidence. And being asserted as evidence
+is a contingent circumstance. It's actually a contingent
+social circumstance. It requires asserters, [LAUGH] asserters. No assertion without asserters,
+so that means persons. So that means not just a contingent
+circumstance being asserted as evidence, something which may or may not be
+the case, it's a social circumstance. And so we can say,
+data is a role that propositions have in certain contingent
+social circumstances. All right,
+now let's turn our attention for a moment away from data to the thing
+data is asserted as evidence for. And ask ourselves, what is that,
+and what kind of thing is that? So we think of data as being
+asserted as evidence for things like theories, hypotheses,
+conjectures, claims, assertions. It's really quite a list,
+and perhaps most vividly in my list here,
+you see that theories, big, complicated explanatory assertions,
+might be quite simple. We're going to ignore this
+difference in complexity and explanatory nature and
+call all of these things claims. So whether evidence is being asserted in support of the theory
+of general relativity. Or whether it's being asserted in support
+of identifying the culprit in a burglary. Doesn't matter, for us now,
+all of those things are claims. So data is asserted as evidence for
+claims. Now, what kind of thing is a claim? A little reflection, I think,
+will suggest that both data and claims are ontologically
+the same sort of thing, propositions in a role. So data propositions, claims propositions. Different roles, as we're going to see. But the kind of thing in
+play here is a proposition. So data are propositions in the role
+of being asserted as evidence. Claims are propositions in the role of
+being asserted as supported by evidence. A mouthful, but you get the point. So data and claims, both are roles. What makes, in some scenario, propositions
+data and, in another, propositions claims? Only the intentions and
+actions of a particular person or persons. Nothing intrinsic in the world,
+other than those social circumstances. Nothing about a proposition
+that makes it evidence. Nothing about a proposition
+that makes it a claim. It simply depends upon what's intended,
+On the structure of assertion. Again, nothing intrinsic to
+data that makes data data. Nothing intrinsic to claims
+that makes claims claims. It's the structure of the assertion. So being data is a role that some
+propositions have in certain contingent social circumstances,
+and the same for claims. There's nothing about any proposition
+that prevents it from being evidence or prevents it from being a claim,
+Intrinsically. And this allows us to see how data is, in
+an important additional sense, relative. Again, we've seen that whether
+propositions are data or claims depends upon what is intended. Depends on, you might say,
+the structure of assertion. And that propositions can therefore
+be data in one circumstance, claims in another. Science as a whole
+actually depends on this, science as a large social enterprise. For instance, for a climate scientist, growth rings on tree rounds
+might be evidence for theories about temperature changes. But for an evolutionary ecologist, theories about temperature changes
+may in turn be evidence for theories about competitive advantages. And in science and
+the larger social enterprise sense. In which there's a lot of
+interdisciplinarity and collaboration, and we're addressing real-world problems. The relativity of data and
+claim is, of course, what to some extent binds
+everything together. And allows different communities
+to support each other and to draw support from each other. So in a slogan, one person's
+data is another person's theory. Apparently, I like ending
+my videos with a slogan. And this slogan,
+one I'm especially fond of, completes the week of videos,
+as well as the video. So with one person's data is another
+person's theory, see you next time.

@@ -1,0 +1,145 @@
+Okay, welcome back everyone. This is An Ontology for Data Concepts. You're probably thinking finally,
+[LAUGH] right? And finally indeed, so
+the preliminaries are over. They were necessary,
+they're behind this now. We are going to present our
+ontology of data concepts, or if you prefer, conceptual model for
+data concepts. This ontology, or model,
+generalizes and refactors FRBR. We're inspired by FRBR, but
+we ran into some problems and we're going to accommodate those problems. There was a collapsing
+middle entity types problem, and there was the multiplying
+middle entity types problem. We're going to deal with both of those
+using the insights from the last video. This will also be an opportunity for
+us to better see the fundamental role
+that standards have in data representation and
+human intentionality more generally. You recall why the middle two
+entity types seemed to collapse. Both of them seemed to be the same thing, simple structures suggesting
+three rectangles for them. But paradoxically, we had another
+problem which seemed to indicate that the two middle entity types were
+multiplying into an indefinite number. This was especially vivid in looking at
+how data's represented in digital systems. You'll also recall our recursive
+definition where we distinguish between types and roles, and see symbol structures as a type, and sentences and encodings as a role. That symbol structures have in
+certain contingent circumstances, and the encoding role gets defined. Okay, that was a quick
+review of the key driving problems and
+insights behind this refactoring. Here we go, an ontology for data. I want to dim the lights, full drum roll. Have your full attention. And here it is. So, as you can see, as you suspected,
+as I think I've said [LAUGH], we've reduced the four
+entity types to three. Propositional content, symbol structure,
+patterned matter and energy. And these entity types are now presumably real types, not roles, but types. So being a proposition's property,
+which is presumably a type, because propositions could not have
+been anything other than propositions, same goes for symbol structure. Same goes for
+the stuff in the physical world, the actual matter and energy that
+eventually, we live in a material world. And [LAUGH] eventually things
+have to reach the material world, need to be instantiated in stuff. So we've reduced the number of
+entity types and we've also made sure that our entity
+types are types and not roles. Relationships, of course, are key. There's going to be a symbol structure
+which expresses propositional content in any actual case of data being recorded. And there's going to be a symbol structure
+that gets inscribed in patterned matter and energy. And between the two,
+there will be any number of symbols structures encoding each other because
+this is now a recursive relationship. And symbol structures can
+encode symbol structures. Let's look at an actual example. Let's imagine observations about,
+let's say, temperature on the surface of the Earth. Those are propositions, claims about
+temperatures on the face of the Earth recorded by I don't know,
+a geosynchronous satellite. Those observations, those propositions
+could be expressed in a number of ways, but one way to record
+them is as RDF triples. But that's just an abstract
+characterization of the strategy for encoding propositions. Those RDF triples themselves
+can be articulated in different serialization formats. Turtle, N3 or as here, RDF/XML. That serialization, however,
+can have different character encodings. EBCDIC, for instance,
+not going to do that, nobody uses EBCDIC. We're going to use Unicode characters. Those Unicode characters
+can be encoded within UTF-8 bit streams,
+that's what we're doing here. They could be also encoded
+other ways as well. And those bit streams
+are inscribed here in the example in an actual RAID array state. That's where we hit the material world,
+that's what the M means. There, we're in the material world,
+matter and energy. At the top, propositions,
+this is propositional content. At the bottom, the RAID array state. Right here,
+that's patterned matter and energy. Every one of these intervening
+levels is a symbol structure. These RDF triples express propositions. This UTF-8 bit stream level is what's
+inscribed in the actual array state. But here it has two, we have a symbol structure the encodes a symbol structure. And here we have the symbol structure
+that encodes a symbol structure. That's how we accommodate
+the indefinite cascade abstraction which presented us with kind of a puzzle. Now I'm not going to claim
+that this is exactly right. And the example certainly is not
+supposed to be exactly right for [LAUGH] observations about
+temperature being encoded, but this is the kind
+of thing that goes on. It's not as well understood
+as it needs to be, but the basic view here
+of three kinds of things that have a multiple
+relationships along these lines. Very powerful, I think, insight into
+how we record and describe data. And therefore, eventually how we
+need to take care of that data. This picture of data
+concepts is one that was elaborated originally by work done by Dave
+Dubin here at the University of Illinois, and has been extended over
+the years by Dave and others. I want to draw attention now
+to the relationships again. You recall, that's the arrows,
+you recall that roles, things have roles in virtue
+of contingent circumstances. And we can ask ourselves,
+we should ask ourselves, what are the contingent circumstances
+that establish these roles? It's not anything intrinsic
+to the entity types, this is a misunderstanding that you'll
+find in many discussions elsewhere. The relationships between entity types, whether it's here expressed, encoded by, inscribed by, those are a given here. Those need to be established by
+contingent circumstances, their roles. How is it that an actual encoding happens? How is it that a certain symbol
+structure encodes another? How is it that a certain symbol structure
+expresses propositional content? How is it that a certain
+arrangement of matter and energy inscribes a symbol structure? Fundamental question, when you're thinking
+about ontologies for data concepts. So this is where what we call
+interpretative frames come in. The question is, how do expressing,
+encoding and inscribing actually happen? So part of the answer is standards,
+information processing standards. These standards are part
+of how the expressing, encoding, inscribing relationships
+will come into existence. So that means things like in HTML that <p> indicates a paragraph. In Unicode or ASCII that the integer
+101 encodes the Latin character e. Also in Unicode,
+that the octet 01100101 encodes the integer [LAUGH] of 101. Standards, tremendous variety,
+a number of standards are what are behind actual
+representation in digital systems. And these standards might be simple
+mappings, as I've shown examples here, but also more complex specifications
+of syntax and semantics for data representation languages,
+processing languages as well. But in [LAUGH] addition,
+tempted to say unfortunately, but in fact we'll never get away from it. Natural language, never get away from it,
+[LAUGH] natural language prose descriptions are also important
+in establishing the contingent circumstances that bring these
+relationships into existence. And of course, natural language
+prose is difficult to interpret. So we call all of these
+things interpreted frames. And they are part of what enables these relationships to come into existence. They don't create the entities,
+we imagine those as given. What needs to be created and established are the relationships
+between these entities. And that's what interpretive frames do. So we need interpretative frames to
+establish the relationships between the types of things that
+are involved in representing data. But are the interpreted frames
+that I've mentioned so far enough? Are standards and policies enough? To bring these relationships
+into existence? Well they aren't. We also need humans who actually intend these standards and policies to apply. So as I say here, standards, policies, etc are inert unless they
+are intended by people to be applied. So that means we also need beliefs,
+intentions, practices and so on. And this is important to pause and
+reiterate, because what we're recognizing here is
+the importance of human intentionality in the recording and
+representation of data, at the very heart of the recording and
+representation of data. So human agreement intentionality, as I
+say here, is particularly prominent in the digital world in the form of standards
+and polices, but those standards and policies alone, as important as they are,
+as a representative of human agreement intentionality,
+as they are, they're not enough. The circumstances that establish and
+sustain the contingent relationships that we've indicated in our model,
+expressing, encoding, inscribing. Also involve and essentially involve the actual collective beliefs, intentions,
+and expectations of engineers, programmers end users, and others. What's represented is determined
+to a large extent by what we want to be represented,
+what we believe is being represented. How we've agreed to use symbols. How we've all agreed to use symbols to represent observations or
+encode other symbol structures. Or how we've agreed to
+use a physical digital system to inscribe simple structures. Those are all agreements, intentions, expectations, beliefs, and that's it. That's what makes the world go round. And just so it's clear,
+it's not one person, it's a community. We're all involved in this. And so, as you can imagine,
+it's pretty complicated. It's pretty hard to say, no one's really
+said exactly how well this works. But for the most part,
+it has something to do with how we share beliefs, intentions, expectations. The engineer shares beliefs,
+expectations and tensions with the programmer, who
+shares the same ones with the end user. And of course lateral relationships. Programmer to programmer, engineer to
+engineer and it's all some big pluming confusion of collective agreement without which we would not
+have these relationships. It's that collective agreement that makes
+these representation relationships happen. That's it, this line right here is our
+picture of an ontology for data concepts. Our three entity types
+are three fundamental relationships that allow for
+an indefinite cascade in the middle. The role of interpretive frames,
+standards and policies, of course, but also the people who intend those
+standards and policies to apply. And it's a collective intention,
+a collective agreement, collective expectations. And you'll find, I think, when you look at
+data creation problems in the workplace, that this could bring a lot of,
+this is a framework that could bring some clarity and
+sometimes insight leading to solutions, recognition of problems,
+strategies for moving forward. And that's it for this video,
+there's one more. We're going to elaborate and
+summarize a little bit. See you soon.

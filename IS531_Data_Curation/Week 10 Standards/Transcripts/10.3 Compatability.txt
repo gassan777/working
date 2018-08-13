@@ -1,0 +1,190 @@
+All right. Hi, everyone. Welcome back. This is the standards week. This is the third and last video,
+it's titled compatibility. We're talking about what it means for
+standards to be compatible. And this has many applications that
+are relevant to data curation. And we've talked about some in the past, in particular with respect to data
+integration and preservation. The focus here will be a little bit
+more on how we deal with versions of standards and
+moving data from one standard to another, touched on in the past but
+we're going to drill down a bit. So start out by talking about general
+challenges for integration and conversion. Then distinguishing data format
+conformance for processor conformance, often don't realize these are two
+fundamentally different kinds of conformance that go together,
+work together, and are often specified in
+same standards document. We talked about some what I call
+basic compatibility relationships. Remember your Boolean algebra? And then compatibility backwards and
+forwards, you know the phrase I'm sure, backwards compatible, what? What does that mean? Take a look, and
+then what I call P-compatibility, which is important but
+not talked about very much. So as I said, we discussed some of
+the challenges that are involved in standards compatibility when we
+discussed integrating different formats, state integration. And when we discussed migration from one format to another as
+part of a preservation strategy. That could be the migration strategy per
+se, or it also could be the normalization strategy which also requires moving
+data from one format to another. So in this video we're going to
+look specifically now at some of the formalities of data
+standards compatibility. So this where we're doing applies
+as well to data integration and migration, and preservation. Here though, the context is going to be focused
+on adjusting to changing standards. Always a huge problem in IT and in data science. And it's usually dumped on
+the data curation team. So that the data analysts,
+they want their data, but when they discover that their
+software doesn't read the data in the format it's in,
+it needs to be updated to the new formats. And, [SOUND] that's in
+the data curation portfolio, how do we adjust to changing standards,
+how do we adjust to other standards So these issues can be huge questions for
+an organization or project, because conversion
+can be expensive. Lose information, break commercially or locally developed applications,
+tools and workflows. And sometimes, most problematically, complicate your relationships with your
+collaborators, suppliers, and customers. But you're going to do it,
+otherwise you can fall behind in using new powerful functional
+applications and tools. And also you can fall behind with
+respect to your relationships with again collaborators,
+suppliers, and customers. Now let's distinguish data format
+conformance from processor conformance. Data standards can define conformance for
+both data and processing. And they often do these two
+conformances work together in a very intimate way by
+processing basic software, right? So data set conformance might
+require such things as that is for a data set to be conformant to a standard,
+these things may be required. A particular character encoding, particular delimiters, a serialization
+matching a particular formal grammar. Additional constraints,
+such as referential integrity, data types, and so on. And perhaps the inclusion of relevant
+metadata, some minimal amount of metadata. Processor conformance might require the
+processing software to correctly tokenize, verify that statements
+magically clear grammar, perform additional validation such as
+preferential integrity, again data types. Confirm their required metadata is there. Process the datasets correctly,
+perhaps performing particular actions such as generating
+a normalized parse tree, or maybe doing some calculations, or
+rendering visualization, and so on. Those sorts of things can be required for
+processor conformance. If the processor detects
+non-conformant data sets, it might be required to display an error. It might be required to halt and
+not go any further. Especially in a very critical application, where it would be dangerous if processing continued once it was noted that
+the data was not conformant. And processing conformance can be tested by a specified test suite of data sets,
+typically. Dataset conformance is tested
+by specific validating tools. Okay, I promised you a little formality. Here we go. This slide describes some basic
+compatibility relationships that is some basic possible compatibility
+related relationships, that might obtain between two standards. The two standards I'm using in
+the definition are S1 and S2. And you can think of, if it might be
+easier to think of S1 and S2 as schemas. This applies to both standards and schemas, and sometimes of
+course a standard is a schema. And what we're doing here is nothing, all that new we're defining the usual
+sorts of class relationships. So we'll start with
+a data set d is S1 valid, defined as d conforms to S1. S1 includes S2,
+these are two standards, S1 and S2. S1 includes S2. All S2-valid datasets are S1-valid. That is,
+all S2-valid datasets are also S1-valid. There is no S2-valid dataset
+that's not also S1-valid. S1 is equivalent to S2 means, S1 includes S2 and S2 includes S1. You might be wondering
+are they really different? If that's true, it's a good question. We take it up in the next slide. It's the definition of overlap. S1 and S2 overlap is defined. Some S1-valid datasets are S2-valid. Some S1-valid datasets are S2-valid. Which is of course equivalent to
+some S2-valid datasets are S1-valid. That's just logic. Now, S1 and S2 properly overlap, some S1-valid datasets are S2-valid, and some S1 datasets are not S2-valid. That's proper overlap, obviously. Isomorphic with subset and proper subset. And finally, S1 excludes S2. No dataset is both S1 valid and S2 valid. Some things to note here, and
+you can think about these on your own. These are interesting and
+significant observations, I think, with respect to
+these compatibility concepts. So includes is transitive. And we'll see in the next
+slide why that's important. You can probably see already you
+can have a chain of inclusion, and the chain of inclusion means that everything earlier, or in this case, later in the chain is
+included in everything. Earlier in the chain. Earlier means on the left. And overlap and proper overlap,
+not transitive. And that actually is
+profoundly important for understanding compatibility
+issues with standards. Okay, compatibility backwards and
+forwards. So this is where our general remarks about compatibility start
+to focus on compatibility issues with respect to changing
+versions of a standard. That is, does the standard evolves? What do we do? Plays as well temporarily
+to multiple standards, but the most natural application is
+a standard that's changing over time, and how to think about our relationship to
+that change and what we're doing about it. So consider a standard, or a schema. S1 that is replaced by a new version S2. S2 is the later one. First, the definition of
+backwards compatibility. S2 is backwards compatible with S1, that is the later standard is backwards
+compatible with the earlier standard. S2 is backwards compatible with S1,
+means S2 includes S1. And so you don't have to look
+back at the earlier slide, that means that every dataset
+that's S1 valid is S2 valid. This is usually not too hard to
+achieve when standards are evolving. Standards developers usually
+have it as an objective. And they often succeed in producing
+a standard that is backwards compatible. They certainly try. Next, forwards compatible. S1, that's the earliest standard. Is forwards compatible with S2. Means S1 includes S2. That is, all datasets and
+the latest that are conformant to the later standard S2 are conformant
+to the earlier standard. This is harder to achieve and
+it's not always achievable. And so, often, not an objective. Okay, next S1 is equivalent to S2, so
+you've already seen this one I know. We're bringing it here again so we can look a little closer
+at what it might mean. So S1 is equivalent to S2. The definition is S1 includes S2,
+and S2 includes S1. Which basically means that S2-validity and S1-validity pick out
+the same set of datasets. They're co-extensive. So, here's the interesting thing
+about the notion of equivalence. As I said, you might think, well,
+if these two standards have the same consequences for dataset validity, in
+what sense are they different standards? In a sense, perhaps,
+they aren't different standards. So whether or
+not this is a trivial notion, equivalence really depends on what we
+mean by same standard or same schema. The highest you might say
+conceptual level S1 and S2 are the same standard. If they define the same
+set of conformant data, regardless of how they define that set. And so two appropriate standards are going
+to be the same standard or same schema, two conformant schema, same schema. But there's a more
+practical question here, which comes up when you have two schemas
+that are syntactically different. They could be in the same schema language,
+but just a different use of that language or they could be in
+two completely different schema languages. And there's two different languages for
+defining schemas. And the question is,
+do these syntactically different schemas, do they pick out the same
+set of conformant datasets? So here we have two schemas
+that are different in the sense that [LAUGH] different characters and
+different orders, and perhaps completely different
+schema definition language. And we're wondering,
+do these two schemas, standards, pick out the same set of
+conformant data sets, or will they ever differ with respect to
+whether or not a data set is conformant? And that is not a trivial question,
+as I'm sure some of you know. Okay, and
+the last definition on this slide. S1 is p-compatible with S2. Is defined this way,
+S1 properly overlaps with S2. In other words,
+some data sets are both S2-valid and S1-valid, but not all. This is sometimes achievable and
+when it is, it can be a very valuable thing,
+as we'll see. Let me also draw attention here
+while we're on this slide, to the fact that backwards and
+forwards compatibility also are transitive, but
+p-compatibility is not. Why that's important,
+we'll see on the next slide. Okay, a little more on p-compatibility. P stands for partial by the way. In the case of p-compatibility
+what we have is a non-null intersection of S1-valid and S2-valid, but not all S1-valid data sets are S2-valid. Here, of course, when we're generalizing
+over data sets, we mean all possible. So I don't mean just existing data sets,
+this is about this set of, yeah, the infinite set, [LAUGH] certainly. Probably denumerably
+infinite of all possible datasets that meet
+a particular standard schema. So the question is, what
+are the consequences of getting into or staying in that intersection? It's a pretty nice place to be. Can you convert all of your existing
+S1-valid files to the intersection? Can you do it without
+loss of information or without loss of functionality,
+such as validation? Perhaps some of your S1-valid files can be
+put in the intersection and some can't. This is something you'll be looking
+into if a new standard comes out and for one reason or another, and
+there'll be lots of reasons, you can't just suddenly assume that
+you're going to be producing S2 data. Or that your customers, or suppliers,
+or contractors can deal with S2 data. But you do realize that some of them
+are already changing their tools, some of your customers already
+have S2 compliant applications. And what we mean here is very simple. And I'm going to use a very simple
+example, as always, from SGML. Tag minimization, that's when you can omit
+a tag when it's supplied by the grammar, is allowed in SGML, but
+it's not supported in XML. So the conversion here is trivial. End tags, of course,
+are allowed at XML, they're required. So all you need to do is add
+the missing tags, the missing end tags. And that's easily determined
+from the schema and easily done. But not so simple,
+XML does not allow schemas to depart from standard formal grammars. For instance, by allowing the inclusion or
+exclusion of elements of an element tree, which is something that
+SGML does just to blanket. You could put this anywhere in the tree,
+or you can't put this anywhere in the tree, [LAUGH] you don't see that in
+traditional mathematical formal grammars. It's a headache to brings
+schemas into line. And that's a schema level
+change in this particular case. Okay, and now an example
+that will unpacked, I think, the value of p-compatibility
+a little more. [COUGH] It's from my personal experience. I was the chair of the Open eBook
+Publication Structure Working Group. That's the working group that developed
+the format known as OEBPS and that's an early version of what
+became the ePUB eBook content format. And ePUB still is largely
+the same strategies and same natural evolution from OEBPS. And I'm going to sort of cheat a bit and
+tell a little stylized, idealized history. So when OEBPS version A.2 replaced OEBPS version A.1, backwards compatibility was not possible. Real backwards,
+complete backwards compatibility, namely, we could not ensure
+that every OEBPS A.1 document would conform to OEBPS A.2. But OEBPS A.2 was designed so that a large subset of actual and possible OEBPS A.1 documents would be A.2 conformant. And that's p-compatibility. So this ensured that many
+existing documents that were A.1 conformant
+would be A.2 conformant. It allowed content producers in A.1 shops
+to continue to use existing software tools and workflows to produce documents
+that were also A.2 conformant. It allowed content producers in
+A.2 shops that were emerging to use new software tools and
+workflows, A.2 software tools and workflows, to produce documents
+that were A.1 conformant. Yeah, so this is important
+because they want to sell, in this case, sell to consumers who
+had A.1 readers in their hands. But they also wanted to use
+the new tools and move forward. Fourth advantage here on the list,
+A.1 applications such as eBook production tools and
+the consumer readers continue to process A.2 conformant data if it was
+in the A.1 compatible subset. And A.2 applications could
+process A.1 conformant data if it was in the A.1 compatible
+subset, conformant subset. So as you can see, p-compatibility, it's a very good compromise if you
+can't get backwards compatibility. And that's it for standards,
+you gotta love them. I know they can be a headache. And p-compatability, get it if you can. See you next week.

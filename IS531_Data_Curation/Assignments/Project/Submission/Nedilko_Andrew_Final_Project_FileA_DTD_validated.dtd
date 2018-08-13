@@ -1,0 +1,41 @@
+<!ELEMENT consumerComplaints ( complaint+ ) >
+
+<!ELEMENT complaint ( event | product | issue | consumerNarrative | company | submitted | response )* >
+<!ATTLIST complaint id NMTOKEN #REQUIRED >
+
+<!ELEMENT event EMPTY >
+<!ATTLIST event type ( received | sentToCompany ) #REQUIRED >
+<!ATTLIST event date NMTOKEN #REQUIRED >
+
+<!ELEMENT product ( productType, subproduct? ) >
+
+<!ELEMENT productType ( #PCDATA ) >
+
+<!ELEMENT subproduct ( #PCDATA ) >
+
+<!ELEMENT issue ( issueType, subissue? ) >
+
+<!ELEMENT issueType ( #PCDATA ) >
+
+<!ELEMENT subissue ( #PCDATA ) >
+
+<!ELEMENT consumerNarrative ( #PCDATA ) >
+
+<!ELEMENT company ( companyName, companyState, companyZip ) >
+
+<!ELEMENT companyName ( #PCDATA ) >
+
+<!ELEMENT companyState ( #PCDATA ) >
+
+<!ELEMENT companyZip ( #PCDATA ) >
+
+<!ELEMENT submitted EMPTY >
+<!ATTLIST submitted via CDATA #REQUIRED >
+
+<!ELEMENT response ( publicResponse | responseType )* >
+<!ATTLIST response timely CDATA #REQUIRED >
+<!ATTLIST response consumerDisputed CDATA #REQUIRED >
+
+<!ELEMENT publicResponse ( #PCDATA ) >
+
+<!ELEMENT responseType ( #PCDATA ) >

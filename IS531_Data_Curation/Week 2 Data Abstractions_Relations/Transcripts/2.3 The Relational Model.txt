@@ -1,0 +1,124 @@
+In the last video,
+we talked about the problems faced, especially in the 1960s when data
+processing became very important. But before we had developed systematic,
+well grounded strategies for facing the challenges that
+came about naturally, when everybody was basically just
+kind of doing their own thing. So I'll review that problem, and
+then we'll talk about the solution that emerged at the end of
+the 1960s that addressed directly the challenges faced in data processing,
+data management at that time. And this is a problem and a solution that provides really
+deep insights into data creation. I'll then talk about the basic
+idea behind the relational model, which is of course relations. How the relational model
+addresses the problem, and the how is really important here. Because these are general principles that
+we'll see reflected in other data models, and in how those other data models
+address different challenges. So the principles are important here,
+the how is important. A few words about relations
+as a mathematical construct, because that also was relevant
+to their effectiveness. And then outline, in particular,
+the two fundamental principles of data organization, abstraction and indirection,
+which we'll see again and again. In the last video, we described two fundamental
+problems that face data management. And these problems were
+especially problematic in the 1960s, but
+they are still with us today. In fact, they are still with us every day
+in every work place, and they're related. At first, programs and users interact with
+data directly via its storage structure. Whenever this happens, it is a big
+problem with many damaging consequences. And part of the reason is because
+those storage structures vary wildly. The second problem is that the intrinsic
+nature of information that is recorded in our systems is not reflected in
+the nature of those management systems. So the management systems work
+with information and data, without clarifying the nature and
+structure of the data itself. These systems don't, for
+instance, explicitly identify and reflect attributes,
+relationships, and so on. And those are the genuine components of
+the information being stored and managed. So as I said, in the 1960s, this problem, which is still with us today,
+was especially daunting and resulting in many negative consequences. Lack of reliability and efficiency,
+missed opportunities, and so on. In 1970,
+EF Codd proposed a very simple solution, conceptualize data as relations tables. And then map those relations to whatever
+storage methods are being used. And this simple solution changed
+the world, I strongly recommend, in fact, it's on the reading list,
+Codd's classic paper, Relational Model of Data for
+Large Shared Data Banks. It is, I believe, the most cited
+paper in all of computer science, so what's a relation? I bet you know, it's,
+colloquially, a table, rows and
+columns with cells that hold data. Attribute names are applied
+to the columns, and the values for
+those attributes are in the cells. This is an example of a relation
+that's named works, and at the top,
+you see the names of the attributes. This is an informal
+characterization of relation and mathematical one comes up,
+so why does it work? Well, the relational model is a simple,
+single, high-level abstraction for conceptualizing information,
+and that's the heart of it. A simple, single, high-level abstraction
+for conceptualizing information. It is indifferent to the details of
+physical storage and processing. All interactions with data
+are in relational tabular terms, terms such as attributes,
+values, and rows. And those interactions
+are then translated into instructions that are expressed
+in terms of data storage. So this distinction between storage and the data itself is what makes this work. The great thing about using relations,
+a mathematical construct, is that operations on data through
+relations can be formally defined, with well understood operations
+from logic and set theory. So how does it work, previous slide was
+[LAUGH] why it works, now how it works. Many of the problems that we described
+in the last video are now solved or mitigated by this approach. For instance, programmers and other users need know nothing
+about storage methods. Remember that before,
+programmers had to understand how data was being stored in order to
+write access subroutines. Users also needed to know about how did it was being stored in
+order to issue queries. This is no longer the case, programmers
+and users are indifferent to storage. They interact with data via
+the tabular representation, programmers can learn a common language
+and approach to data management. You know what I'm talking about,
+something like SQL, they don't have to learn a different
+language for every data storage system. Documentation now has a common
+structure and organization. We're talking about attributes,
+we're talking about data values, we're talking about tables. These concepts will be
+used throughout wherever data's stored using the relational model. Without the relational model,
+the concepts are going to be specific to the particular organization,
+institution, or even division. Again, established mathematical
+methods can be used to design, manage, and use relational databases. And those methods, and the relational
+model, are based on set theory and logic. Data from different sources
+can be integrated more easily, for now, I'm just going to say,
+we'll show you how later. Data will be easier to check for validity
+and quality, again, more of that coming. And data independence, remember,
+data independence is supported. Storage methods can be changed
+without impacting programs, and new data constructs can be added
+without impacting programs. These things, we're going to go into a little bit
+more detail over the next two videos. So, for now, take it on trust,
+all of these advantages ensue in the relational model. And obviously, all of these
+advantages go directly to the tasks of data curation,
+as we described them in the first week. So the Ideology of
+the relational model is, in some respects,
+very simple and very earnest. You conceptualize all information
+in terms of relations, sets of tuples, or rows, columns, values. You map these relations
+to your stored data, and whenever you say anything,
+you say it in relations. Whenever you do anything, you do it
+with relations, whenever you talk, talk in relations. Whenever you think,
+think in relations, rows, columns, values, nothing else ever. So you upload your data in rows and
+columns, you query your data in rows and columns, you receive your query
+results in rows and columns. You only buy software that works in rows
+and columns, you eat, drink, and sleep, rows and columns. You pay no attention to how
+the data's stored, not your problem. Relations, relations, relations,
+the end, that's the relational. I know it sounds a bit cultish, but
+it's a cult worth belonging to. My friend Michael McQueen once
+said something along the lines. Whatever you do in the privacy of
+your own CPU, that's your business, but the interface you present
+to the public must be relations. The mathematical point of view,
+a relation is simply a set of n-tuples. And if you remember your
+discrete math course, or your course on the relational model, you know that a relation simply is
+a set of tuples all the same size. And that's what a table is, even sort
+of graphically, as you can see here. If you would like to be reminded of a more
+mathematical definition of a relation, you will find it here, or
+in your favorite discrete math book. And finally, I want to introduce here, although we'll be talking about these
+quite a bit over the next few weeks, the two fundamental principles
+of data organization. And they're both profoundly important to
+data curation, the first is abstraction. This data model, the relational model,
+is an abstraction, it abstracts away from the transient and
+varying details of storage and processing, and focuses on the essential
+features of the data itself. And that is absolutely key to
+how this data model works, and abstraction is key to how any of the powerful data models that
+we will be looking at work. Abstraction is fundamental
+to information organization. Second, a related principle, indirection, relational data management
+systems do not directly interact with stored data representations. Instead, they interact indirectly
+with stored data representations, via the relational representation
+that is mapped to the actual storage representation. So it's this indirect connection to the data that provides the enormous advantages that we described. These are important principles
+throughout data creation, and we'll be discussing them later. That's all for now,
+see you in the next video.

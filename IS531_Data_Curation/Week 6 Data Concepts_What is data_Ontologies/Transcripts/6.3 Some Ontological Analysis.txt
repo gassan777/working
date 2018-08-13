@@ -1,0 +1,154 @@
+Hi, everyone,
+this is Some Ontological Analysis. So we saw in the last video, how important the concept of
+identity is in data curation. How important, but also how problematic. It's the kind of concept, and
+the kind of problematic concept, that we ought to be able
+to understand better and manage better, if we had a rigorous
+conceptual model for data concepts. And that's the project that we
+embark on here, in this video. We won't finish it, but we'll start it. So, as you'll see,
+FRBR seems to be relevant, here. I introduced FRBR, as you know, a couple
+of weeks ago as an example of an ontology example of a conceptual model,
+we're going to get double duty out of it. FRBR seems to be, point us in
+the right direction with respect to developing a conceptual model for
+data concepts. And we're going to try to
+take advantage of that. And so, we're going to try to do it, we're going to attempt
+to generalize FRBR from bibliographic objects to
+representation in general. Why do we think this will help? Well data seems to be, after all,
+a representation of how things are. So if we had a conceptual model for
+representation, we might have one already for
+data concepts. That is, the conceptual model for representation might serve as
+a conceptual model for data concepts. So we're going to develop a fragment
+of a FRBR-like conceptual model for representation in this video. When we're done or about done, we'll see two problems appear when
+we try to apply this model to data. To somewhat startling, and
+to some extent, opposed problems. What we see,
+is that the two middle entity types, there will still be four entity types,
+two in the middle. The two middle entity types appear to
+simultaneously collapse into a single entity type and explode into
+an indefinite number of entity types. We're not going to solve those
+problems in this video, but we're going to set them up. Generalizing FRBR. Recall the cascade of representations
+that we saw in the last video, how some data could be
+realized in RDF triples. Those RDF triples serialized
+in three statements. Those and three statements encoded
+in ASCII, that sort of thing. This is sort of similar to FRBR's Work,
+Expression, Manifestation, Item. For instance, we're seeing that in
+the cascade, from the last video, that the same data can be realized
+in triples, relations or a tree. And in FRBR the same work can be realized
+in English or French expressions. In the last video, we saw how,
+if data is encoded in triples, those same triples can be
+encoded in RDF/XML and through your turtle,
+just as in FRBR the same expression can be encoded in Helvetica or
+Times manifestation, and so on. So we have those kind of
+one to many relationships, down some kind of tree of abstraction. In addition,
+a work is a little like data, isn't it? Aren't both some information? Aren't both of them saying something about
+how the world is or might possibly be? And don't we need, in both cases,
+languages to express works or data? And can't those languages be realized
+in different ways in the world? And don't we eventually have to have
+some representation that is physical, that's concrete, that's actually
+instantiated space and time in both cases? So parallels aren't perfect,
+but it's a start. Okay, so FRBR's inspirational, we see, the instructional resonances and
+semantic overlaps, but we need a conceptual model
+that's more general than FRBR. FRBR focuses on bibliographic objects, we need something much more general
+if it's going to cover data concepts. So we're going to go for a conceptual model for representation,
+representation in general. And you don't want to get
+lost in the abstractions, so the examples we're going to use will
+be from linguistic representation. In the development of a fragment
+of this conceptual model, which follows the next few slides,
+there will be four key entity types. Proposition, sentence,
+encoding and inscription. So our plan here is to identify
+the ontological kind for each of those entity types,
+which, in effect, just makes the entity type
+more precise and rigorous. And then, at the end of it all, replace the linguistic model
+with a fully general one. Okay, focusing on linguistic model though, let's examine each of these
+four entity types in turn. Okay, we start with propositions. So, representation of any kind,
+communication for instance, typically involves the presentation of
+what we might call propositional content. This is the meaning or
+intellectual content that's independent of language or presentation. Been a variety of efforts to define
+propositions in philosophy and linguistics, and they all seem to more or less pick out the same sorts of things,
+so here are four. You could characterize propositions
+as the content of assertions, what is being asserted when
+somebody says something. Characterize propositions as
+the objects of belief, doubt, etc., that is the things that
+are believed or doubted. Characterize propositions as
+the bearers of truth and falsity, the kind of thing that is properly true or
+false. And you can characterize propositions,
+perhaps, as the meanings of declarative sentences. So the important thing about propositions
+is that intellectual content, it's language independent and
+I know that sometimes is lesatation to admit the existence of language and
+dependent meaning. But for the most part, the common sense
+approach to language and communication. We do recognizelLanguage
+independent meaning. A monolingual Russian mathematician and a monolingual English
+mathematician might believe the same things about
+a particular mathematical domain. They will, perhaps, compete to see who
+can prove a particular theorem first. They don't have language in common, but they have some of the same
+beliefs in common. So, as we proceed here, we will assume that there is language
+independent propositional content, as in fact, we do most of the time. Now, let's distinguish
+propositions from sentences. Sue says, snow is white. Astrid says, Schnee ist Weiss. Sue and Astrid here are using different
+sentences to say the same thing. So in our terminology, we would say,
+same proposition, different sentences. They're saying the same thing,
+they believe the same thing, so it's the same proposition, but
+they're using different sentences, To articulate that proposition,
+to say the same thing. So, propositions versus sentences. Now, sentences versus encodings. Imagine that Jill's writing a paper,
+perhaps longhand. And she writes using her pen on
+paper in cursive, snow is white. I can also say snow is white by speaking it out loud. I'll do it right now, snow is white. So one of these sentences is in
+a particular writing system and it consists of graphemes,
+punctuation and so on. Another mine is at
+a particular speech system and it consists of phonemes, stress, pitch. Not graphemes, not punctuation. Same sentence, however, but we're using
+different symbols to encode that sentence. So, here we say same sentence,
+different encodings. In one case, phonemes, in the other
+characters, lifts or graphemes. But the same sentence. Now, encodings versus inscriptions. So on this slide, I have Snow is white,
+Snow is white, Snow is white. Same encoding, namely characters, it's a writing system, But
+different inscriptions. Same proposition, same sentence, same encoding, different inscriptions. Let's compare this FRBR. So, paralleled with work,
+we're using the concept of a proposition. Paralleled with expression,
+the concept of a sentence. Paralleled with manifestation,
+the concept of an encoding. Paralleled with item,
+the concept of inscription. And these parallels actually seem
+kind of close, and to some extent, a little clearer than we see with FRBR,
+which is good. But let's see we can
+make them clearer still. Because words like, sentence, for
+instance, even encoding inscription. Not sure that we know exactly what
+ontological kind we're focused on. So let's try to get there. Okay, where have we got to here? On this slide you see three columns,
+one for the FRBR concepts, one for the concepts in the linguistic representation
+model that seems to be emerging. And then, finally,
+our efforts to get serious and identify in a rigorous, clear, useful way the ontological type for
+these concepts. I don't think you can do better
+than proposition, for work. And for item inscription,
+we can generalize that a bit more and say this, what we're talking about here, is a physical matter in energy,
+patterned in some way or other. From the top,
+the first three are going to be abstract. But at some point, physical world's
+involved and that's at the item or inscription level. And I don't think we can do better
+than saying matter and energy. This particular phrase by
+the way is from Dave Duben. But what should we say for sentence and encoding? We don't get much help by looking at
+expression manifestation I don't think. What sorts of things are these? Ontologically speaking? What fundamental kind? And I'm going to conjecture that
+a good ontological client here for both of them is symbol structure,
+Because sentences, of course,
+are structures of symbols in the abstract. And the various ways that we encode those
+symbols, whether it's using linguistic sample, whether it's phonemes or
+glyphs or something else. Those are going to be
+simple structures as well. Something worrisome about this, though. This is where we're going. So this is a problem, maybe not a big one, maybe a big one, we'll see. In an Diagram or
+any kind of conceptual modeling diagram, you're not going to have
+an entity type represented twice, no need for two rectangles. So if, in fact,
+it really is simple structure for the entity type for
+both sentences and encodings. And, perhaps, for both expression and manifestation, spoiler alert,
+I think it is, then we're going to end up
+producing four entity types to one. That's interesting. And I would call it a kind of
+problem because at least we need to make sure we're doing the right thing. And we need to give
+a full account of that. But we also see another problem
+emerging in this same area. And here it is. So let's go back to, snow is white. Snow is white,
+is a proposition on our account. It can be expressed by a sentence. That sentence can be
+encoded by characters. The character S, the character N,
+the character O, the character W. Those characters, in turn,
+can be encoded by glyphs. Those are renditions of characters. Those glyphs can be encoded as integers. And, yes, it's not kosher, it's not real Unicode, bear with me. Those integers can be encoded in numerals,
+which can be encoded in binary octets. How many levels are there going here? How many should there be? In fact, I don't see any reason why we don't have to prepare for
+an indefinite number of levels. These are encodings, aren't they? At any rate, they're all symbol systems. Now, this is a puzzle. So we now have an indefinite number of
+symbolic encodings that are possible, not just one, or two. The first level seems to be
+similar to a FRBR expression, or in our linguistic model, a sentence,
+so maybe that's not an encoding, it's still a symbol structure. But the rest we either see
+an encoding of a expression, or an encoding of an encoding. It's a challenging situation. We have two problems, and they're
+kind of paradoxically inconsistent. We need to replace the middle two
+entity types with one entity type, because both of them appear to be the same
+sort of thing, symbol structures. And at the same time,
+we need to replace the middle two entity types with many entity types to
+accommodate these many levels of encoding. So while it looked like we were
+getting off to a good start, we've encountered two challenging but interesting problems. It'll take two videos
+to get through them and into an actual conceptual model for data. In the next video,
+we setup the solution and it's really, in effect, one solution to both problems. It's pretty cool, it's pretty deep,
+it's pretty interesting. See you soon.

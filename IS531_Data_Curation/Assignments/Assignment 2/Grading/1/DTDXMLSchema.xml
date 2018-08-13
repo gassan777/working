@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE technique [ 
+<!ENTITY manufacturer "DePuySynthes">
+<!ENTITY address "700 Orthopaedic Drive Warsaw, IN 46582 USA">
+<!ELEMENT technique (page+)>
+<!ELEMENT page (number, title, heading, text, figure, table, note, compatibility, footer, instrument_layout)>
+<!ELEMENT number (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT heading (#PCDATA)>
+<!ELEMENT text (#PCDATA)>
+<!ELEMENT figure (#PCDATA)>
+<!ATTLIST figure img_path CDATA ''>
+<!ATTLIST figure subscript CDATA ''>
+<!ELEMENT table (#PCDATA)>
+<!ATTLIST table title CDATA ''>
+<!ATTLIST table img_path CDATA ''>
+<!ATTLIST table subscript CDATA ''>
+<!ELEMENT note (#PCDATA)>
+<!ATTLIST note informative CDATA ''>
+<!ATTLIST note warning CDATA ''>
+<!ELEMENT compatibility (#PCDATA)>
+<!ATTLIST compatibility compatible CDATA ''>
+<!ATTLIST compatibility incompatible CDATA ''>
+<!ELEMENT footer (#PCDATA)>
+<!ELEMENT instrument_layout (#PCDATA)>
+]>
+
+<technique>
+<page>
+<number>12</number>
+<title>INITIAL PREPARATION OF THE TIBIA</title>
+<heading>Reaming the Medullary Canal</heading>
+<text>Assemble the straight reamer to the T-handle.
+If power reaming, it will be necessary to attach the modified Hudson Adapter to the straight reamer. The shaft of the Reamer contains markings in 25.4 mm
+(1 inch) increments. Each marking is numbered to
+use as a reference when reaming to the appropriate depth. Fluted stem lengths are available in 75, 115 and 150 mm. Determine the length and diameter of the Prosthetic Stem Extension with Templates (Cat. No. 2178-30-100) applied to pre-operative Radiographs.
+Use the Reamer Depth Chart (Figure 8) to determine the appropriate mark on the reamer for canal reaming depth. Another option to determine Reamer depth is to measure the trial assembly against the Reamer and note the corresponding depth mark for reaming. Sequentially open the canal with progressively larger Reamers until firm endosteal engagement is established (Figure 9).</text>
+<note>Simple cortical contact should not be construed as engagement.</note>
+<text>The fixed relationship of the reamer to the cortices ensures the secure fit of the appropriate reamer
+and, subsequently, the corresponding fluted stem.
+It is equally important to not over-ream osteopenic bone. While reaming the proximal tibia, pay close attention
+to the reamer to assure that it is somewhat centrally located to the exposed proximal tibial surface. Eccentric reaming can occur, which could lead to undersizing of the tibial component.
+The size of the final reamer indicates the diameter
+of the implant stem. The fluted stems are available in even sizes (10 through 24 mm). Perform final reaming with an even-sized reamer. The final implant will have a 0.4 mm press fit versus the reamer.</text>
+<note>Refer to Appendix 1 (page 56) for cemented stem preparation.</note>
+<table title="Reamer Depth Chart" img_path="Figure8.jpg" subscript="Figure 8"></table>
+<figure img_path="Figure9.jpg" subscript="Figure 9"></figure>
+<footer> SIGMA Revision Knee and M.B.T. Revision Tray Surgical Technique</footer>
+</page>
+</technique>

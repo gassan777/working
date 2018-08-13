@@ -1,0 +1,74 @@
+Hi everyone. This is the identification
+identity identifiers week. It's video three, how do we identify? We're going to be asking, how do we
+identify sameness of propositions? We want to know, are those the same
+observations, are those the same zip codes, the same proteins, same
+temperatures on the face of the earth? How do we identify sameness of syntax. Is this the same n3 file, as that file, which one is it, and how do we identify
+the sameness of encoding. Okay, you saw at the end of the last video that we use our basic
+representation model to see what there is to be identified
+With respect to datasets. And the items on blue in the right are the things that we
+may need to identify. The propositions,
+the observations, The triples, the RDF/XML, the Unicode characters,
+The bit streams. We can put this differently,
+what are we identifying? We are identifying propositions at
+this semantic level or we'd like to. We are identifying lots of symbols,
+different sets of symbols. At the top level is the syntax level and then various encodings,
+who knows how many. But eventually ones and zeros. Now identification actually
+works from the bottom up. And now what we are interested in
+are proposition, observations. But how in the world are we
+going to actually identify directly a set of propositions? Yeah it's a challenge. It's a bit of a spoiler. We're going to kind of start over and
+work up to it. But I want you to know where we're going. So operationally identification
+works from the bottom up. We identified the bitstream or
+the character sequence in the normal form in order to indirectly identify
+the higher level encodings, the syntax, top level coding or
+the propositional content. Okay, we'll start with
+Propositional Identityand I know, I said this would be bottom up and
+it will be. Bear with me. So, as I just said also,
+establishing the data sets have the same prepositional content
+can be really challenging. I mean think about it how, do you do that? Consider for instance where data sets
+are using different modeling approaches. So relations perhaps in
+the CSV file in one case, RDF triples perhaps in N3 in another. How to determine that these two data sets contain the same propositions. Determining identity at the propositional
+level requires translating both data sets into a single
+data representation language. And then, confirming that every
+proposition in one is also in the other. I mean think about it. That's a lot of work, a lot of time. It's going to be expensive and
+it may not be successful. So, we'll come back to this, but
+we're going to warm up, that is, we'll come back to the identification
+proposition identity. But now we're going to go to
+the prime up approach and consider simpler cases in coding and
+syntax identity. So, first Encoding Identity. As you know,
+because I'm sure you've done it, establishing that two files
+contain the same sequence of bits. Relatively straightforward in the current
+environment where we live and the tools we have. What we do is rely on
+standard tools that recognize the intended recorded sequence of 1's and 0's within the context of some particular
+operating system storage medium. And then, those two bit streams that
+have just been read are compared, and we're done. [COUGH] Similarly, moving up a step in
+the abstraction letter, establishing the data sets contain the same sequence
+of meaningful octets, or bytes. Also, not particularly difficult. So here we rely on tools and
+standards like UTF-8, UTF-16, whatever, for recognizing
+the bytes within the bitstreams. And again,
+comparison is fairly straightforward. And finally, for
+the most part, interpreting those bytes is corresponding
+to integers or directly or indirectly to characters or other atomic semantic tokens
+fairly straightforward. And again, we rely on standards,
+in this case, coding standards and EBCDIC ASCII or Unicode,
+that map byte sequences into characters sequences that can be compared,
+not hard. However, Syntax identity not so easy. So establishing the two
+data sets contain the same representation of relations,
+triples, graphs, etc. This is more challenging, why? I have a feeling most of you encounter
+these problems it's because there are so many variations that may occur such
+as tab spaces, abbreviation, etc. That are considered irrelevant
+syntactical identity, in other words, same statement, even when the same
+serialization language is being used. Even if it's Turtle, even if it's XML, even if it's JSON. And in addition establishing that two
+data sets contain the same relations, triples, graphs etc. That's even more challenging and that's
+because the same data structure can be represented in different
+serialization languages. So going after Syntax, A lot harder
+than going after lower level encodings. It's really what's going
+on here is every step up the extraction ladder things
+become a little harder, why? Apart of it is that things that we
+want to identify can be expressed or encoded in different ways, that is, it's a 1 to many relationships
+on this abstraction ladder. The same audiotriple can be encoded differently. Those encodings can be encoded
+differently and so on. This is where our troubles begin. We cannot easily use the lower
+level instantiations to determine identity of
+the upper level entities. Because variation at the lower level
+does not necessarily entail variation at the upper level. However, there's a really nice
+solution to this problem and I'm going to do it in the next video. So, that's all for today or
+[LAUGH] all for this video. Thanks, see you soon.

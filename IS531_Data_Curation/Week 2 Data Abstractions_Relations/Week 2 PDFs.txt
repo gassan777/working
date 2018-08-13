@@ -1,0 +1,882 @@
+Z:\IS\IS-2017-1_IS531\SOURCE_FILES\ART\BRANDING\COURSE\Titles\MSDS-Titles-201.jpg
+Z:\IS\IS-2017-1_IS531\SOURCE_FILES\ART\BRANDING\CAMPUS\Illinois-Logo_WhiteBug_bottomLeft.png
+
+Data Models 
+
+
+•What is a data model? 
+•Some examples of data models 
+•Why data models are important to data curation 
+•Towards an integrated picture of data model relationships 
+
+
+
+
+Some data models you know and love 
+
+
+Relations 
+Trees 
+Work 
+
+Author 
+
+Title 
+
+Date 
+
+W58425 
+
+P42425 
+
+Moby Dick 
+
+1851 
+
+W85246 
+
+P24246 
+
+The Scarlett 
+Letter 
+
+1860 
+
+W55427 
+
+P24246 
+
+ 
+
+Fanshawe 
+
+1828 
+
+
+
+poem 
+
+
+heading 
+
+
+“The Sick Rose” 
+stanza 
+
+
+line 
+
+
+“O Rose thou art sick.” 
+
+
+line 
+“The invisible worm,” 
+line 
+
+
+“That flies in the night” 
+
+
+line 
+“In the howling storm:” 
+
+
+stanza 
+
+
+line 
+
+
+“Has found out thy bed” 
+line 
+“Of crimson joy:” 
+
+
+line 
+
+
+“And his dark secret love” 
+line 
+
+
+“Does thy life destroy.” 
+
+
+Name 
+
+
+Birth 
+First 
+Published 
+Title 
+
+
+Death 
+
+
+Person 
+Work 
+
+
+AuthorID 
+
+
+[M:M full] 
+
+
+Authored 
+Entity/Relationship (ontologies) 
+WorkID 
+
+
+
+The relational model 
+
+
+Here a relational model is being used: 
+•Relations (tables) are well-suited for data that 
+conceptualized as attribute/value pairs. 
+•This particular relational model includes the 
+attributes Title and Date. 
+•It is modeling a state of affairs where a novel, 
+Moby Dick, was published in 1851. 
+
+
+
+Work 
+
+Author 
+
+Title 
+
+Date 
+
+W58425 
+
+P42425 
+
+Moby Dick 
+
+1851 
+
+W85246 
+
+P24246 
+
+The Scarlett 
+Letter 
+
+1860 
+
+W55427 
+
+P24246 
+
+ 
+
+Fanshawe 
+
+1828 
+
+
+
+
+The tree model 
+
+
+poem 
+heading 
+“The Sick Rose” 
+
+
+stanza 
+
+
+line 
+“O Rose thou art sick.” 
+line 
+
+
+“The invisible worm,” 
+
+
+line 
+“That flies in the night” 
+line 
+
+
+“In the howling storm:” 
+
+
+stanza 
+line 
+“Has found out thy bed” 
+
+
+line 
+
+
+“Of crimson joy:” 
+line 
+“And his dark secret love” 
+
+
+line 
+
+
+“Does thy life destroy.” 
+Here a tree model is being used: 
+This particular tree is serialized in XML. 
+•tree models are well-suited for data that 
+has a tree-like or hierarchical structure, 
+such as documents. But they can also be 
+used to serialize relations and other model 
+instances. 
+•In this tree the nodes have labels such as 
+stanza and line. 
+•It is modeling a poem that has two stanzas 
+each with four metrical lines. 
+
+
+
+
+The entity/relationship model 
+
+
+Here is an ER schema, 
+•ER models operate at a high of 
+abstraction, representing the things and 
+relationships of a domain. 
+•In this ER schema there are two entity 
+classes: Person and Work; each entity 
+class has several attributes, and there is a 
+relationship (Authored) that obtains 
+between entities in those classes. 
+•Both relation and tree data models and be 
+used to implement ER models. 
+•[For our purposes ER diagrams, UML class 
+diagrams, other conceptual modeling 
+approaches, RDFS and OWL, and other 
+ontology languages are all fundamentally 
+similar and may be all be considered ways 
+of specifying an ontology] 
+
+
+
+
+
+
+Name 
+Birth 
+
+
+First 
+Published 
+
+
+Title 
+Death 
+Person 
+
+
+Work 
+
+
+AuthorID 
+WorkID 
+[M:M full] 
+
+
+Authored 
+
+
+
+What, exactly, is a data model? 
+
+
+The phrase “data model” has three common senses: 
+
+ 
+1. A type of framework for representing information 
+
+ 
+
+ 2. A particular framework for representing information (typically specified by a schema) 
+
+ 
+
+ 3. The application of a particular framework to represent information 
+
+ 
+
+ 
+
+
+
+
+Sense 1: A type of framework 
+
+
+1)“The relational model, with attributes, tuples, and values, is a good one for organizing 
+course registration information.” 
+2)“The tree model, with nodes, labels, and edges, excels at organizing natural language 
+text.” 
+3)“The entity relationship model, with entities and relationships, identifies the things and 
+relationships in a domain of interest.” 
+
+
+ 
+
+
+
+Sense 2: A particular framework 
+(schema) 
+
+
+1)“The registrar’s relational model includes these attributes: course, prerequisites, credits, 
+department . . . and assigns credits the datatype integer . . .” 
+2)“The journal uses an XML tree model. It includes the nodes article, title, author, affiliation 
+… It requires that title node must (and may only) appear as the first child of an article 
+node . . .” 
+3)“The ER model for registration includes the entities person, course, and department, and 
+the relationships enrolled in, sponsored by, and teaches. It allows persons to teach multiple 
+courses but requires that a course be sponsored by just one department . . .” 
+
+
+
+
+Sense 3: The application of a particular 
+framework 
+
+
+1)“The registrar’s [relational] model has the value “IS501” for course in the only tuple that 
+has “Smith” for instructor. 
+2)“In the [XML tree] model for this article the node labelled author has the content “Alonzo 
+Church”, and the following sibling node, affiliation, has the content “Princeton 
+University”. 
+3)“The RDF instance of that [ontology] model shows that Anton Marty is enrolled in Dr. 
+Brentano’s course” 
+
+
+
+
+What is a Data Model? (Elaborated) 
+
+
+Data models typically have three sorts of components: 
+
+1.Structure: sets and tuples, nodes and arcs, … 
+2.Things: values, labels, entities, relationships … 
+3.Constraints: datatypes, grammars, cardinality … 
+
+
+
+
+ 
+
+Often the specification of operations is considered essential: 
+
+ “A data model is a mathematical formalism with two parts: 
+
+1.A notation for describing data 
+2.A set of operations used to manipulate that data” — Ullman, 1988 
+
+
+
+
+
+
+
+
+Why are we talking about data models? 
+
+
+Because critical activities in data curation include 
+
+ 
+Select data model types 
+
+Select data model schemas 
+
+Develop data model schemas 
+
+Revise data model schemas 
+
+Document data model schemas 
+
+Validate dataset instances with schemas 
+
+Transform data in one model (type) to another data model (type) 
+
+Transform data in one model (schema) to another data model (schema) 
+
+Transform data from one representation (e.g. serialization) to another (with same schema) 
+
+Integrating data from two different data models (schema or type) 
+
+ and more 
+
+
+
+
+Looking ahead: data model relationships 
+
+
+A critical issue in data curation has to do with: 
+
+
+How different types of data models, and different data models of the same type, are related 
+to one another 
+
+
+This is a question we will take up in detail later in the course 
+
+ 
+
+But here’s a partial diagram of the territory ahead . . . 
+
+
+
+Data model relationships 
+
+
+Relations 
+
+e.g., Relational databases 
+
+Schemas: column and key 
+descriptions 
+
+
+Trees 
+
+e.g., XML Documents 
+
+Schemas: grammars (e.g. 
+DTDs), 
+
+
+Entities, Relationships 
+Conceptual models, UML or ER models, ontologies 
+
+
+
+Triples 
+
+e.g., RDF triple stores 
+Schemas: serialization 
+descriptions. 
+
+
+Conceptual Level 
+
+
+Physical Level [or: Storage] 
+
+
+Logical Level 
+
+
+[files, records, delimiters, data structures, indexes, etc.] 
+
+
+Schemas: ER, UML . . . 
+
+ 
+
+
+Schemas: RDFS, OWL . . . 
+
+
+
+Z:\IS\IS-2017-1_IS531\SOURCE_FILES\ART\BRANDING\COURSE\Titles\MSDS-Titles-201.jpg
+
+What’s The Problem? 
+
+
+The situation (circa 1960) 
+Lack of data independence 
+Data is stored in radically different ways 
+Explicit and formal conceptualization of data as data is rare 
+(and typically only in human memory) 
+Why is this a problem? 
+
+
+
+
+Left to itself each division will probably: 
+(i) conceptualize their domain in different ways 
+
+
+
+
+
+
+
+
+
+Storage representations 
+
+
+Fixed-length fields 
+4 
+
+
+2 5 D i 1 8 
+5 
+4 
+a 
+l 
+e 
+r 
+1 
+
+
+
+8 
+
+The problems this causes (1) 
+
+
+Many different unique access subroutines must be developed, tested, and maintained. 
+Tools developed for different divisions are not interoperable. 
+There cannot be a sustainable 3rd party industry of common applications and tools. 
+
+
+
+•
+•
+•
+
+
+
+The problems this causes (2) 
+
+
+There are more problems caused by a lack of a general conception of data: 
+
+
+
+As a result. . . 
+
+
+Difficult to document 
+
+
+
+
+Data Independence 
+
+
+This failure comes in two varieties: 
+Type 2: If new kinds of data need to be represented, then again end user programs may 
+fail or give the wrong result. 
+
+
+
+
+First, keep these variations in mind 
+
+
+4 
+
+
+
+
+Lack of data independence (type 1) 
+
+
+If the physical storage method changes, then the end user programs accessing the data will 
+fail to perform as expected. 
+
+
+
+
+Lack of data independence (type 2) 
+
+
+If new kinds of data need to be represented then, again, end user programs may fail or give 
+the wrong result. 
+
+For instance, if a new attribute is accommodated by adding a delimited field to the right side 
+of a record, then any program or other tool that has been identifying fields by counting 
+delimiters right to left will probably return the wrong result. 
+
+
+
+Z:\IS\IS-2017-1_IS531\SOURCE_FILES\ART\BRANDING\COURSE\Titles\MSDS-Titles-201.jpg
+
+The Relational Model 
+
+
+The problem, the solution 
+Abstraction 
+Relations 
+The relational model 
+Indirection 
+Relations from a mathematical POV 
+
+
+
+
+The problem, again 
+
+
+Programs and users interact with data directly via its storage structure 
+
+
+These systems to not explicitly reflect the attributes, relationships, etc. that are the genuine 
+components of the information being stored and managed. 
+
+
+
+
+
+The Solution 
+
+
+In 1970 E. F. Codd proposed a simple solution. 
+
+Relations (aka Tables) 
+
+
+Last_Name 
+
+
+First_Name 
+Moby Dick 
+Melville 
+The Scarlett Letter 
+
+
+1860 Hawthorne Nathaniel 
+
+Why it works 
+
+
+It is indifferent to the details of physical storage and processing 
+
+How it works 
+
+
+Many of the problems described earlier are solved or mitigated by this approach 
+
+Programmers and other users need know nothing about storage methods 
+
+Programmers can learn a common language and approach to data management 
+
+Documentation will have a common structure and organization 
+
+
+
+Simple and relentless 
+
+
+Whenever you say anything , say it in relations 
+Whenever you do anything, do it with relations 
+Whenever you talk, talk in relations 
+Whenever you think, think in relations 
+Upload your data in rows and columns, query your data in rows and columns, receive your query 
+results in rows and columns, only buy software that works on rows and columns, eat, drink and 
+sleep rows and columns 
+relations, relations, relations, relations 
+
+
+
+
+Internal/External 
+
+
+
+Relations, from a mathematical POV 
+
+
+P42425 
+A relation is a set of n-tuples: 
+
+
+
+
+Relations, from a mathematical POV 
+
+
+More formally: 
+
+ Where each set A1, A2, …,An is the set of possible values for an attribute 
+The sets Ai are the domains of the relation, and n is the degree of the relation. 
+
+
+
+
+
+
+Two key principles: 
+abstraction and indirection 
+
+
+Abstraction 
+
+Our data model is an abstraction; it abstracts away from the transient and varying details of 
+storage and processing and focuses on the essential features of the data itself. 
+
+
+Indirection 
+
+Relational data management systems do not directly interact with the stored data 
+representations, instead they interact indirectly with the stored data representations, via the 
+relational representation that is mapped to the actual storage representation. 
+
+ 
+
+
+
+Z:\IS\IS-2017-1_IS531\SOURCE_FILES\ART\BRANDING\COURSE\Titles\MSDS-Titles-201.jpg
+
+The Relational Model In More Detail 
+
+
+Terminology 
+Schemas 
+Normalization 
+Constraints 
+
+
+
+
+Relation Terminology 
+
+
+W58425 
+
+
+
+ 
+Fanshawe 1828 
+Nathaniel 
+
+Schemas (generally) 
+
+
+Schema: a general term for a specification of how data is or will be organized 
+they may also specify: vocabulary, syntax, data types, attributes, value ranges, etc. 
+support validattion 
+
+create structured interfaces for input 
+
+support inferencing and analysis 
+
+support format conversions 
+
+•
+
+•
+
+
+
+
+Schemas for relations 
+
+ 
+WorkTable (workID, authorID, title, date) 
+
+Normalization and 
+Functional Dependencies 
+
+
+W85246 
+
+
+
+P42425 
+
+
+1851 
+Melville 
+Herman 
+
+
+
+Normalization 
+
+
+People 
+
+
+
+Keys 
+
+
+Person 
+
+
+People 
+
+
+
+Normalization and data curation 
+
+
+
+Constraints and data curation 
+
+ 
+
+
+
+
+Query languages and data curation 
+
+
+The relational model supports the use of well-understood query languages, rather than 
+idiosnycratic language based on unique structures. 
+
+
+
+Z:\IS\IS-2017-1_IS531\SOURCE_FILES\ART\BRANDING\COURSE\Titles\MSDS-Titles-201.jpg
+
+Abstraction, indirection, and data independence 
+
+ 
+Abstraction 
+Data independence 
+
+
+
+
+Abstraction and Indirection 
+
+Adjusting the mapping manages data 
+independence 
+
+
+The problem with direct interactions: 
+if the storage method switches from a fixed field approach to a delimited field approach 
+then the access programs (and other tools) will return the wrong results. 
+
+Adjusting the mapping manages data 
+independence 
+
+
+The logical schema can change without affecting interactions with the data. 
+
+...with feeling 
+
+ 
+Abstraction 
+
+implemented with indirection 
+
+ supports data independence 
+
+ (among other things) 
+
+ 
+This is a fundamental principle in the data curation creed. 
+
+We will see it again and again in this course. 
+
+ 
+
+
+

@@ -1,0 +1,93 @@
+Hi everyone. This is the Data Concepts week
+of Foundations of Data Curation. The first video asks the question,
+what is data? It's our first attempt
+to ask that question. You might think, gee, shouldn't we have [LAUGH] asked
+that right away at the beginning? Actually, no. We've discovered that both with respect
+to the question what is data and related questions with respect
+to fundamental data concepts, they're pretty abstract, and it's a good
+idea to build up some momentum and some acquaintance with
+the problems of data curation before turning to these more
+abstract questions and answers. And that practical orientation will
+also give us a little more insight into why these issues are important. Okay. What is data? The first attempt. We're going to look at some
+dictionary definitions. We'll see they're useful but not formal
+enough, and they conceal problems. We then look at a more empirical
+approach to this question. It yields additional insights, but again, no rigor, lots of variation,
+and even inconsistencies. Scientists, particularly those involved in
+curation, will insist that we're not done. Formal definitions are needed, conceptual
+models are needed, so we're here to serve. We aren't going to give up. Our question is, what is data? And what we want to know is what is data,
+not who is Data. Commander Data there. What kind of answer do we want? What we're after is a formal
+definition of data, one that is part of a conceptual model,
+or ontology, of data concepts. This is not just a theoretical interest,
+as you'll see. A conceptual model for
+data concepts, if we had one, would provide a rigorous
+formal foundation for the design of systems supporting
+all aspects of data curation. What's going on right now,
+you might wonder? Well, everybody has a slightly
+different model in their head. We really haven't gotten to
+the point where there's a lot of shared agreement on what
+a good conceptual model for data concepts would be,
+let alone articulated one formally. Let's look at some definitions. These are from dictionaries, most of them. So, at the top, information. These are definitions of data. Information, especially information
+organized for analysis, from the AHD. Factual information,
+such as measurements and statistics, used as a basis for reasoning, discussion
+or calculation, Merriam Webster. A collection of facts from
+which conclusions may be drawn. That's from the Princeton WordNet Project. Very interesting project, surf it up. A collection of observations,
+is very, many, many definitions of data start this way. I haven't actually been
+able to find the origin. And a collection of organized information,
+usually the result of experience, observation, or experiment. May consist of numbers, words, or images, particularly as measurements or
+observations. So, are we done? [LAUGH] We looked up data in
+the dictionary, well, we aren't. These are much too casual for
+rigorous modelling. What we want is a conceptual model,
+or ontology, for data concepts, not casual dictionary
+definitions that do a fair job of indicating how a term is typically used but does so
+in a way that allows far more variation than we could
+accommodate in a formal model. And at the same time,
+it does not attempt to go after the essential fundamental
+features of a concept like data. So how about an empirical approach? Okay, if looking it up in
+the dictionary is not going to work, let's do a systematic
+content analysis of how scientists define data in their articles, because scientists should have
+an answer to this question, right? They don't, but let's pretend. Okay, so, here at the School
+of Information Sciences, we did a study taking a look
+at how scientists define dataset in their scientific papers and
+related to no documentation. And results are pretty interesting. Turns out that there is a fairly
+common set of four areas, content, grouping, purpose, relatedness, that occur in most definitions of dataset,
+which is pretty encouraging. And if you look at the next slide,
+you'll see that those areas match our dictionary
+definitions fairly well. The legend is colored there so
+you can see references to content, references to grouping,
+relatedness, purpose. But at the same time,
+if you look at what's included in these areas are what terms
+are used to characterize the area. There's a tremendous amount of variation,
+and the variation clearly cuts
+across ontological boundaries. So a file, a measurement, a fact, RDF triple, observation,
+those are all from content. Clearly those are radically
+different kinds of things. And all of the lists here
+associated with each area, you can see, are fairly diverse. So is there enough agreement
+here to support modeling? Not really. There is too much variation, and
+the kind of variation is just too extreme. Purpose, relatedness, and grouping, as common as those areas are when
+you look at them closely, but the sorts of things they cover
+vary too much from paper to paper. Especially challenging is
+the variation within content. Observations, values,
+facts, numbers, records, expressions, triples, tuples,
+information, all kinds of things. All things of radically different kinds. So while we do see patterns,
+colloquial definitions, even by scientists, well, maybe shouldn't
+call them colloquial, no disrespect, but they're still,
+from a modelling point of view, too informal, too varied, and
+actually too inconsistent. So things don't look too
+good at this point for proceeding to develop a formal
+model based upon empirical observations of how data and
+dataset are defined. So we might hope that maybe scientists
+just don't care about definitions, and we can just bail on this whole project. Right. Not likely? Actually, scientists do care. Here are just a couple examples. Can find others in the literature. Sam Pepler, National Center for
+Atmospheric Science in the UK says, there's an ambiguity in what
+type of object a dataset is, with different groups of users
+applying different connotations. There needs to be an explicit statement
+of what the intended preservation of a dataset will imply. He's a little frustrated. And Bruce Barkstrom at NASA,
+while there's been substantial work in the IT community regarding metadata and
+file identifier schemas, there appears to be relatively little work on
+the organization of the file collections. One symptom appearing in
+nomenclature describing collections, the terms data product, data set, version, are overlaid with multiple
+meanings between communities. And, in both cases,
+the problems that result are described. So there is a sense that although
+it may be difficult to develop a conceptual model for data concepts,
+it would be beneficial to data curation and
+the use of data if we could do that. So, the next step in that
+direction is in the next video.

@@ -1,0 +1,118 @@
+Okay, hi everyone. This is the Identity,
+Identification, Identifier week. It's the fourth video, and
+it's on canonicalization. A solution to some of our
+problems finally, I know. Okay so in this video I'm going to
+give an example of canonicalization. It's a central strategy for determining
+identity of our presentation, or propositional content, which as we noted
+in the last video, looks really hard. This is a bit of a compromise,
+but it's practical, and it works. [COUGH] Okay, canonicalization,
+actually the general technique of canonicalization is very broad,
+it has many applications, many variations. Here, today, for me, it's a technique for determining representational identity,
+and a reasonable proxy for propositional identity,
+a reasonable way of determining propositional identity
+as well in practice. It's most directly applicable with
+the representation syntax of the two datasets is the same. But instead of being exactly the same and showing up with a check sum is the same,
+there are variations in coding, and alternative synonymous variation
+within that single language. Okay, now we're going to
+use an example from XML. I want you to imagine two XML files, and let's assume that they both
+define the same data structure. That is, the same labeled graph. The same label directive graph
+with ordered branches etc., etc., and with the same
+attribute/value pairs on the notes, but these two XML files could have
+different pretty printing conventions. I'm talking about tabs versus spaces. End tags might be indented or
+not, and so on. They may also have different
+character encodings. Even if they're basically ASCII, they can
+still have different line end encodings. I'm sure many of you have
+pulled your hair out over that. They may also have different ways
+to define the same data structure. For instance, there may be global
+defaults for attribute values, but in some cases local
+specification as well or perhaps one dataset only
+uses local specification. That is, the attribute and
+value occur on every element, where the other dataset, it's implied
+on certain elements by default. That creates the same graph,
+the same data model, but the serialization is different, because
+the mud case you rely on the default. Another way they can differ,
+attribute/value pairs on an XML element, the order doesn't matter. So could have different orders
+of attribute value/pairs on elements, and
+the two different files, but it's the same data structure,
+the same node decoration. It just happens that they are in
+different orders, so as a result, these quite different files can
+specify the exact same data structure. How can we tell that they do
+specify the same data structure? You can't do it by using
+a checksum to determine whether or not they are the same,
+because a checksum only determines bit, or byte, or perhaps character fixity,
+or sequence. So that's not going to help
+us discover whether or not these two files are the same. We already know that they
+don't have the same bytes or characters in the same order. So we gotta find another approach, and this is the problem that
+canonicalization goes after. Okay, here we go. This is a simple example of how
+XML canonicalization might work. It's really just to give you
+a sense of how it might work, [LAUGH] don't try to use
+this in the workplace today. There are full treatments online,
+but this will give you a sense. So, here we go. The objective is to determine whether or not two XML files determine
+the same data structure. We've already noticed that
+if we try a checksum, yeah, they're not the same sequence of characters, and
+maybe we even looked at them, and we see immediately not
+the same sequence of characters. We still suspect they might
+determine the same data structure. They might actually be representing
+the same information, the same data. So what do we do? Here we go, first. Convert to a single character encoding,
+if that's not the case already. It probably is, and also,
+normalize line ends. We still can't be sure that we have
+the same line ends these days. Second, remove all comments, tabs,
+non-significant spaces, all that stuff. It all goes. I know. Now, it's not readable, but sorry. No hope for that. Third, propagate attributes defaults that are indicated in
+the schema to the elements themselves. So if you have a decode
+in the schema that says, every name, has by default, a nationality equals Brazilian, that could be a value pair, unless of course it's overwritten. Propagate that to the elements, because you need to be sure that you're saying this the same way in each dataset. There are two ways to place
+that constraint on your data. You want to do it the same way. Number four, attribute/value pairs on elements, can go in any order. It doesn't affect the data structure,
+but of course, it will affect any attempt to check for
+of character sequence. So put attribute/value pairs
+on elements in alpha order. Fifth, expand all character references. After all you might have some characters, there in their Unicode code point. You might have other characters
+represented by a character reference, like ampersand, perhaps ampersand,
+name, semicolon, that kind of thing. Again, two ways to say the same thing,
+bad news for us, so we're going to unify this
+to a single representation. Six, remove any internal schema or
+declarations. So if there's a schema in the file,
+at this point, we can take it out. We've already looked at it
+to determine what outputs had attributes defaults, and
+if there's any schema modification, coding takes that out as well,
+and now, we're ready. You can test using your favorite tool,
+or writing one, to see if the character sequences
+in the two files are identical. If they are identical now you know, well, actually [LAUGH] sorry,
+let me back up one step. Now you test to see if the characters
+sequences are identical. If they aren't identical, it may still
+specify the same data structure, and maybe it's because you haven't
+succeeded in getting a good normal form. You can read more about this online,
+XML, not normal forms. You haven't actually succeeded
+in getting to a normal form. However, if now you have identical character sequences
+in each file, now you know. These two files, which looked so different in the beginning,
+actually specify the same dataset. How cool is that? Okay, you may have noticed that it
+looks like I'm trying to do something sneaky here, avoiding talking about
+how we identify propositional content. Just talking about how we identify
+the representation of data structures, does that mean we're giving up on
+identifying propositional content? We are not, but we are compromising. When a single data description
+language is being used, a fixity checksum on files in
+a defined canonical number form is, really for all practical purposes, our best shot at sameness
+of propositional content. That is, go for
+a normal form and then if you get same characters
+from your fixity check, you could conclude that the two
+datasets contain the same data. They contain the same information. And that's really,
+it's a most practical approach, the most common approach, so
+focusing on normal forms and canonicalizing your your putatively
+identical datasets into a normal form, is the best approach for
+trying to figure out whether or not they have the same functional content. If they have the same character by character content Then they do have the same representational syntax, and the same propositional content, so we do it from the bottom up. Now there are some alternative approaches,
+where we sort of convert everything into predicate logic,
+and do theorem proving, that kind of thing, but
+those are complicated to implement, and probably don't have results
+that are significantly better. So canonicalization, that's your friend. You can't stop at fixity. You will never, [LAUGH] if you're
+focusing on fixity checks, you will hardly ever be in
+a position to say that two datasets contain the same data,
+that is two files contain the same data, because there's going to be invariably, even if they're using the same
+description language, there's going to be variation that will
+have your fixity checks saying no, these are different
+sequences of characters. So normal forms canonicalization, Are part of the daily
+work in data curation. I would say a few words
+about readings this time. The first four here,
+I would call those required. You should read these. They're great. Strongly recommend them. So persistent identifiers,
+fixity checksum's already mentioned. Utility identification schemes for
+digital earth science data, this is great. Great article from some really smart people in inert science. For some reading specifically
+about canonicalization, Clifford Lynch's classic
+article on canonicalization. You could read that.
+You gotta read that, and then browse the XML recommendation that specifies a normal form for XML. They call it canonical XML, and that's it. This is the last video in
+the identification week. I had fun, I hope you did. See you next week.

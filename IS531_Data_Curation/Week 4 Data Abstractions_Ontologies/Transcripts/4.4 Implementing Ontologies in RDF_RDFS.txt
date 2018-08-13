@@ -1,0 +1,135 @@
+This video is on implementing ontologies in RDF/RDFS. We cover the RDF graph model for predication, RDF schema for
+defining a simple ontology. Be given example, and
+when we're done with this, our data model diagram, remember that? It's done, we've completed it. Today, ontologies have been described
+in many different ways over the years. Today, ontologies are most often expressed formally In RDFS or OWL. These are powerful logic based languages
+that are designed to be read and processed by computer software,
+including inferencing systems. They are the foundation for
+the semantic web. But they're used more generally
+to implement any ontology for computer processing, more often than not. RDFS, resource description framework,
+is just a simple model for predication, saying that
+something has value for property. And it can be serialized in
+a number of different ways. RDFS is RDF Schema. There we have provided for
+us the basic schema concepts that we can use to define schemas for
+the RDF instances. And then finally, the powerful Web
+Ontology Language comes in several levels of power which provides schema
+concepts for more advanced schemas. Sometimes if you surf the web and
+look around, look quickly at these things in the semantic
+web, they look very sophisticated. And they are in some respects, but some
+of that sophistication is an illusion. There is a lot of simplicity here,
+as well. And it starts with RDF itself. RDF gives us a general model for
+describing things. For saying that some thing
+has some particular property with a particular value. And you know what, that's it. It's a way of saying that
+a thing has a particular property with a particular value. And these descriptions are intended
+to be processed by software and shared across applications and
+computing environments. And that's where some of
+the surface complexity comes in, in actual implementation
+of this predication model. But at bottom,
+the basic idea is that we have a single, simple model for
+saying things about the world. Not surprisingly, this model is often
+referred to as the triple model. Because notice the italics were saying
+it's something as a property with a value. Or somethings have a value for property
+and we need the other order because that's how it shows up in the graph in the actual
+picture, which you'll see in a minute. Here we name these elements and
+the RDF graph model. The thing, RDF calls the subject. The property, RDF calls the predicate. And the value for
+that property, the object. And here's how it looks in a picture. Subject, predicate, object, and an RDF graph is a collection
+of these triples. And if you draw it as a graph, of course, you can have multiple arrows
+going into the same oval. As well as multiple arrows
+coming out of the same oval. And you can also draw arrows, arcs,
+back and forth to predicates. So the picture that we get when we combine RDF triples is, not in the graph form, is not a sequence of triples, but is a connected graph. Let me point out that this is a graphic
+representation of under the hood, simple two place first order
+logic predication RXY, R of course corresponding
+to the predicate. So here we have some information that
+needs to be expressed some how or other. We have the fact that something
+has the identifier b128935, that something has a certain title. Something has a particular author,
+particular date, particular publisher,
+language type, and so on. And this is a controlled vocabulary
+from the Dublin Core element list. Here's how it looks,
+When we express this as a graph. This is an RDF graph. Take a moment and take it in. We have seven triples here. But because we get to reuse these things,
+these ovals, two rectangles. I'm going to show you what's
+going on there in a second. It's a little more economical
+than a sequence of triples. The difference between the ovals and
+the rectangles in RDF graphs is that the rectangles are used for
+literal strings. These are actual strings,
+not names of things. Except that in the RDF semantics
+a string names itself. It's a special case, nonetheless,
+so we represent it as a rectangle. Here we see an RDF description as triples. And the graph form is more economical,
+but can't really read that graph directly off the whiteboard or
+off the slide into a computer system. So this is a serialization of the graph. Now if you take a close
+look at that RDF graph, you will see that it's not consistent
+with the insights that we got from FRBR. Adapting that description to
+reflect our FRBR view of the world really is difficult to do
+without a system of classes and properties, which is to
+say without a schema. So we need a schema,
+and the sort of schema we need is one that will
+interoperate with RDF. And that would be RDF Schema. RDF Schema is a schema language for
+defining RDF vocabularies. The RDF Schema language itself uses RDF
+triples as its syntax, kind of cool. It also has a particular
+schema vocabulary. This allows us to use fundamental
+properties in classes to define RDF vocabularies for
+specific domains. Okay, so here's an example of two small class hierarchies that allows us to define the classes we need to create
+a schema that we can use for more accurate RDF vocabulary. And here we go. Just getting started,
+this is our RDF schema. We have properties with domains and
+ranges. And we have class hierarchies, and also,
+as you can see, property hierarchies. We use the RDF vocabulary subclass and
+subproperty of domain and range to express these relationships. isRealizedBy, isEmbodiedBy, and isExemplifiiedBy,
+those of course come from FRBR. So what we're looking at here is a schema, a schema with class hierarchy and
+subproperty relationships. We can visually connect this
+schema of RDF instances like this. So here we see an instance,
+which is to say a bit of information about what's going on in the domain
+connected to the schema. So the yellow ovals refer to
+specific things in the domain. Not classes of things and not to types of things, but to actual things. So in the case of the first one
+in the far left, that's a work. That's what the w means. w128935 is a particular work, which of course will be
+a member of the set work, the entity type set work. Moving over left to right,
+we come to an expression, e128935. This is a text of that work, and its type is expression. It is in fact a member of
+the set of all expressions. Expressions is a set class. Moving over once more,
+we come to the addition, an addition,
+because there are quite possibly many, which embodies that particular text or
+expression. And that addition is what kind of thing,
+what type of thing. It's a manifestation, which means that it's a member of
+the set or class Manifestation. And one more step to the right, we come to a physical object, the item, That exemplifies the addition. There might be any number, probably
+are of course, and this physical object. What kind of thing is it? It's an item, which means that particular physical object is a member
+of the class or set Item. So this is a connection
+between an instance, some data, and the schema that defines the solutions base or
+scope of possibilities for arrangements in the domain or
+facts in the domain. And a little more on that on this slide, you can read it yourself
+if you're interested. Here we're going to
+elaborate just a bit more. We've got a person, Elaine Svenonuis,
+who created that work. And the type of entity that
+Elaine is is a person. That means that Elaine is an member of the set of all persons. And the relations of creating and
+acting on are also represented here. Okay, let's see where we are with our
+data model relationships diagram. We've talked about everything
+on this diagram now, shown how there are three levels of abstraction,
+physical, logical, conceptual. The logical level you have relations,
+trees, and triples. At the conceptual level,
+we have our conceptual models, like Diagrams and
+UML models and ontologies. You don't have data at all unless you
+have stuff at the physical level. But if you only have physical
+arrangements of data, you don't have logical schemas. The reliability,
+usefulness, functionality, preservation, likelihood,
+profoundly diminished. And that of course has much driven the
+development of relation trees and triples. At the same time, if you only have
+schemas at the logical level, you don't have schemas
+at the conceptual level. You really are not explicitly connecting the data that you have
+with the features in your domain that give that data meaning. That makes that data
+information that enables you to understand just what the data means. And this of course is absolutely
+essential to effective data curation, in all aspects of data curation
+from functionality to preservation. So this diagram,
+data curator should have it laminated and in your wallet, and
+it should remind you that you want to be at all three levels for
+most effective data curation. And it also reminds you
+that there are multiple ways to say something about the world. You can say it in relations, you can say
+it in trees, you can say it in triples. And as time goes by,
+your data will typically be moved from one schema to another,
+certainly within those types and sometimes across those types, as well. And managing that, accommodating that
+is a major task for the data curator. As is, of course, taking data from
+multiple sources in multiple data models, different schemas, different data types,
+understanding what that data means, Which means, of course, some kind of
+reference to entities and relationships, at least implicit ontologies,
+understanding what that data means. So you can combine data
+from different sources, from different schemas in a model, from different models
+into the same database or same view, or federated for
+purposes of queries. And we'll talk more about that. But data integration,
+like preservation, like functionality, reliability, depends upon
+having as much abstraction, as much document abstraction, as you can. And with that, and that injunction to
+have as much document abstraction as you can may seem expensive, but it's worth it. That's the end of the ontology week, and this is also the end of
+the three weeks on data models. Thank you.

@@ -1,0 +1,10 @@
+https://www.w3schools.com/xml/xml_dtd_intro.asp
+Fast and light description of DTD. Scroll up for the same introduction to XML.
+
+http://etutorials.org/Programming/Learning+xml/Chapter+4.+Quality+Control+with+Schemas/4.2+DTDs/
+More detailed discussion of DTD and special cases (helped me to correctly use lists of controlled values for attributes to pass the validation)
+The website has a Python and Pyrhon. Text Processing tutorials with a brief, BUT INDEPTH discussion of material!!!!
+Also CPP!!!
+
+http://www.xmlfiles.com/dtd/
+Several DTD and XML tutorials, not evaluated, but seem very worthy as the entire site is dedicated to XML.

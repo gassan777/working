@@ -1,0 +1,11 @@
+<!ELEMENT CHECKBOX EMPTY>
+	<!ATTLIST CHECKBOX Development CDATA #IMPLIED (Checked|Unchecked) "Unchecked">
+	<!ATTLIST CHECKBOX Revision CDATA #IMPLIED (Checked|Unchecked) "Unchecked">
+	<!ATTLIST CHECKBOX Editing CDATA #IMPLIED (Checked|Unchecked) "Unchecked">
+	<!ATTLIST CHECKBOX Approval CDATA #IMPLIED (Checked|Unchecked) "Unchecked">
+	<!ATTLIST CHECKBOX English_and_Permian CDATA #IMPLIED (Checked|Unchecked) "Unchecked">
+	<!ATTLIST CHECKBOX English_and_Cambrian CDATA #IMPLIED (Checked|Unchecked) "Unchecked">
+
+<!ELEMENT CHARGE_CODE (#PCDATA+)>  
+<!ELEMENT OPERATING_AREA (#PCDATA+)>  
+<!ELEMENT COMPANY_NAME (#PCDATA+)>  

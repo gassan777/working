@@ -1,0 +1,105 @@
+Let's take a little closer look at how
+the relation model is implemented. This is stuff you
+probably already know but I want to make sure
+we're on the same page. And I also want to take the opportunity
+to look a little more closely at how the implementation of the relational
+model contributes to data curation. So, topics for this video, terminology, with respect to the relational model,
+relational schemas, normalization, constraints,
+query languages. First, some terminology. Here we see a graphic
+representation of a relation. The name of the relation is Works. You see at the top of every column
+the attribute for that column. You see each row referred to by
+its mathematical name, tuples. And then of course stated
+values in the cells that are created by the intersection
+of columns and rows. As we said last time, a relation is
+a set of same sized tuples and tuples. And that means that since sets
+have no order to their elements, these tuples aren't really ordered
+even though in a two-dimensional slide they have to have some order or
+other, but order's insignificant. Once we have an attribute attached to a
+column we could also reorder the columns. But without the attributes,
+if it's simply a bare set of tuples, then the column order will
+actually be important. Okay, schemas, as you probably know,
+schema is a general term for a specification of how data is or
+will be organized. Schemas specify such things as vocabulary, syntax, data types, attributes,
+value ranges, and so on. Schemas are written in a schema language
+and most schemas can themselves be processed by software which enables
+us to use schemas to do things. For example,
+to configure access and retrieval, to map between levels of abstraction,
+just saw an example of that. To support validation,
+to create structured interfaces for input. To support inferencing and analysis. To support format conversions. Very important data creation. To support documentation, and so on. What is a schema for relations look like? So here's the simplest kind of
+relation schema or table schema. It's the schema for,
+the name of the schema is AuthorTable and the attributes are authorID,
+last, and first. Presumably last name and first name. And this is three column schema. authorID is underlined
+because it's the primary key. And the simplest table schema, all
+that's going on is that we're indicating the names of the columns and indicating which column or
+combination of columns is the primary key. To make a relational database
+schema out of relation schemas, you simply make a set of relation schemas. Here you can also indicate,
+as we do, in italics the foreign key that matches up with
+the primary key in AuthorTable. So schemas for relations,
+the simple version you see right here, but schemas for relations can also
+include information about data types, range constraints,
+control vocabularies, things like that. So you probably already know
+about functional dependencies. But let's make sure. Supposed that whenever two tuples two rows agree in value on
+the author attribute, they will also always agree
+on the value for last name. That's pretty much what we
+have here in that the author attribute is a unique ID
+indicating the author, and the last name is
+the last name of the author. So whenever you see P24246,
+you're going to see Hawthorne, as you do here and here. As you know, this is a situation
+that can create problems. First of all, if you had to
+update the author's last name, say it was misspelled throughout,
+you would have to find every occurrence of the author's last name and
+update that occurrence. If you missed one,
+you would have an inconsistency. Problems like that can create havoc in any
+kind of relational database or dataset. And one of the powerful strategies for
+managing functional dependencies in the relational model is
+of course normalization. So normally in the simplest kind of
+normalization that we're illustrating here, we create a second table,
+which is the table for people. And the primary key is P24246, namely, a key for each person. And then we indicate the last name of that
+person just once in the person table. So now, it's of course much
+easier to update the last name. And we don't have any
+risk of an inconsistency. These two tables are connected, of course, because the primary key
+person shows up as a foreign key in the author column
+of the works table. And as you probably know, there are other
+kinds of functional dependencies and various levels of normalization. And these two tables are connected,
+of course, by a primary key,
+foreign key relationship. Okay, a few words about, in general,
+about normalization in data creation. Understanding functional dependencies,
+which of course is an integral part of relational database theory, is important
+to data creation for the same reasons. Because this understanding, understanding
+functional dependencies allows us to use normalization strategies to
+reduce dangerous redundancies. Redundancies that could cause errors and
+even worse inconsistencies. This normalization also
+helps us avoid the kinds of redundancy that makes updates
+extremely inefficient, because we have to go hunting for
+every occurrence and that interferes with the validation
+of databases, datasets as well. Finally or generally,
+normalization based on the understanding of functional dependencies
+can allow the developer or user curator to reason about how
+data might be manipulated or reorganized in a more systematic and
+understanding way. Now a few words about constraints and
+their relation to data creation. Again, constraints, fundamental part
+of relational database theory, and they're important in data creation for
+the same reasons. So, these are constraints
+such as key constraints, primary foreign keys,
+data type constraints, data range constraints, referential integrity,
+control vocabularies. All very important in data curation. They help us model the real world,
+real states of affairs, with greater complexity and expressiveness
+than the relational model alone. At the same time they support because
+they're constrained, they support validation, and data quality,
+data assurance, data consistency. So they're very important. And again,
+more generally they reflect what may be assumed by users,
+application developers, storage structures, curators and so on. So, these constraints represent
+assumptions about how we see the world. And it's important to articulate
+those assumptions and it's important to communicate them and
+do curation. Lastly, a few words about query languages. So the relation model,
+because of its very nature based on logic supports the use of well-understood logic-based query languages, rather than, Relying on idiosyncratic languages
+that are based on the unique structures developed locally or
+for some particular purpose. Those local, unique, query languages
+are never going to be as well understood, as well implemented, they're never going
+to have the same range of tools and support and training and shared learning. So, the fact that the relational
+model allows us to develop well understood shared query languages and
+of course we're thinking of SQL or variations like the relation of algebra, domain calculus, stuple calculus,
+data logs and so on. These are powerful, well understood, well documented query
+languages with lots of tools, lots of users, lots of training. And finally, we can be assured
+when we use these query languages, that they have a well
+defined semantics and will perform as we hope and expect.

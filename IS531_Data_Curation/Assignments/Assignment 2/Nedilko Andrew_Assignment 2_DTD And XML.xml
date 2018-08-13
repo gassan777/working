@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE REQUEST [
+
+<!--REQUEST is the root element with mixed content that has 11 children who, in turn, may have their own children (nested structure) -->
+<!ELEMENT REQUEST (#PCDATA  | REQUESTER | DOCUMENT | FILEPATH | LANGUAGE_COMBINATIONS | REFERENCES | ADDITIONAL_NOTES | 
+BILLING_INFORMATION | OFFICIAL_USE | COMPLETION | DISTRIBUTION)*>
+<!ELEMENT REQUESTER (FNAME | LNAME | TELEPHONE | NOTE* | FAX* | REQUEST_DATE | DUE_DATE | NUMBER_OF_PAGES)*>
+<!ELEMENT NOTE (#PCDATA | FNAME | LNAME | TELEPHONE)*>
+<!ELEMENT FAX (#PCDATA)*>
+<!ELEMENT REQUEST_DATE (MONTH | DAY | YEAR | TIME)*>
+<!ELEMENT DUE_DATE (MONTH | DAY | YEAR | TIME)*>
+<!ELEMENT FNAME (#PCDATA)*>
+<!ELEMENT LNAME (#PCDATA)*>
+<!ELEMENT TELEPHONE (#PCDATA)*>
+<!ELEMENT NUMBER_OF_PAGES (#PCDATA)*>
+<!ELEMENT MONTH (#PCDATA)*>
+<!ELEMENT DAY (#PCDATA)*>
+<!ELEMENT YEAR (#PCDATA)*>
+<!ELEMENT TIME (#PCDATA)*>
+<!ELEMENT DOCUMENT (#PCDATA | CHECKBOX)*>
+
+<!--The CHECKBOX element below have attributes with a controlled list of values, namely Development, Revision, Editing, Approval, etc. -->
+<!ELEMENT CHECKBOX EMPTY>
+<!ATTLIST CHECKBOX
+	Development (Checked|Unchecked) #IMPLIED
+	Revision (Checked|Unchecked) #IMPLIED 
+	Editing (Checked|Unchecked) #IMPLIED
+	Approval (Checked|Unchecked) #IMPLIED
+	English_and_Permian (Checked|Unchecked) #IMPLIED
+	English_and_Cambrian (Checked|Unchecked) #IMPLIED
+>
+<!ELEMENT FILEPATH (#PCDATA)*>
+<!ELEMENT LANGUAGE_COMBINATIONS (CHECKBOX)*>
+<!ELEMENT REFERENCES (#PCDATA | FILE_NAMES | LOCATIONS)*>
+<!ELEMENT FILE_NAMES (#PCDATA)*>
+<!ELEMENT LOCATIONS (#PCDATA)*>
+<!ELEMENT ADDITIONAL_NOTES (#PCDATA)*>
+<!ELEMENT BILLING_INFORMATION (CHARGE_CODE, OPERATING_AREA, COMPANY_NAME)>
+<!ELEMENT CHARGE_CODE (#PCDATA)>
+<!ELEMENT OPERATING_AREA (#PCDATA)>
+<!ELEMENT COMPANY_NAME (#PCDATA)>
+<!ELEMENT OFFICIAL_USE (#PCDATA | JOB_NUMBER)*>
+
+<!--The JOB_NUMBER element below has attributes with a controlled list of values, namely Doveloper, Editor, and DTP -->
+<!ELEMENT JOB_NUMBER (#PCDATA)>
+<!ATTLIST JOB_NUMBER
+	Developer (CSC|HARRYPOTTER|POKEMON) #IMPLIED
+	Editor (CSC|HARRYPOTTER|POKEMON) #IMPLIED
+	DTP (CSC|HARRYPOTTER|POKEMON) #IMPLIED
+>
+<!ELEMENT COMPLETION (#PCDATA | MONTH | DAY | YEAR | TIME)*>
+<!ELEMENT DISTRIBUTION (#PCDATA)*>
+]>
+
+    <REQUEST> TEOC DOCUMENTATION REQUEST FORM
+	<REQUESTER>
+		<FNAME>John</FNAME>
+		<LNAME>Klondike</LNAME>
+		<TELEPHONE>217-654-4718</TELEPHONE>
+		<NOTE> FOR TECHNICAL QUESTIONS CALL:
+			<FNAME>Debbie</FNAME>
+			<LNAME>Villanova</LNAME>
+			<TELEPHONE>217-654-4788</TELEPHONE>
+		</NOTE>
+		<FAX>217-654-3720</FAX>
+		<REQUEST_DATE> 
+			<MONTH>January</MONTH>
+			<DAY>29</DAY>
+			<YEAR>2007</YEAR>
+			<TIME>6:50 A.M.</TIME>
+		</REQUEST_DATE>
+		<DUE_DATE> 
+			<MONTH>January</MONTH>
+			<DAY>31</DAY>
+			<YEAR>2007</YEAR>
+			<TIME>5:00 P.M.</TIME>
+		</DUE_DATE>
+		<NUMBER_OF_PAGES>55</NUMBER_OF_PAGES>
+	</REQUESTER>
+	
+  	<DOCUMENT>Archaeological mapping data
+		<CHECKBOX Development="Checked"></CHECKBOX>
+		<CHECKBOX Revision="Unchecked"></CHECKBOX>
+		<CHECKBOX Editing="Unchecked"></CHECKBOX>
+		<CHECKBOX Approval="Unchecked"></CHECKBOX>
+	</DOCUMENT>
+	
+	<FILEPATH>S:\TEOC Work\TEOC RL Input_Output\Documentation TEOC\Input\Odoptu Approvals\</FILEPATH>
+
+	<LANGUAGE_COMBINATIONS>
+		<CHECKBOX English_and_Permian="Unchecked"></CHECKBOX>
+		<CHECKBOX English_and_Cambrian="Checked"></CHECKBOX>
+	</LANGUAGE_COMBINATIONS>
+	
+	<REFERENCES> If Applicable, References To Previous Jobs:
+		<FILE_NAMES></FILE_NAMES>
+		<LOCATIONS></LOCATIONS>
+	</REFERENCES>
+
+	<ADDITIONAL_NOTES>Can you please develop the requested 55 page document by Friday, January 31? The charge code is S77B1DMA00 (Hanover). Thanks!
+	</ADDITIONAL_NOTES>
+
+	<BILLING_INFORMATION>
+		<CHARGE_CODE>S77B1DMA00</CHARGE_CODE>
+		<OPERATING_AREA>Denver Project</OPERATING_AREA>
+		<COMPANY_NAME>ESSD</COMPANY_NAME>
+	</BILLING_INFORMATION>
+
+	<OFFICIAL_USE>FOR USE BY DOCUMENTATION SERVICES
+		<JOB_NUMBER Developer="CSC" Editor="CSC" DTP="CSC">077-jan-43 (TEOC0128TXT001)</JOB_NUMBER>			
+	</OFFICIAL_USE>
+
+	<COMPLETION>Job completed:
+		<MONTH></MONTH>
+		<DAY></DAY>
+		<YEAR></YEAR>
+		<TIME></TIME>
+	</COMPLETION>
+
+	<DISTRIBUTION>
+		Send the requested document to debbie.a.villanova@essd.com, and carbon copy to john.klondike@essd.com, xm1.rocks@essd.com
+	</DISTRIBUTION>
+    </REQUEST>

@@ -1,0 +1,61 @@
+This is the second video in
+the week on the tree data model. And this is where we present the problem,
+the historical, and to some extent ongoing problem
+that elicited the development and use of the tree model as a data model for
+working with text and documents. And there's a lot of
+similarities historically and also conceptually with the emergence and use of the relational model for
+data, for tabular data. It's very interesting. Looking ahead, as I say,
+there's a lot of similarities, so many similarities that
+the problem that the tree model addresses is kind of
+basically the same problem. Just for text instead of data that was
+addressed by the relational model. So much to imagine
+the situation around 1960. More or less as we did for
+the relational model. Text is being stored and
+processed in radically different ways. Interaction with text is immediately and
+directly via the storage and processing methods. And explicit and formal conceptualization
+of text components is rare, and to the extent that it exists,
+it's in human minds, in memory. Why is this a problem? It creates huge operational
+inefficiencies, lack of functionality, and lack of data independence. Now, some detail. So in the last video, I noted how
+important documents are in our lives and in our societies, and the long-standing promise of digital documents to
+provide exciting new functionality. I also noted that we're
+only part way there. That creating complex, high-performance
+documents remains arduous and the results are hardly
+the sophisticated high-performance information environments that we
+were promised, along with jetpacks. So what is the problem? Why are we only halfway there? What was it in the 60s that
+was really holding us back and we're only now getting beyond? Simply that there are many, many ways to represent text in documents. Sound familiar? [LAUGH] Just like there are many, many ways to represent
+data in a computer system, there are many ways to represent
+text in digital documents. There are some examples. When you interact with text
+that's represented like this, typically you're interacting
+directly with storage structures, and you're also interacting typically
+with the processing instructions. You're working with processing
+instructions, such as, you see some of them right here, font
+shifts, for instance, line length spaces. You're not conceptualizing your
+text in terms of its natural parts. And kind of spoiler alert,
+[LAUGH] once again, we see the fundamental principles of abstraction and
+indirection are not being implemented. So what happens? Well, when you have this incredible
+variety of representation for text. And your interaction with that
+text is typically focused on processing instructions and
+storage methods. Training does not transfer. Tools are not interoperable. Data from multiple sources
+cannot be integrated. Application development is very difficult. Documentation is hard. Validation and assurance,
+nearly impossible. Specialized applications
+like searching and analysis are very weak if
+they're supported at all. And schemas don't even really exist. Sound familiar? So let's make this concrete. This is an example, made up but a reasonable facsimile of electronic publishing in the 1960s. An input file contained data such as,
+or information such as, what you see right here, and
+you could guess what it means. Skip to an odd page,
+use the Times font, make the size 14, italics, center, five points from
+the left, five points from the right, skip two points, keep with the next,
+and so on and so forth. And this file would be processed and it would be rendered,
+as you see here, The Sick Rose. So imagine the whole scenario. These instructions
+are typed into the file and if there's corrections to be made,
+if there are alterations to be made, then someone has to find
+the right place and every place where an alteration
+needs to be made and make it. Then when we're ready to create output, that file is processed and it renders output like The Sick Rose. So this was how digital text was organized in the 1960s in large-scale
+publishing applications, in technical documentation. Wherever it was necessary
+to have some systematic way of creating documents,
+this was the sort of thing that we saw. I'm going to pause for
+a moment and let you think for a moment about what kinds of
+problems this approach creates. So one problem, obviously,
+is that there are a lot of opportunities to make a mistake,
+or there's a lot to type. And another problem is even if you don't
+make a mistake, it takes quite a while. And that's just the beginning. So we're going to pick up this example and
+carry it further in the next video.

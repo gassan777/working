@@ -1,0 +1,84 @@
+Hi everyone. This one's titled
+How Does Metadata Support Data Curation? And yes, we're kind of going from the
+sublime to the ridiculous or vice versa. After a couple videos of somewhat labored, almost philosophical rumination. We're now going to talk
+about getting things done. Let's start by recalling
+the objective of data curation. Data curation is concerned with
+all aspects of the management of data in order to efficiently and
+reliably support the analysis of data, and enable reuse over time
+in order to efficiently and reliably support the analysis of data and
+enable reuse over time. Recall our areas of curatorial activities. Recall our methods of data
+curation analysis, documentations, system design and implementation,
+policy, and process. And metadata is in
+the documentation area of method. Okay, in the next two slides I'm going to go through the areas
+of curatorial activities. And indicate how metadata
+supports activities in those areas by the unique kind of
+documentation that it provides. Documentation which presumably rigorous,
+formal, and accessible to digital processing. So two slides, there they are. [COUGH] Start with collection,
+and there are three columns here, the first is the name of the area,
+then the description of the area and then the third column indicates how it's
+supported by metadata documentation. So, collection which is support for
+collecting and acquiring data, is supported by metadata that documents method, method of collection,
+method of sampling, stuff like that. Location, time, instruments, instruments
+settings, calibration and so on. Organization, supported by
+metadata the documents, schemas and schema documentation for
+semantics, syntax and coding. Storage, this is curatorial support for
+reliable and effective storage, supported by metadata that
+documents the authoritative and alternative copies of data sets,
+documents physical location, redundancy, compression,
+reduction, backups and so on. Preservation. Here I'm just going to
+refer you to organization, identification, which is coming,
+and storage. Discoverability, that's supported
+by metadata that documents the topic of the database,
+the coverage, the formats. Because you don't want to retrieve
+something you can't read, right? Availability, currency, and so on. Access, so most of access is covered
+in organization security but also access is supported by
+metadata that documents licensing, ownership, and, of course, location. Workflow, also everything said
+in organization applies, but, in addition, workflow is supported
+by metadata that documents scripts, processes, transformations, inputs. Identification, as always, everything
+said in an organization applies, and in addition, identification is supported
+by metadata that documents identifiers, version data, integrity checks, checksums,
+things like that, authentication. All that is represented in metadata. Identifiers themselves even are metadata. Integration, here I just refer you
+to what's covered in organization, identification, access, discoverability Part II, modification, reformatting, provenance, reproducibility, preservation, these are all supported by metadata. But in ways that have
+already been mentioned. So we start to see that some of these
+activities really, are based on others, so there's dependency relationships here. Compliance also based on methods
+of metadata documentation in organization probably that's work for
+discoverbility, but some other things as
+well such as certification. Indicating that a particular
+dataset has in fact passed some certification requirements
+that can be indicated by metadata. Security, again depended on many
+of the things we've talked about mentioned earlier, but
+also metadata can indicate encryption, and again security related certification. Communication, supported by metadata
+in the ways already discussed. And sharing, once again, supported by metadata documenting things we've already discussed, okay. Before leaving, metadata,
+not that we can ever leave metadata, a few words about
+the kinds of headaches that are involved in using
+metadata in the real world work place this comes
+from empirical studies. Are carried out, well by the authors listed below in the citation there. They least four categories
+of metadata frictions, standardisation, temporal,
+data sharing, human support. Standardization frictions typically have
+to do with multiple metadata standards, multiple serialization strategies. Metadata standards that are evolving
+either because they're unfinished or they're just frequently being revised. If you're going to have comparable
+metadata across time In your shop, you're going to have to update your
+metadata as the standards change. Or you're going to have to accept the fact that your community is going to in fact be kind of an island of
+an unapplied updates. There's a temporal category,
+that they call temporal, the category metadata frictions. And this has to do with headaches
+around when do you apply the metadata, in the data management life cycle. And you should be applying it along but opportunities to actually intervene and find ways to develop metadata, relatively efficiently without
+bringing the process to a halt. This can be a real headache
+in the real world. Sharing frictions. So, when the question that inevitably
+arises is who is this metadata for? And if it's for highly sophisticated insiders in a community that's one thing, if it's in fact intended to allow others outside your community
+to find your datasets, understand them, use them and so on. That requires a different
+kind of design and promotion. Most of the time we're
+actually doing both and there're conflicts there. And finally, human support. This is cross-cutting actually, it's involved in all of
+these friction categories. Unless you're part of
+a really large operation, NASA for instance,
+there will not be metadata, there will not be anyone
+who's job it is to design, promote, train,
+manage metadata activities. Instead the managers will be
+trying to coerce programmers and engineers, to choose metadata schemas, choose serialization strategies. And then, this is the hardest part,
+actually stick with it and do a good job of recording metadata
+when it needs to be recorded, and according to the normative policies,
+and your shop is actually developed. It's a legitimate question to ask,
+what is the ROI on any particular set of
+metadata recommendations? And sometimes we do go to far, but more often, I would say,
+we don't go far enough. And lack of metadata hugely
+diminishes whether or not your data can in fact, be used reliably and efficiently, to support data analytics. And that's it for
+the metadata week, see you soon.

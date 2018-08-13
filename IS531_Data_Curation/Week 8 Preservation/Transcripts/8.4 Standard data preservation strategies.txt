@@ -1,0 +1,170 @@
+Hi, everyone,
+this is the preservation week. And this is a video on standard
+preservation strategies, and we're going to briefly review the four
+classic preservation strategies. And you'll see these
+discussed in the literature. And they are replication, migration,
+emulation, and normalization. So replication is make a lot of copies,
+spread them around. Migration is when you need to update your
+formats, update your data to new formats. Emulation is as things change,
+such as operating systems or tools, maintain software that can emulate
+the original processing environment. Obviously, a strategy which is common for game preservation used elsewhere as well. And finally,
+normalization which is convert or maintain your data sets in a standard
+format that's optimized for preservation. We're going to look at each of these in
+turn with respect to their weaknesses. Basic ideas,
+pretty straightforward for each. So replication weaknesses. Remember, replication is make a lot
+of copies, spread them around. So the first problem is how do you
+ensure authenticity and identity? Remember those terms? Across all the copies. Another problem is you do
+have storage costs still. I know hardware costs approaching zero,
+not there yet. And that those costs are functions
+of size of your data sets, how independent your replications are,
+how spread around they are. You will need multiple physical storage systems if replication
+is going to work well. And, of course,
+the number of replications. In addition, every replication will
+create the possibility for errors. And perhaps more importantly or
+as importantly at least, confusion about whether or
+not we're really looking at the same data. And you might think well, just run a check
+sum or fixity check of some kind or other. But in fact, there're many
+slight changes that can occur even line in character turn
+type changes that make simple fixity not always practical for
+determining identity. And more on that later. Perhaps most importantly,
+replication itself does not protect data against
+technological changes. Changes that compromise viability,
+renderability, etc, of formats. Replication in usually copying, so
+in fact, it's by definition copying. So the data will be in some format or
+other. And at the same level of encoding,
+the same level of syntax and consequently very vulnerable
+to changes in practices and the software and
+operating system environments. On to migration. Remember, migration is keep updating your
+data to new formats whenever you need to. So, again, every act of transformation
+itself does introduce room for errors. And in fact, since migration is a lot
+more complicated than replication, errors are much more likely. You're probably going to lose
+context when you do this, unless you make an effort
+to thoroughly document. This transformation in the new format and
+result can be losing information. Another problem is that migration
+in the sense we're discussing it is instead of standalone preservation
+strategy, is usually ad hoc. We do it when we have to do it
+because we bought new software. The old data formats don't
+work with the new software. We're trying to share software
+with somebody and we discovered that our data format being out of
+date can't be used by our colleagues. So this kind of migration usually
+takes place only when it's needed and often in a kind of emergency. Some things failed or some opportunity is hard to take advantage of and
+that means it's not systematic. It's not coordinated and it can lead
+to data sets that are very poorly understood because we just
+need a new data set now. And, again,
+going to lose information, kind of overspecialized format that's really
+designed for some particular use. We end up with incompatible formats and all of these things lead to a lot
+of confusion about identity, compatibility, and scientific replication,
+scientific equivalence. And eventually, questions about
+reproducibility, scientific results. In addition,
+migration does not reduce vulnerability to simple loss in the way
+that replication does. Your migration may just produce one more data set in the new format. In the same RAID array, in the same
+building owned by the same organization. That's a pretty brutal
+vulnerable situation. Emulation, what are its weaknesses? So emulation, remember, is maintaining software that can
+emulate the original processing. So you're often recreating
+an operating system or creating an environment that looks like an application that no longer runs
+in your current operating system. Emulation is very expensive,
+very complicated. How do you ensure that you've correctly identified the properties
+that you want to maintain? These are often called significant
+properties in data preservation. And what audiences are you trying
+to serve over what period of time? Again, think about
+the preservation of online games. Of various kinds, that's where emulation usually seems to be the best
+approach to preservation. Other kinds of visualization as well. But, at the same time,
+very difficult to do, very difficult to know what
+determines success, very expensive. In addition,
+emulation doesn't address the problems that are addressed by replication,
+or migration. So it really needs to be
+combined with those things, particularly with replication. And finally, the emulation environments
+themselves may need to be preserved. Okay, normalization. That's where we convert our data sets
+to a standard format optimized for preservation, or
+you might create your data sets originally in a standard format
+optimized for preservation. So here data sets are maintained in a
+format that has standard encodings, syntax and ontologies, all with full
+documentation at every level. For simple data sets, a kind of quick and dirty approach might be simply CSV files
+with some documentation in Unicode. You could do worse, [LAUGH] Right? For more complex data sets,
+XML is commonly used and there would be full documentation
+of both syntax and ontology. And encoding as well. The semantic web ontology languages,
+OWL, and RDF, with their corresponding
+serializations like turtle and N3 are also commonly used in
+normalization strategies. So part of the idea of normalization
+is that data sets in new formats, that are needed to accommodate
+new software for instance, or specialized formats can
+be generated as needed. And when new data is developed
+it goes into the standard normal forms, but when we need to use it, we might need to transform
+it out of the standard normal forms into the specialized formats. And if this is institutionalized,
+if it's coordinated and organized, there's often a maintain
+suite of tools for transformations, from
+the normalized format to other syntaxes or
+ontologies or even in codings. These might be documented and
+validated against the test suite, scripts or
+Excess LT templates, for transfer from the XML,
+things like that. Pitfalls for normalization. So, one problem for getting normalization
+to work really well is that, it's commonly believed and
+I think backed up by most experience that some kind
+of central coordination and support, may be required
+to make this work. Some organization for instance, to manage documentation and
+to manage the transformation tools that makes normalization effective. Given recent experiences however, may be that a rich culture of
+open development will also work. I think the jury's out on that, but it's quite possible
+that open voluntary collaborations with
+online open repositories, can also achieve the kind of support that
+normalization requires to be effective. It is true that normalization itself does
+not provide basic protection against loss. So, if this normalized
+data set is still just on your floppy disk,
+if it's still in one place, Or even if the copies are within
+a single organization, or a single physical building,
+the threat of loss is still real. Now it's interesting to compare
+normalization and migration. As you've probably noticed,
+aspects of normalization, in particular the role of transformations
+are similar to migration. Obviously, transformations are important
+at the heart of each of these strategies. But migration as a preservation strategy
+we can distinguish from normalization and then having made this distinction, or
+clarified it compare the pros and cons. So, let's just think about migration
+is that it creates a chain of data sets, presumably with
+the same data in different formats. Time goes by, we update the format
+the data will remain the same. So we do this with transformation,
+but the transformation are in chain. Normalization is a hub and spokes model. We go in and
+out of the core foundational dataset, the preservation dataset. Now what we said earlier
+about migration formats, with respect to the down side,
+the creation of these new datasets new formats,
+tends to be ad hoc, uncoordinated. Can lose information, they can be over
+specialized and create confusions about compatibility and scientific equipment. But it's possible, and
+I think this deserves some attention that migration
+is really better integrated into the actual practical reality
+of formats and data preservation. Than strategies that require
+transformation in and out of a single core format. That is that migration,
+which of course is occurring all the time, I bet that most of us simply migrate our
+data forward in that migration chain. Most of us don't maintain
+a normalized document, we simply move our documents forward. So, perhaps Migration is better integrated into
+the practical reality, but for most scientific data, I doubt it. It's an empirical question. I want to say a few words at this point
+about transformations more generally. So both migration and
+normalization strategies involve transforming a dataset in one format
+to a dataset in another format. And presumably, both the input dataset and the output dataset are carrying
+the same information. So ideally the transformation
+should be documented in a standard computer
+processable metadata language. The data set of course should
+be documented as well, but the transformation itself should
+be documented and this whether we're talking about a migration
+scenario or a normalization scenario. And the next slide indicates one way how
+this could happen very simple example. But it's also an example of workflow and providence documentation,
+looking ahead just a bit. So here is an example
+of how a transformation can be documented with metadata. In this case, the documentation
+metadata is from a standard schema. You can read about it in premise and the actual instance is liberally
+adapted from metadata for a real migration that took
+place at the University of Illinois Better Champagne library. What's going on in general theory? You can see there at
+the top in event detail there's some pro sentence
+contentDM record. XML file was transformed into
+the mods XML file using XSLT. So there's documentation
+of what exactly took place. If you look down a ways,
+to in black mods one XML, this is the output file. A little further down
+contentdm_record_1.xml. This is the input file. And the transformation itself was specified by an XSLT file and template script contentDM_to_MODSv32. So this meta data here gives us a lot
+of information about the migration, in fact I've deleted a lot
+to get it on one slide. And in particular, it tells us in this
+case, in English, what's going on. It also indicates the input data,
+the output data, and it also documents what script,
+or as we say in XLT, template. Controlled the actual,
+specified the actual transformation. So, the documentation of transformations, extremely important in ensuring
+reliable preservation. And especially useful if when used as
+a common shared language schema for documenting transformations,
+as we're doing here. We're using a schema from premise. And it's important
+whether it's a migration, or whether its normalization or
+tell the difference between the two. And that's all for
+this video, see you soon.

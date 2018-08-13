@@ -1,0 +1,215 @@
+All right, hi everyone, and welcome back. This is the week on communication,
+and it's the third video. Titled, the solution to
+the data crisis is more data. That's right, the problem is too much
+data, the solution is more data. I'm going to start by recalling
+the problem described in the last video that there are more relevant articles that
+any specialist could possibly read and specialization is hitting
+diminishing returns. Then provide some background
+on how scientists and other professionals actually do read, which raises the question,
+how could we help them read better? Does it mean we're abandoning text mining? It means we're complementing text mining,
+more on that later. You remember this graph,
+If you look at 1990, you see this tremendous explosion of
+growth in papers on the South Cycle, and many other specializations
+are experiencing similar growth. This is a huge problem for scientists, it's really rarely possible
+these days to master the literature in a specialty
+with any confidence. No matter how much you increase
+the degree of specialization, the production is enormous. And the reason for that,
+just some interesting numbers, there are 25,000 scientific publishers,
+25,000. They produce 1.5 million
+scholarly articles a year. And 600,000 abstracts are added to Medline, just Medline, each year. Yeah, look at those numbers. It's a challenge,
+it's a challenge to science. It'd drive science, but right now, it also presents challenges. So let's pick up another
+thread in this snarl and take a look at how scientists and other professionals actually
+engage the literature. So I want you to imagine scientists using
+bibliographic systems like PubMed or SCOPUS, Google Scholar,
+Web of Science, ADS and so on. Searching databases of
+scientific articles or articles on engineering, business, any area of science or scholarship. And most of you have had
+this experience yourself, you kind of go into a trance,
+I call it the search trance. And engage with literature almost
+like you're playing a video game. We see this,
+especially in researchers where the amount of literature
+is really enormous. You see the searcher, the scientists,
+using a bibliographic database rapidly, almost subconsciously developing
+queries to find known items or to retrieve items on
+a particular subject or topic. Tracking references backwards,
+tracking citations forwards, you've all done this, I'm sure. Making really rapid, relevant judgements,
+assessments of impact, assessment of quality. And also within a particular article
+using text search to find key terms or equations, definitions,
+protocols, findings, diagrams. And move through the article as fast
+as possible, put it behind you. And this behavior is almost subcognitive, it's not clear that we're thinking
+all the time about what were doing. It's a little kinesthetic, and
+as I said, even trance-like. It's particularly interesting
+that these sessions are often considered
+successful by the researcher, even if no article to read was found. They're still often
+described as successful. This is really at odds with what
+was going on 20, 30 years ago. And to some extent,
+it's at odds with our traditional notion of how library resources are used. So the goal of researchers using
+these systems does not appear to be finding an article to read. In fact, if you look closely, the goal seems almost
+to be to avoid reading. Finding an article to read
+can really hold things up. You want to get information, you want to get a sense of what's
+going on in some part of the field. But chances are you really don't want to
+have to sit down and read an article. Now this is really nothing new,
+If you think about it, indexing, citation analysis,
+that helps us find what articles are relevant,
+that is also a way of avoiding reading. We figure out what articles
+are relevant using citation analysis or indexing without reading them. Abstracts and literature reviews help us take advantage
+of articles without reading them. The articles we do engage with and
+their analyses and summaries, help us take advantage of other
+articles without reading them. And, of course, friends, colleagues,
+and best of all, graduate students, help us take advantage of
+articles without reading them. So avoiding reading really is nothing new,
+but it does appear to be escalating. So studies in the 80s and
+90s here at the University of Illinois of how
+engineers read articles, engaged with the literature. Discovered that even in the,
+actually 70s, 80s, 90s, engineers and
+other researchers were not really reading articles left to right,
+top to bottom, all the way through. They had strategies for moving
+through an article fairly quickly by, for instance, reading the abstracts, getting section headings,
+looking for summary statements, beginning or end, looking for
+definitions, illustrations. And they might cut and
+paste parts of an article, put it together into a notebook,
+all kids of things, including especially, of course,
+markers and scribe [INAUDIBLE]. All kinds of things to get through
+an article as fast as possible without actually reading it. So when faculty members here at
+the university interviewed researchers and scientists, engineers in particular. They would say things like, well,
+I used the sections of the papers for the equations. Or I wouldn't read other
+parts of the article. I look for specific surface tensions,
+experimental measurements. I sometimes need to look specifically
+at other methods and theories. They described their behavior in
+terms of searching the document for particular bits of information,
+particular sections, particular kinds of representations. And not reading it as if,
+of course, you're reading a novel. I'm sure you suspected this all along and
+I'm sure you do it too. It's pretty interesting to accumulate
+this evidence systematically. These are long-standing behaviors,
+nothing new. But they do seem to be
+escalating in prevalence and intensity, and for good reason. It's the amount of data and the rapid
+increase in scientific publishing. So some interesting studies,
+that give us a view of what's going on, were conducted by Carol Tenopir and
+Donald King between 2000 and 2007. And what they see is that
+the time spent searching and browsing grows rapidly from 1984 to 2000. Until the mid 90s, the number of
+articles read was more or less steady. But since then,
+the number of articles read, and it's read, not browsed, has been climbing. And then the amount of
+time spent per article, not surprisingly, is dropping. And in some fields,
+it's dropping fairly fast. There are only so
+many minutes, hours in the day. If you read more articles, chances are, you're going to be spending
+less time in each article. One of the startling things that Tenopir
+and King discovered was that the time per article was dropping,
+in some fields, below 24 minutes. And these are complicated articles. You really can't read
+an article in 24 minutes. The respondents were describing their
+reading as reading, not browsing. I suppose because they felt like they
+were engaging with these articles as much as they engaged with any article. But still, 24 minutes in
+a complicated article in medicine or some other scientific or engineering
+field, you're not reading the article. This graph is from Tenopir, and I want you to take a look at
+the hockey stick around 2000. This red line here is the average
+number of articles read per year. Yeah, [LAUGH] this is pretty interesting. What we're basically
+looking at here I think, is that researchers are struggling to
+keep up with scientific productivity. That's what's happening between 1997 and
+2000. But in 2000, they're really giving up. [LAUGH] They cannot continue to engage
+with the number of articles they have to engage with, with the level of attention
+and time that they're used to. And so what's happening now is
+researchers are moving through more and more articles, but
+they really aren't reading them. They are not reading them, that's over. Take a look at the blue line and
+you'll see the steady drop since the mid 90s in
+time spent per article. So these are really harbingers of change in how scientists
+work with literature. So Carol Palmer,
+working in roughly the same period, is also turned up some
+interesting results that are relevant in how we
+address these problems. She confirms that researchers use very
+sophisticated techniques to mobilize information in the literature,
+according to their varied research needs. That these information needs
+are not uniform across discipline. They vary substantially
+across disciplines. They vary across the research lifecycle. And they vary with research strategies. As well as, of course,
+what the technologies you're using, what functionality those
+technologies have. Finally, she observes that
+the pace of evolution and innovation in these
+techniques is increasing. And it's increasingly driven
+by the researchers themselves, not by information specialists or
+publishers or librarians or central IT. Researchers themselves are scrambling
+to develop strategies and tools. So what can we do about this? Well, first,
+there's plenty of reason to believe that the human reading of natural
+language prose is uniquely valuable. That it provides nuance and
+clarity and insight that cannot really be achieved by
+automated information extraction. And consequently,
+it is really unlikely that reading will be totally
+replaced by text mining. There won't just be robots
+reading the literature, we will always be engaged with
+the literature in some way or other through strategic reading,
+reading strategically, as described. So let's provide tools that
+support strategic reading. What are we talking about? Things like computationally
+available data items that you can access with discipline-specific tools. Data items like chemical formula,
+proteins equations, advanced navigation and
+viewing that are optimized for domain-specific, objective-specific
+browsing and analysis. Various ways to collapse or
+expand or follow hypertext links. Those hypertext links, they should be
+typed, they should be first class objects. They should move in two directions. Data-driven interactive
+diagrams could be really handy, especially if they let you change
+the data or the parameters. Computable equations, long desired Ontological inferencing. And of course, complete or exclusively just possible
+interoperability with other tools. And these kinds of things
+have been a long standing, you might say dream of functionality for reading in the 20th century. We are now at the point though
+where we really need them. And this next slide is an example
+of remember Carol Palmer noted that much of this is
+driven by scientists themselves. And they're pretty ambitious, and
+blue sky in their hopes and dreams. Here's an example, not always,
+but in this particular case. So here we have Peter Murray-Rust and Rzepa from Cambridge University
+in England. To chemists,
+well known accomplished chemists arguing that documents need to become. That would be a hypermedia document that
+was accessible to robots and humans. For transmitting complete information,
+including content and behavior, the machine is semantically
+aware of the document content through domain-specific XML components. We argue that a cultural change in our
+approach to information is needed. Pretty ambitious, and a little more somber. Well known scientist Matthew Cockerill
+writing in BMC Bioinformetics. Imagine what could be achieved if
+articles rather than consisting entirely of free-form natural languages. Contained explicit assertions
+about biological knowledge in unambiguous machine readable form,
+some progress is being made. So in a nutshell what we're talking
+about is that as scientific ontologies standard terminologies. And other supportive data, metadata, standards are integrating publishing work flow that many of
+the enhancements just describe. The scientific communication
+will become possible and actually since many of the are already
+in place will be extended further. So this means better support for
+text mining, better support for information extraction, better support for
+literature based discovery, but also better support for
+strategic reading. So there's a lot of reason
+to be optimistic about the pace of change for
+tools and support of this sort. And the principal ground for
+optimism I would say, the necessary data standards necessary for
+interoperability and integration and so on, are now pretty much in place
+not just there increasingly adopted. So for instance character encoding, we have character encoding
+interoperability now with Unicode. You do have, I'd say adoption's nearly
+total there, complete interoperability. Data structure serialization using XML or
+JSON, between the two of them,
+adoption nearly total. Syntactic interoperability,
+the civilization for approaches to say RDF(S) and
+OWL adoptions will underway. Semantic interoperability RDF/OWL
+with the higher conceptual levels. Adoption substantial document markup, blank images or
+rather document mark up meta-languages. XML is adoption's nearly total. Document markup languages,
+they've got a member of them. But they're all widely used, NLM Jack,
+HTML, TEI, DocBook and so on. Once you [INAUDIBLE]
+metaphysical interoperability, the upper ontologies, hard to say,
+but that may not be essential anyway. Domain ontology terminologies,
+there are hundreds of domain ontologies and
+standard terminologies now. So I would say steady improvement,
+every reason for optimism. Let's take a look at a couple of
+examples of what kinds of tools might be used in a graphic
+environment like PubMed MEDLINE. So here's an example,
+Textpresso for neuroscience. It's described as a gene network for
+navigating the literature, but it processes articles in midline. And using a number of
+standard terminologies, which it brings to bear
+in neuroscience and in related fields makes it easier for the reader to find the relevant
+parts of an article. And only the relevant
+parts of an article and get the information that a reader needs. So here's another one,
+information hyperlinked to protein, proteins, iHop and in some respects,
+similar to Textpresso. Also using automatically
+accessing standard terminologies out on the web
+who linked open data. But what's interesting about iHop is that
+it is taking sentences that are relevant. In this case,
+relevant to a particular team SFN1, and bringing them together and
+putting them adjacent to one another. So you're really looking at
+sentences from multiple articles referring to the same things or
+about the same things. But brought together,
+again with annotations, with standardized terms and
+also some additional generalization specialization management. Pretty cool, pretty cool stuff. You can see how in an effort
+to engage with vast amount of literature
+in a particular field. And absorb what you need,
+extract what you need, in order to plan your own research. Develop your own experiments and
+solutions to problems so on and so forth. This kind of tool can be really useful,
+and there others that are underway. And I think it will be really interesting to see what everyone comes up
+with in the next few years. And that's it for communication,
+I'll see you soon.

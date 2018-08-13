@@ -1,0 +1,33 @@
+Welcome back,
+this is schema integration, an example. So we're going to do an example that'll
+have some moves similar to the ones you've seen. This is a classic bit
+of schema integrating. Here we go, and we're using books again,
+and we'll use books in the future. Everybody likes books, I hope. So in one model we have relationships,
+entity types, attributes that look like this. Books are published by publishers, adopted
+by universities, they refer to topics. And this example,
+by the way comes from Pattini Adal. It's a good one. Here's an alternative
+model of the same domain. It's almost a little debatable
+whether when you have two models that are different, whether they're
+really modelling the same domain, especially if you take domains that
+are in the eyes of the beholders. But anyway, this model, we have
+publications of different types and each publication has a list of keywords. So how do we integrate these
+two conceptual schemas? We peer at them and notice that Topics and Keyword appear to refer to the same thing. We think about books,
+we think about publications and using our domain knowledge conclude
+there's a relationship here. A set of all books is a subset of the set
+of all publications, proper subset. We also note that publisher is an entity
+in one schema, an attribute in another. And we don't need any additional domain knowledge to imagine
+a resolution for that. Acting on those observations we use
+"Topics" for "Keyword" as well. You can study these slides if
+you'd like at your leisure. We make "Publisher" an entity,
+here we go, not an attribute. We squash these schemas together, and I encourage you to stare at this for
+a while. We create the obvious subset relationship
+that we knew we were going for, removing unnecessary relationships and
+we're done. This the integrated schema,
+no information lost. Nice example, and notice we didn't
+have any overlaps really or other peculiar,
+challenging integration issues. In fact, in the real world,
+it is not that easy. It's a massive headache for everyone,
+data integration, schema integration. And if you're involved in data curation
+you'll be spending a lot of time doing it. All right, this was a short one but
+it is the last video in data integration. And looking forward to
+seeing you all next week.
